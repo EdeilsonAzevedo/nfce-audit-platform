@@ -1,0 +1,2783 @@
+[
+  {
+    "descricao": "Sardinha Eviscerada",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7890000314671"
+  },
+  {
+    "descricao": "Orquídea Phalaenopsis",
+    "marca": null,
+    "volume": null,
+    "ncm": "06029021",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7890291325219"
+  },
+  {
+    "descricao": "PATINHO KG",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "03019590",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7890316540610"
+  },
+  {
+    "descricao": "OVO DE GRANJA BRANCO",
+    "marca": "JC",
+    "volume": "30UNID",
+    "ncm": "04072100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes, NCM específico para ovos de galinha",
+    "gtin": "7891000000168"
+  },
+  {
+    "descricao": "Leite Condensado Moça",
+    "marca": "Nestlé",
+    "volume": "395g",
+    "ncm": "04029900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891000065440"
+  },
+  {
+    "descricao": "LEITE NINHO INTEGRAL 380G",
+    "marca": "NESTLE",
+    "volume": "380g",
+    "ncm": "04015010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891000325858"
+  },
+  {
+    "descricao": "Leite em pó Ninho integral 750g",
+    "marca": "Ninho",
+    "volume": "750g",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891000325896"
+  },
+  {
+    "descricao": "Achocolatado em pó Nesquau",
+    "marca": "Nescau",
+    "volume": "370g",
+    "ncm": "18063210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891000379691"
+  },
+  {
+    "descricao": "BOMBOM GAROTO SORTIDO 250G",
+    "marca": "GAROTO",
+    "volume": "250g",
+    "ncm": "18069000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891008116632"
+  },
+  {
+    "descricao": "CAFÉ MELITTA TRADICIONAL",
+    "marca": "MELITTA",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891021006071"
+  },
+  {
+    "descricao": "CAFÉ MELITTA EXTRA FORTE",
+    "marca": "MELITTA",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891021006927"
+  },
+  {
+    "descricao": "OLEO DE SOJA SOYA",
+    "marca": "SOYA",
+    "volume": "900ml",
+    "ncm": "15079011",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891107101621"
+  },
+  {
+    "descricao": "sobremesa",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "84145110",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891150047341"
+  },
+  {
+    "descricao": "Linguiça de carne suína Aurora",
+    "marca": "Aurora",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164004224"
+  },
+  {
+    "descricao": "Presunto Aurora",
+    "marca": "Aurora",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164005610"
+  },
+  {
+    "descricao": "Presunto Cozido Peperi",
+    "marca": "Peperi",
+    "volume": "1kg",
+    "ncm": "16023220",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164005627"
+  },
+  {
+    "descricao": "Lanche Suíno Peperi",
+    "marca": "Peperi",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164005719"
+  },
+  {
+    "descricao": "Linguiça de Frango Aurora",
+    "marca": "Aurora",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164016425"
+  },
+  {
+    "descricao": "FILE DE PEITO AURORA",
+    "marca": "AURORA",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164018214"
+  },
+  {
+    "descricao": "FILEZ PEITO FGO AURORA",
+    "marca": "AURORA",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164018221"
+  },
+  {
+    "descricao": "FILE DE TILAPIA AURORA",
+    "marca": "AURORA",
+    "volume": "800g",
+    "ncm": "03046100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164035020"
+  },
+  {
+    "descricao": "Salsicha Nobre Congelada",
+    "marca": "Nobre",
+    "volume": "3kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164136482"
+  },
+  {
+    "descricao": "Linguiça Calabresa Nobre",
+    "marca": "Sadia",
+    "volume": "2kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164136574"
+  },
+  {
+    "descricao": "Linguiça Defumada",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164136628"
+  },
+  {
+    "descricao": "Carnes diversas",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "01012100",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891164166700"
+  },
+  {
+    "descricao": "COSTELA SUINA SALGADA",
+    "marca": "PERDIGAO",
+    "volume": "1kg",
+    "ncm": "02101900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515021368"
+  },
+  {
+    "descricao": "Pé de porco salgado",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02101900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515021382"
+  },
+  {
+    "descricao": "COSTELA SUÍNA",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515023614"
+  },
+  {
+    "descricao": "PRESUNTO PERDIGAO",
+    "marca": "PERDIGAO",
+    "volume": "1kg",
+    "ncm": "16024100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515220358"
+  },
+  {
+    "descricao": "Salsicha Perdigão",
+    "marca": "Perdigão",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515220983"
+  },
+  {
+    "descricao": "Lanche de Chester Perdigão",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16023230",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515221652"
+  },
+  {
+    "descricao": "Linguiça Josefina",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515340278"
+  },
+  {
+    "descricao": "Mortadela Defumada",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515356736"
+  },
+  {
+    "descricao": "Linguiça Calabresa Perdigão",
+    "marca": "Perdigão",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515391034"
+  },
+  {
+    "descricao": "Presunto de Peru",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16023100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515404062"
+  },
+  {
+    "descricao": "Linguiça Calabresa Perdigão",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515432317"
+  },
+  {
+    "descricao": "Peito de Peru Sadia Fatiado",
+    "marca": "Sadia",
+    "volume": "200g",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515433703"
+  },
+  {
+    "descricao": "Salame Italiano Pequeno",
+    "marca": "Perdigão",
+    "volume": null,
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515471583"
+  },
+  {
+    "descricao": "Bisteca Suína",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515516314"
+  },
+  {
+    "descricao": "Linguiça Calabresa Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515518424"
+  },
+  {
+    "descricao": "COSTELA SUINA TEMPERADA",
+    "marca": "NABRASA",
+    "volume": "KG",
+    "ncm": "02032900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515521028"
+  },
+  {
+    "descricao": "LINGUIÇA PAIO SADIA",
+    "marca": "SADIA",
+    "volume": "370g",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515525729"
+  },
+  {
+    "descricao": "COST SUINA SAD KG",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515539122"
+  },
+  {
+    "descricao": "Bacon",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes e NCM mais relevante",
+    "gtin": "7891515621773"
+  },
+  {
+    "descricao": "Bacon",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515767600"
+  },
+  {
+    "descricao": "Bisteca Suína Congelada",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515781507"
+  },
+  {
+    "descricao": "Linguiça Toscana Apimentada",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515919313"
+  },
+  {
+    "descricao": "Linguiça Perdigão Churrasco",
+    "marca": "Perdigão",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515921446"
+  },
+  {
+    "descricao": "MORTADELA PERDIGAO",
+    "marca": "PERDIGAO",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515974534"
+  },
+  {
+    "descricao": "Mortadela de Frango",
+    "marca": "Perdigão",
+    "volume": "14kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891515974541"
+  },
+  {
+    "descricao": "FILE DE TILAPIA",
+    "marca": "COPACOL",
+    "volume": "800g",
+    "ncm": "03046100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891527062991"
+  },
+  {
+    "descricao": "Coxinha da Asa",
+    "marca": "Copacol",
+    "volume": "1kg",
+    "ncm": "02071413",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891527962253"
+  },
+  {
+    "descricao": "Salsicha Congelada",
+    "marca": "Multi Frios",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7891527977035"
+  },
+  {
+    "descricao": "Cavalinha Congelada Inteira",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041500",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7892249001961"
+  },
+  {
+    "descricao": "Corvina em Posta Pioneira",
+    "marca": "Pioneira",
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7892249789852"
+  },
+  {
+    "descricao": "Salsicha",
+    "marca": "Estrela",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7892970120078"
+  },
+  {
+    "descricao": "Mortadela Defumada Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000004832"
+  },
+  {
+    "descricao": "Filé de Peito de Frango Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "02071300",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000005945"
+  },
+  {
+    "descricao": "MORTADELA SADIA",
+    "marca": "SADIA",
+    "volume": "2kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000017832"
+  },
+  {
+    "descricao": "Bisteca Suína",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000018761"
+  },
+  {
+    "descricao": "Bisteca de Porco",
+    "marca": "Sadia",
+    "volume": null,
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000018778"
+  },
+  {
+    "descricao": "Linguiça Suína Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000023994"
+  },
+  {
+    "descricao": "Linguiça de Frango Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000024007"
+  },
+  {
+    "descricao": "Linguiça Fina Sadia",
+    "marca": "Sadia",
+    "volume": "500g",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000069367"
+  },
+  {
+    "descricao": "LINGUIÇA CALABRESA SADIA",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000069381"
+  },
+  {
+    "descricao": "Salsicha",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000106420"
+  },
+  {
+    "descricao": "Salame Italiano",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000124912"
+  },
+  {
+    "descricao": "Margarina Qualy",
+    "marca": "Qualy",
+    "volume": "500g",
+    "ncm": "15171000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000394209"
+  },
+  {
+    "descricao": "MOELA DE FRANGO SADIA",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02071432",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000437104"
+  },
+  {
+    "descricao": "Linguiça Calabresa Sadia",
+    "marca": "Sadia",
+    "volume": "2.5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000444232"
+  },
+  {
+    "descricao": "Presunto Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000446366"
+  },
+  {
+    "descricao": "FILE DE PEITO SADIA",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000482401"
+  },
+  {
+    "descricao": "LOMBO SUÍNO COM OSSO",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000516830"
+  },
+  {
+    "descricao": "Bacon Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000526044"
+  },
+  {
+    "descricao": "BLANQUET DE PERU SADIA",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "16023100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000696129"
+  },
+  {
+    "descricao": "Peito de Peru Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000696204"
+  },
+  {
+    "descricao": "PERNIL SUÍNO",
+    "marca": "SADIA",
+    "volume": "1kg",
+    "ncm": "02032200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000697010"
+  },
+  {
+    "descricao": "Linguiça Calabresa Sadia",
+    "marca": "Sadia",
+    "volume": null,
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000973817"
+  },
+  {
+    "descricao": "Margarina Deline",
+    "marca": "Deline",
+    "volume": "250g",
+    "ncm": "15171000",
+    "confianca": 0.95,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000979932"
+  },
+  {
+    "descricao": "Margarina Deline",
+    "marca": "Deline",
+    "volume": "500g",
+    "ncm": "15171000",
+    "confianca": 0.95,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7893000980006"
+  },
+  {
+    "descricao": "CARNE DE CHARQUE",
+    "marca": "BERTIN",
+    "volume": "1kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894351165739"
+  },
+  {
+    "descricao": "CHARQUE BERTIN",
+    "marca": "BERTIN",
+    "volume": "1kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894351165791"
+  },
+  {
+    "descricao": "FILE MIGNON SEARA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904004171"
+  },
+  {
+    "descricao": "LINGUIÇA DE FRANGO SEARA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904005185"
+  },
+  {
+    "descricao": "Linguiça Fininha Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904005222"
+  },
+  {
+    "descricao": "MORTADELA DEFUMADA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904005550"
+  },
+  {
+    "descricao": "Lombo Defumado Seara Tipo Cana Fatiado",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904006229"
+  },
+  {
+    "descricao": "Presunto Cozido Magro",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904006304"
+  },
+  {
+    "descricao": "Bacon Defumado",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes e marca identificada",
+    "gtin": "7894904006458"
+  },
+  {
+    "descricao": "Linguiça Defumada Reta",
+    "marca": "Seara",
+    "volume": "2,5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904009688"
+  },
+  {
+    "descricao": "Linguiça Calabresa Seara",
+    "marca": "Seara",
+    "volume": "2.5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904009749"
+  },
+  {
+    "descricao": "Sobrecoxa Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904013180"
+  },
+  {
+    "descricao": "FILE DE PEITO SEARA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904015108"
+  },
+  {
+    "descricao": "FILEZINHO DE PEITO SEARA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904015849"
+  },
+  {
+    "descricao": "PEITO DE PERU DEFUMADO",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "16023100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904072408"
+  },
+  {
+    "descricao": "Linguiça Suína Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904084227"
+  },
+  {
+    "descricao": "Bacon Suíno Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904097302"
+  },
+  {
+    "descricao": "Sobrecoxa Seara IQF",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904197712"
+  },
+  {
+    "descricao": "Presunto Levíssimo Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904252213"
+  },
+  {
+    "descricao": "GALINHA DURA CONGELADA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02069000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes e similaridade textual alta",
+    "gtin": "7894904253883"
+  },
+  {
+    "descricao": "FILE DE TILAPIA",
+    "marca": "SEARA",
+    "volume": "600g",
+    "ncm": "03046100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904255030"
+  },
+  {
+    "descricao": "Bisteca Suína",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02032900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904279791"
+  },
+  {
+    "descricao": "Salsicha Seara",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904572465"
+  },
+  {
+    "descricao": "Salsicha",
+    "marca": "Rezende",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904577859"
+  },
+  {
+    "descricao": "PRESUNTO COZIDO REZENDE",
+    "marca": "REZENDE",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904578153"
+  },
+  {
+    "descricao": "MORTADELA DE FRANGO CONFIANCA",
+    "marca": "Confianca",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904613731"
+  },
+  {
+    "descricao": "Linguiça de Frango Seara 700g",
+    "marca": "Seara",
+    "volume": "700g",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904727209"
+  },
+  {
+    "descricao": "FRANGO PASSARINHO TEMP IQF",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "02071419",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904769889"
+  },
+  {
+    "descricao": "FRANGO INTEIRO SEARA",
+    "marca": "SEARA",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904797905"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa congelada",
+    "marca": "Seara",
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904797929"
+  },
+  {
+    "descricao": "MORTADELA CONFIANCA",
+    "marca": "Confianca",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904861378"
+  },
+  {
+    "descricao": "Linguiça Mista Confiança",
+    "marca": "Confiança",
+    "volume": null,
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7894904890330"
+  },
+  {
+    "descricao": "Espinhaço Salgado",
+    "marca": null,
+    "volume": "10kg",
+    "ncm": "02101200",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7895099590777"
+  },
+  {
+    "descricao": "Café 3 Corações Tradicional",
+    "marca": "3 Corações",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896005800362"
+  },
+  {
+    "descricao": "Arroz Parboilizado 1kg",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "10063011",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896009866050"
+  },
+  {
+    "descricao": "Arroz Parboilizado Emoções 1kg",
+    "marca": "Emoções",
+    "volume": "1kg",
+    "ncm": "10061091",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896012300213"
+  },
+  {
+    "descricao": "ARROZ BLUE BONET PARBOILIZADO",
+    "marca": "BLUE BONET",
+    "volume": "1kg",
+    "ncm": "10062010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896015223014"
+  },
+  {
+    "descricao": "QUEIJO REINO TIROLEZ FRACAO",
+    "marca": "TIROLEZ",
+    "volume": "180g",
+    "ncm": "04069020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896030518966"
+  },
+  {
+    "descricao": "Óleo de Soja Liza",
+    "marca": "Liza",
+    "volume": "900ml",
+    "ncm": "15079011",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896036090244"
+  },
+  {
+    "descricao": "Arroz Tio Urbano Branco",
+    "marca": "Tio Urbano",
+    "volume": "1kg",
+    "ncm": "10063021",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896038321056"
+  },
+  {
+    "descricao": "Leite em pó integral Itambé",
+    "marca": "Itambé",
+    "volume": "200g",
+    "ncm": "04015010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896051130055"
+  },
+  {
+    "descricao": "Leite em pó integral Itambé 750g",
+    "marca": "Itambé",
+    "volume": "750g",
+    "ncm": "04022110",
+    "confianca": 0.95,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896051130086"
+  },
+  {
+    "descricao": "Corvina Costa Sul Posta 800g",
+    "marca": "Costa Sul",
+    "volume": "800g",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896082500841"
+  },
+  {
+    "descricao": "File de Merluza Costa Sul",
+    "marca": "Costa Sul",
+    "volume": "500g",
+    "ncm": "03047400",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896082502555"
+  },
+  {
+    "descricao": "FILE SALMÃO COSTA SUL 500G",
+    "marca": "COSTA SUL",
+    "volume": "500g",
+    "ncm": "03048100",
+    "confianca": 0.85,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896082506690"
+  },
+  {
+    "descricao": "Café Pilão Vácuo 250g",
+    "marca": "Pilão",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896089012637"
+  },
+  {
+    "descricao": "CAFÉ PILÃO EXTRA FORTE 250G",
+    "marca": "PILÃO",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896089016291"
+  },
+  {
+    "descricao": "FARINHA DE TRIGO FINNA",
+    "marca": "FINNA",
+    "volume": "1kg",
+    "ncm": "11010010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896090082063"
+  },
+  {
+    "descricao": "CAFÉ SANTA CLARA VÁCUO 250G",
+    "marca": "SANTA CLARA",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896224814126"
+  },
+  {
+    "descricao": "LEITE EM PÓ CAMPONESA INTEGRAL",
+    "marca": "CAMPONESA",
+    "volume": "200g",
+    "ncm": "04022910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896259410133"
+  },
+  {
+    "descricao": "LEITE EM PÓ CAMPONESA INTEGRAL",
+    "marca": "CAMPONESA",
+    "volume": "200g",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes, NCM mais específico",
+    "gtin": "7896259470229"
+  },
+  {
+    "descricao": "ARROZ CACAROLA PARBOILIZADO 1KG",
+    "marca": "CACAROLA",
+    "volume": "1kg",
+    "ncm": "10061091",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896393601046"
+  },
+  {
+    "descricao": "FLOCAO DE MILHO CORINGA",
+    "marca": "Coringa",
+    "volume": "500g",
+    "ncm": "11052000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896481130137"
+  },
+  {
+    "descricao": "Fígado bovino",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896481917141"
+  },
+  {
+    "descricao": "Presunto Pif Paf",
+    "marca": "Pif Paf",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581301635"
+  },
+  {
+    "descricao": "APRESUNTADO PIF PAF",
+    "marca": "PIF PAF",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581301734"
+  },
+  {
+    "descricao": "LINGUIÇA DEFUMADA",
+    "marca": "PIF PAF",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581325020"
+  },
+  {
+    "descricao": "Salsicha",
+    "marca": "Pif Paf",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581348180"
+  },
+  {
+    "descricao": "Salsicha Sadia",
+    "marca": "Sadia",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581348203"
+  },
+  {
+    "descricao": "SALSICHA PIF PAF",
+    "marca": "PIF PAF",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581348210"
+  },
+  {
+    "descricao": "apresuntado",
+    "marca": "PIF PAF",
+    "volume": "2kg",
+    "ncm": "16024900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581349989"
+  },
+  {
+    "descricao": "Coxas de Frango PIF PAF IQF 1KG",
+    "marca": "PIF PAF",
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896581354150"
+  },
+  {
+    "descricao": "Linguiça Calabresa Mista",
+    "marca": null,
+    "volume": null,
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896589520588"
+  },
+  {
+    "descricao": "Queijo Minas Frescal",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061090",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896704800304"
+  },
+  {
+    "descricao": "RICOTA TINA",
+    "marca": "TINA",
+    "volume": "1kg",
+    "ncm": "04061090",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896704800397"
+  },
+  {
+    "descricao": "QUEIJO REINO TINA",
+    "marca": "TINA",
+    "volume": "1kg",
+    "ncm": "04069030",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896704801448"
+  },
+  {
+    "descricao": "Queijo Reino Fracionado",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04069020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896704802629"
+  },
+  {
+    "descricao": "QUEIJO MINAS PADRAO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04069020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896704802667"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896733300882"
+  },
+  {
+    "descricao": "LINGUIÇA TOSCANA DE FRANGO",
+    "marca": null,
+    "volume": null,
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896733303487"
+  },
+  {
+    "descricao": "MELÃO",
+    "marca": null,
+    "volume": null,
+    "ncm": "08071900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896806500133"
+  },
+  {
+    "descricao": "QUEIJO VENEZA MINAS PADRAO",
+    "marca": null,
+    "volume": "450g",
+    "ncm": "04069020",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896877300052"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896877300083"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7896877300670"
+  },
+  {
+    "descricao": "PEPSI PET",
+    "marca": "PEPSI",
+    "volume": "200ml",
+    "ncm": "04061090",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897256000259"
+  },
+  {
+    "descricao": "QUEIJO MINAS PADRÃO LIGHT",
+    "marca": "DAVACA",
+    "volume": "500g",
+    "ncm": "04069030",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318000210"
+  },
+  {
+    "descricao": "Queijo Mussarela Light Davaca",
+    "marca": "Davaca",
+    "volume": "1kg",
+    "ncm": "04064000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318500116"
+  },
+  {
+    "descricao": "QUEIJO COALHO",
+    "marca": "DAVACA",
+    "volume": "500g",
+    "ncm": "35071000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318500314"
+  },
+  {
+    "descricao": "Queijo Minas Padrão Zero Lactose",
+    "marca": "Davaca",
+    "volume": "1kg",
+    "ncm": "04061090",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318500611"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA ZERO LACTOSE",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes e NCM relevante",
+    "gtin": "7897318500628"
+  },
+  {
+    "descricao": "Manteiga Davaca",
+    "marca": "Davaca",
+    "volume": "200g",
+    "ncm": "04051000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318507016"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA DAVACA",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318512676"
+  },
+  {
+    "descricao": "QUEIJO PRATO DAVACA",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04069020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318519156"
+  },
+  {
+    "descricao": "QUEIJO MINAS PADRÃO DAVACA",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04069030",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318524938"
+  },
+  {
+    "descricao": "QUEIJO PRATO",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04069020",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318533565"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA DA VACA",
+    "marca": "DAVACA",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318535408"
+  },
+  {
+    "descricao": "Manteiga Davaca",
+    "marca": "Davaca",
+    "volume": "500g",
+    "ncm": "04051000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897318572816"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA MUCURI",
+    "marca": "Mucuri",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897336900035"
+  },
+  {
+    "descricao": "QUEIJO PRATO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04069020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897336900059"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": null,
+    "volume": null,
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes, NCM específico para mussarela",
+    "gtin": "7897336920071"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": "MAIS VIDA",
+    "volume": "4kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897339800066"
+  },
+  {
+    "descricao": "OVO BRANCO GRANDE IANA C 30",
+    "marca": "IANA",
+    "volume": null,
+    "ncm": "04072100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897542800037"
+  },
+  {
+    "descricao": "Queijo Mussarela",
+    "marca": "Conquista",
+    "volume": null,
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897856400282"
+  },
+  {
+    "descricao": "OVO BRANCO GRANDE CARTELA 30 UNIDADES",
+    "marca": "KEROVOS",
+    "volume": null,
+    "ncm": "04072100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7897967907113"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA CRISTAULAT",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898011150042"
+  },
+  {
+    "descricao": "PEIXE CORVINA POSTA BRASIL SUL",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898023505120"
+  },
+  {
+    "descricao": "FILE DE PEITO SUPER FRANGO",
+    "marca": "FGO",
+    "volume": "1kg",
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898040082451"
+  },
+  {
+    "descricao": "CHARQUE JERKED BEEF",
+    "marca": "Litoral",
+    "volume": "5kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898044486026"
+  },
+  {
+    "descricao": "AÇÚCAR CRISTAL AGROVALE",
+    "marca": "AGROVALE",
+    "volume": "1kg",
+    "ncm": "17019900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898060250014"
+  },
+  {
+    "descricao": "LEITE CONDENSADO ITALAC",
+    "marca": "ITALAC",
+    "volume": "395g",
+    "ncm": "04015010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898080640413"
+  },
+  {
+    "descricao": "Limao Taiti",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "08055000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898117990771"
+  },
+  {
+    "descricao": "CORVINA EM POSTA",
+    "marca": "MARE VIVA",
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898128592568"
+  },
+  {
+    "descricao": "Sardinha",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898128594319"
+  },
+  {
+    "descricao": "Sardinha Inteira Congelada",
+    "marca": "Peixe Vivo",
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898128594326"
+  },
+  {
+    "descricao": "FILE DE PEITO MAURICEA",
+    "marca": "MAURICEA",
+    "volume": "1kg",
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136970341"
+  },
+  {
+    "descricao": "Coxa de Frango",
+    "marca": "Mauricea",
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136970358"
+  },
+  {
+    "descricao": "Linguiça de Frango Seara",
+    "marca": "Seara",
+    "volume": "3kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136970624"
+  },
+  {
+    "descricao": "FRANGO CONGELADO",
+    "marca": "MAURICEA",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136973793"
+  },
+  {
+    "descricao": "Peito de Frango Congelado",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136973953"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136973984"
+  },
+  {
+    "descricao": "FILE DE PEITO TEMP AZEITE ERVAS FINAS",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136974158"
+  },
+  {
+    "descricao": "Cavalinha Inteira",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041500",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136974523"
+  },
+  {
+    "descricao": "Dorso de frango congelado para canja",
+    "marca": "Mauricea",
+    "volume": "1kg",
+    "ncm": "02071419",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136975667"
+  },
+  {
+    "descricao": "Mortadela",
+    "marca": "Mauriceia",
+    "volume": "2.5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136976459"
+  },
+  {
+    "descricao": "Salsicha de carne de ave congelada",
+    "marca": "Mauricea",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136976763"
+  },
+  {
+    "descricao": "Salsicha Mauriceia Hot Dog Congelada 2 5kg",
+    "marca": "Mauriceia",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136976770"
+  },
+  {
+    "descricao": "Cavalinha Mauricea Inteira Congelada 1kg",
+    "marca": "Mauricea",
+    "volume": "1kg",
+    "ncm": "16041500",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136977036"
+  },
+  {
+    "descricao": "PEIXE DESFIADO TIPO BACALHAU",
+    "marca": "MAURICEA",
+    "volume": "1kg",
+    "ncm": "03054910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898136977395"
+  },
+  {
+    "descricao": "Queijo Mussarela",
+    "marca": "Piracanjuba",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898215150138"
+  },
+  {
+    "descricao": "FRANGO INTEIRO CONGELADO",
+    "marca": null,
+    "volume": null,
+    "ncm": "20091100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223660162"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": "Avigro",
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223660803"
+  },
+  {
+    "descricao": "Peito de Frango Congelado Envelopado",
+    "marca": null,
+    "volume": null,
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223660834"
+  },
+  {
+    "descricao": "COXINHA DA ASA TEMPERADA",
+    "marca": "AVIGRO",
+    "volume": "1kg",
+    "ncm": "02071010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223661015"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa temperada",
+    "marca": "Avigro",
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223661046"
+  },
+  {
+    "descricao": "Linguiça de Frango",
+    "marca": "Avigro",
+    "volume": "5kg",
+    "ncm": "16023290",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898223661169"
+  },
+  {
+    "descricao": "Apresuntado Saudali",
+    "marca": "Saudali",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898229382082"
+  },
+  {
+    "descricao": "Linguiça Suína",
+    "marca": "Saudali",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898229382099"
+  },
+  {
+    "descricao": "Linguiça Calabresa",
+    "marca": null,
+    "volume": "2.5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898229384987"
+  },
+  {
+    "descricao": "FRANGO INTEIRO CONGELADO",
+    "marca": "FRANGO DE OURO",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898251410012"
+  },
+  {
+    "descricao": "GALINHA FRANGO DE OURO",
+    "marca": "FRANGO DE OURO",
+    "volume": "18kg",
+    "ncm": "02109911",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898251410029"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": "Frango Ouro",
+    "volume": "20kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898251410210"
+  },
+  {
+    "descricao": "Peito de Frango",
+    "marca": "Frango de Ouro",
+    "volume": "1kg",
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898251410241"
+  },
+  {
+    "descricao": "Peito de Frango com Osso",
+    "marca": null,
+    "volume": null,
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898251410821"
+  },
+  {
+    "descricao": "CIMENTO POTY 50KG",
+    "marca": "POTY",
+    "volume": "50kg",
+    "ncm": "25232910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898265334854"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA CAMPANELLA KG",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898268390017"
+  },
+  {
+    "descricao": "CAFÉ MARATA VÁCUO 250G",
+    "marca": "MARATA",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898286200039"
+  },
+  {
+    "descricao": "CAFÉ MARATA TRADICIONAL 250G",
+    "marca": "MARATA",
+    "volume": "250g",
+    "ncm": "09012100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898286200060"
+  },
+  {
+    "descricao": "FRANGO CONGELADO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297060011"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa congelada",
+    "marca": null,
+    "volume": null,
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297060110"
+  },
+  {
+    "descricao": "PEITO DE FRANGO CONGELADO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071411",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297060127"
+  },
+  {
+    "descricao": "Coxinha da Asa Gujão",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071413",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297060202"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297060622"
+  },
+  {
+    "descricao": "ASA DE FRANGO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071300",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297061346"
+  },
+  {
+    "descricao": "Linguiça Frescal de Frango Gostoso",
+    "marca": "Gujao",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297061575"
+  },
+  {
+    "descricao": "Frango Fresquinho Gujao",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "01039100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297061971"
+  },
+  {
+    "descricao": "Dorso de frango congelado",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071300",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898297062107"
+  },
+  {
+    "descricao": "CARNE MUSCULO FRESCO BOVINO",
+    "marca": "FRIBOI",
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302280687"
+  },
+  {
+    "descricao": "CARNE PALETA BOV RESERVA",
+    "marca": "FRIBOI",
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302280724"
+  },
+  {
+    "descricao": "Mocotó Fatiado",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02062990",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302287815"
+  },
+  {
+    "descricao": "Carne bovina resfriada",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290037"
+  },
+  {
+    "descricao": "PATINHO",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290242"
+  },
+  {
+    "descricao": "Contra Filé",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290303"
+  },
+  {
+    "descricao": "CARNE PAULISTA BOVINA FRESCA",
+    "marca": null,
+    "volume": null,
+    "ncm": "02013000",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290334"
+  },
+  {
+    "descricao": "Coxão mole bovino resfriado",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290365"
+  },
+  {
+    "descricao": "ALCATRA KG",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290525"
+  },
+  {
+    "descricao": "RABADA BOVINA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02062910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290938"
+  },
+  {
+    "descricao": "VISCERAS BOVINAS RIM CONG",
+    "marca": "FRIBOI",
+    "volume": "1kg",
+    "ncm": "05040011",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290945"
+  },
+  {
+    "descricao": "PASSARINHA",
+    "marca": null,
+    "volume": null,
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302290969"
+  },
+  {
+    "descricao": "Fígado bovino",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302291195"
+  },
+  {
+    "descricao": "Bife bovino",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302291256"
+  },
+  {
+    "descricao": "COSTELA DE BOI",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02012090",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302291393"
+  },
+  {
+    "descricao": "Bucho Bovino Congelado",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "20091100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302291638"
+  },
+  {
+    "descricao": "ACEM BOVINO",
+    "marca": "FRIBOI",
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302292130"
+  },
+  {
+    "descricao": "BANANINHA PREMIUM",
+    "marca": null,
+    "volume": null,
+    "ncm": "20079923",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302292529"
+  },
+  {
+    "descricao": "Miúdo bovino mocotó",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302295933"
+  },
+  {
+    "descricao": "Picanha Bovina",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02013000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898302297883"
+  },
+  {
+    "descricao": "Coxa sobrecoxa",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898304251142"
+  },
+  {
+    "descricao": "Linguiça Toscana Mista",
+    "marca": "Avivar",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898312040608"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA NATVILLE",
+    "marca": "NATVILLE",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898387120014"
+  },
+  {
+    "descricao": "Manteiga Natville com sal",
+    "marca": "Natville",
+    "volume": "500g",
+    "ncm": "04051000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898387120083"
+  },
+  {
+    "descricao": "Leite Integral Natville 1L",
+    "marca": "Natville",
+    "volume": "1L",
+    "ncm": "04014010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898387120380"
+  },
+  {
+    "descricao": "Sardinha Eviscerada",
+    "marca": "Nordeste",
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898395780316"
+  },
+  {
+    "descricao": "Leite em pó Betânia integral",
+    "marca": "Betânia",
+    "volume": "200g",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898403780918"
+  },
+  {
+    "descricao": "LEITE CONDENSADO BETANIA",
+    "marca": "Betania",
+    "volume": "395g",
+    "ncm": "04015010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898403781298"
+  },
+  {
+    "descricao": "LEITE INTEGRAL BETANIA 1L",
+    "marca": "Betania",
+    "volume": "1L",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898403782387"
+  },
+  {
+    "descricao": "LEITE EM PÓ BETANIA INTEGRAL",
+    "marca": "BETANIA",
+    "volume": "750g",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898403782929"
+  },
+  {
+    "descricao": "Sal de mesa",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "25010020",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898416722110"
+  },
+  {
+    "descricao": "Fígado bovino",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898430862311"
+  },
+  {
+    "descricao": "Corvina posta Luzitania",
+    "marca": "Luzitania",
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898440420341"
+  },
+  {
+    "descricao": "FILE DE MERLUZA",
+    "marca": "LUZITANIA",
+    "volume": "1kg",
+    "ncm": "03047400",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898440424110"
+  },
+  {
+    "descricao": "PEIXE CORVINA POSTA",
+    "marca": "AGROPEIXE",
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898440426442"
+  },
+  {
+    "descricao": "Charque Ponta de Agulha",
+    "marca": "Friboi",
+    "volume": "5kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898542029916"
+  },
+  {
+    "descricao": "FRANGO CONGELADO COM MIUDOS",
+    "marca": "NATURAVES",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898561230027"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": null,
+    "volume": null,
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898622640123"
+  },
+  {
+    "descricao": "Sardinha Congelada",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898647310018"
+  },
+  {
+    "descricao": "Linguiça Calabresa Baianinha 500g",
+    "marca": "JF Agropec",
+    "volume": "500g",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898659020011"
+  },
+  {
+    "descricao": "Toucinho Branco",
+    "marca": null,
+    "volume": null,
+    "ncm": "02091011",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898659020165"
+  },
+  {
+    "descricao": "FILE DE MERLUZA NACI PAC 1KG PESCAF",
+    "marca": "PESCAF",
+    "volume": "1kg",
+    "ncm": "03038111",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898680240112"
+  },
+  {
+    "descricao": "CHARQUE PONTA AGULHA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02102000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898700970449"
+  },
+  {
+    "descricao": "OVOS BRANCO GRANDE",
+    "marca": "SAO LUIS",
+    "volume": "C 30",
+    "ncm": "04072100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898914127066"
+  },
+  {
+    "descricao": "PEIXE CORVINA POSTA",
+    "marca": "SOUSA PESC",
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898914751902"
+  },
+  {
+    "descricao": "Linguiça Mista Frico",
+    "marca": "Frico",
+    "volume": "5kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898916326016"
+  },
+  {
+    "descricao": "Linguiça Apimentada",
+    "marca": "Frico",
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898916326085"
+  },
+  {
+    "descricao": "Açúcar Cristal Cheef",
+    "marca": "Cheef",
+    "volume": "1kg",
+    "ncm": "17019900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898920795228"
+  },
+  {
+    "descricao": "FRANGO CONGELADO",
+    "marca": "AVIGRAN",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898924411018"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA YOGUEDES",
+    "marca": "Yoguedes",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898926184460"
+  },
+  {
+    "descricao": "Sardinha Eviscera 1kg",
+    "marca": "Lagopesca",
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898926712045"
+  },
+  {
+    "descricao": "Sardinha Eviscerada",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898926712519"
+  },
+  {
+    "descricao": "Sardinha Laj Evi",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898926717354"
+  },
+  {
+    "descricao": "Toucinho Salgado",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02101200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898927146450"
+  },
+  {
+    "descricao": "File de Merluza",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "03048510",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898929331489"
+  },
+  {
+    "descricao": "Leite em pó integral",
+    "marca": "CCGL",
+    "volume": "200g",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898929966056"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": "Faz Bem",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898931506011"
+  },
+  {
+    "descricao": "FLOCAO DE MILHO MARATA",
+    "marca": "MARATA",
+    "volume": "500g",
+    "ncm": "11052000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898932426042"
+  },
+  {
+    "descricao": "AÇÚCAR CRISTAL BELLA",
+    "marca": "BELLA",
+    "volume": "1kg",
+    "ncm": "17019900",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898935435027"
+  },
+  {
+    "descricao": "Fígado bovino",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898936734020"
+  },
+  {
+    "descricao": "Sardinha Tratada",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16041310",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898936984081"
+  },
+  {
+    "descricao": "Corvina em posta",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "03038910",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898936984241"
+  },
+  {
+    "descricao": "FRANGO CONGELADO AVIVIP",
+    "marca": "AVIVIP",
+    "volume": "1kg",
+    "ncm": "02071210",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898937117037"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa de frango",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "02071423",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898937117150"
+  },
+  {
+    "descricao": "Coxa e sobrecoxa AVIVIP 1KG",
+    "marca": "AVIVIP",
+    "volume": "1kg",
+    "ncm": "02071412",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898937117242"
+  },
+  {
+    "descricao": "Peito de Frango Congelado",
+    "marca": "Avivip",
+    "volume": "1kg",
+    "ncm": "02071422",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898937117402"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA DAMARE",
+    "marca": "DAMARE",
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898945133098"
+  },
+  {
+    "descricao": "Leite Integral",
+    "marca": "Damare",
+    "volume": "1L",
+    "ncm": "04022110",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898945133203"
+  },
+  {
+    "descricao": "QUEIJO MUSSARELA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898946401011"
+  },
+  {
+    "descricao": "Linguiça Toscana Suína",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898950833259"
+  },
+  {
+    "descricao": "Presunto",
+    "marca": "Lebon",
+    "volume": "1kg",
+    "ncm": "16024900",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898950833372"
+  },
+  {
+    "descricao": "Linguiça tipo calabresa suína",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "16010000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898950833655"
+  },
+  {
+    "descricao": "UVA THOMPSON SEM SEMENTE",
+    "marca": null,
+    "volume": "500g",
+    "ncm": "08061000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898956087014"
+  },
+  {
+    "descricao": "FILE DE TILAPIA LAGO DOURADO",
+    "marca": "LAGO DOURADO",
+    "volume": "800g",
+    "ncm": "03043100",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898958243739"
+  },
+  {
+    "descricao": "QUEIJO LANCHE NATULACT",
+    "marca": "NATULACT",
+    "volume": null,
+    "ncm": "04063000",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898965755089"
+  },
+  {
+    "descricao": "QUEIJO MINAS FRESCAL",
+    "marca": null,
+    "volume": "300g",
+    "ncm": "04061090",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898966138577"
+  },
+  {
+    "descricao": "Queijo Mussarela",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "04061010",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7898994558224"
+  },
+  {
+    "descricao": "DIESEL S10",
+    "marca": null,
+    "volume": null,
+    "ncm": "27101921",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899050521244"
+  },
+  {
+    "descricao": "Fígado bovino",
+    "marca": "Friboi",
+    "volume": "1kg",
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899567227882"
+  },
+  {
+    "descricao": "Bucho bovino congelado branqueado",
+    "marca": null,
+    "volume": null,
+    "ncm": "60041041",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899567227905"
+  },
+  {
+    "descricao": "Osso de Patinho",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "05069000",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899567234286"
+  },
+  {
+    "descricao": "Fígado bovino congelado fatiado",
+    "marca": null,
+    "volume": null,
+    "ncm": "02062200",
+    "confianca": 0.9,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899567245299"
+  },
+  {
+    "descricao": "FILE DE MERLUZA",
+    "marca": null,
+    "volume": "1kg",
+    "ncm": "03091000",
+    "confianca": 0.8,
+    "motivo_confianca": "descrições consistentes",
+    "gtin": "7899567249976"
+  }
+]
