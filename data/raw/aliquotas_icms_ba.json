@@ -1,0 +1,4796 @@
+{
+  "0101": {
+    "ncm4": "0101",
+    "descricao": "Cavalos e outros equídeos vivos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 46217,
+      "valor_total_brl": 1340389331.19,
+      "ncms_8dig_encontrados": [
+        "01012100",
+        "01012900",
+        "01013000",
+        "01019000"
+      ]
+    }
+  },
+  "0102": {
+    "ncm4": "0102",
+    "descricao": "Bovinos vivos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 6222,
+      "valor_total_brl": 96981330.19,
+      "ncms_8dig_encontrados": [
+        "01022110",
+        "01022190",
+        "01022911",
+        "01022919",
+        "01022990",
+        "01023110",
+        "01023190",
+        "01023911",
+        "01023919",
+        "01023990",
+        "01029000"
+      ]
+    }
+  },
+  "0103": {
+    "ncm4": "0103",
+    "descricao": "Suínos vivos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3362,
+      "valor_total_brl": 13197203.9,
+      "ncms_8dig_encontrados": [
+        "01031000",
+        "01039100",
+        "01039200"
+      ]
+    }
+  },
+  "0104": {
+    "ncm4": "0104",
+    "descricao": "Ovinos e caprinos vivos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3205,
+      "valor_total_brl": 30063512.82,
+      "ncms_8dig_encontrados": [
+        "01041011",
+        "01041019",
+        "01041090",
+        "01042010",
+        "01042090"
+      ]
+    }
+  },
+  "0105": {
+    "ncm4": "0105",
+    "descricao": "Aves vivas (galinhas, frangos, patos)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3946,
+      "valor_total_brl": 82733515.85,
+      "ncms_8dig_encontrados": [
+        "01051110",
+        "01051190",
+        "01051200",
+        "01051300",
+        "01051400",
+        "01051500",
+        "01059400",
+        "01059900"
+      ]
+    }
+  },
+  "0106": {
+    "ncm4": "0106",
+    "descricao": "Outros animais vivos (coelhos, animais silvestres)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1464,
+      "valor_total_brl": 610075312.26,
+      "ncms_8dig_encontrados": [
+        "01061100",
+        "01061200",
+        "01061300",
+        "01061400",
+        "01061900",
+        "01062000",
+        "01063100",
+        "01063200",
+        "01063310",
+        "01063390",
+        "01063900",
+        "01064100",
+        "01064900",
+        "01069000"
+      ]
+    }
+  },
+  "0201": {
+    "ncm4": "0201",
+    "descricao": "Carne bovina fresca ou resfriada",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 51015,
+      "valor_total_brl": 34491954393.7,
+      "ncms_8dig_encontrados": [
+        "02011000",
+        "02012010",
+        "02012020",
+        "02012090",
+        "02013000"
+      ]
+    }
+  },
+  "0202": {
+    "ncm4": "0202",
+    "descricao": "Carne bovina congelada",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 10222,
+      "valor_total_brl": 5395974151.91,
+      "ncms_8dig_encontrados": [
+        "02021000",
+        "02022010",
+        "02022020",
+        "02022090",
+        "02023000"
+      ]
+    }
+  },
+  "0203": {
+    "ncm4": "0203",
+    "descricao": "Carne suína fresca, resfriada ou congelada",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 13797,
+      "valor_total_brl": 7295640927.84,
+      "ncms_8dig_encontrados": [
+        "02031100",
+        "02031200",
+        "02031900",
+        "02032100",
+        "02032200",
+        "02032900"
+      ]
+    }
+  },
+  "0204": {
+    "ncm4": "0204",
+    "descricao": "Carne ovina e caprina fresca, resfriada ou congelada",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 397,
+      "valor_total_brl": 24628090.55,
+      "ncms_8dig_encontrados": [
+        "02041000",
+        "02042100",
+        "02042200",
+        "02042300",
+        "02044100",
+        "02044200",
+        "02044300",
+        "02045000"
+      ]
+    }
+  },
+  "0205": {
+    "ncm4": "0205",
+    "descricao": "Carne de equídeos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 28,
+      "valor_total_brl": 121960.91,
+      "ncms_8dig_encontrados": [
+        "02050000"
+      ]
+    }
+  },
+  "0206": {
+    "ncm4": "0206",
+    "descricao": "Miúdos e vísceras comestíveis bovinos e suínos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 12237,
+      "valor_total_brl": 2072400667.97,
+      "ncms_8dig_encontrados": [
+        "02061000",
+        "02062100",
+        "02062200",
+        "02062910",
+        "02062990",
+        "02063000",
+        "02064100",
+        "02064900",
+        "02068000",
+        "02069000"
+      ]
+    }
+  },
+  "0207": {
+    "ncm4": "0207",
+    "descricao": "Carne e miúdos de aves (frango, peru, pato)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 77285,
+      "valor_total_brl": 32229255377.24,
+      "ncms_8dig_encontrados": [
+        "02071100",
+        "02071210",
+        "02071220",
+        "02071300",
+        "02071400",
+        "02071411",
+        "02071412",
+        "02071413",
+        "02071419",
+        "02071421",
+        "02071422",
+        "02071423",
+        "02071424",
+        "02071429",
+        "02071431",
+        "02071432",
+        "02071433",
+        "02071434",
+        "02071439",
+        "02072400",
+        "02072500",
+        "02072600",
+        "02072700",
+        "02074100",
+        "02074200",
+        "02074400",
+        "02074500",
+        "02075100",
+        "02075200",
+        "02075400",
+        "02075500",
+        "02076000"
+      ]
+    }
+  },
+  "0208": {
+    "ncm4": "0208",
+    "descricao": "Outras carnes frescas ou congeladas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 130,
+      "valor_total_brl": 1548825.1,
+      "ncms_8dig_encontrados": [
+        "02081000",
+        "02083000",
+        "02084000",
+        "02089000"
+      ]
+    }
+  },
+  "0209": {
+    "ncm4": "0209",
+    "descricao": "Toucinho, banha e gorduras suínas não fundidas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 456,
+      "valor_total_brl": 9099128.92,
+      "ncms_8dig_encontrados": [
+        "02091011",
+        "02091019",
+        "02091021",
+        "02091029",
+        "02099000"
+      ]
+    }
+  },
+  "0210": {
+    "ncm4": "0210",
+    "descricao": "Carnes e miúdos salgados, defumados ou curados (bacon, charque)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 47947,
+      "valor_total_brl": 16648708884.01,
+      "ncms_8dig_encontrados": [
+        "02101100",
+        "02101200",
+        "02101900",
+        "02102000",
+        "02109100",
+        "02109200",
+        "02109300",
+        "02109911",
+        "02109919",
+        "02109920",
+        "02109940",
+        "02109990"
+      ]
+    }
+  },
+  "0301": {
+    "ncm4": "0301",
+    "descricao": "Peixes ornamentais vivos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 1243,
+      "valor_total_brl": 12370889.26,
+      "ncms_8dig_encontrados": [
+        "03011110",
+        "03011190",
+        "03011900",
+        "03019110",
+        "03019190",
+        "03019210",
+        "03019290",
+        "03019310",
+        "03019390",
+        "03019490",
+        "03019510",
+        "03019590",
+        "03019911",
+        "03019919",
+        "03019991",
+        "03019992",
+        "03019999"
+      ]
+    }
+  },
+  "0302": {
+    "ncm4": "0302",
+    "descricao": "Peixes frescos ou resfriados",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 13679,
+      "valor_total_brl": 2087074015.53,
+      "ncms_8dig_encontrados": [
+        "03021100",
+        "03021300",
+        "03021400",
+        "03021900",
+        "03022100",
+        "03022200",
+        "03022300",
+        "03022400",
+        "03022900",
+        "03023100",
+        "03023200",
+        "03023300",
+        "03023400",
+        "03023500",
+        "03023600",
+        "03023900",
+        "03024100",
+        "03024210",
+        "03024290",
+        "03024300",
+        "03024400",
+        "03024500",
+        "03024600",
+        "03024910",
+        "03024990",
+        "03025100",
+        "03025200",
+        "03025300",
+        "03025400",
+        "03025500",
+        "03025600",
+        "03025900",
+        "03027100",
+        "03027210",
+        "03027290",
+        "03027900",
+        "03028100",
+        "03028200",
+        "03028310",
+        "03028320",
+        "03028400",
+        "03028500",
+        "03028910",
+        "03028921",
+        "03028922",
+        "03028924",
+        "03028931",
+        "03028932",
+        "03028933",
+        "03028934",
+        "03028935",
+        "03028936",
+        "03028937",
+        "03028938",
+        "03028941",
+        "03028942",
+        "03028943",
+        "03028944",
+        "03028990",
+        "03029190",
+        "03029200",
+        "03029900"
+      ]
+    }
+  },
+  "0303": {
+    "ncm4": "0303",
+    "descricao": "Peixes congelados",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 34781,
+      "valor_total_brl": 2696663617.13,
+      "ncms_8dig_encontrados": [
+        "03031100",
+        "03031200",
+        "03031300",
+        "03031400",
+        "03031900",
+        "03032300",
+        "03032410",
+        "03032490",
+        "03032500",
+        "03032900",
+        "03033100",
+        "03033200",
+        "03033300",
+        "03033900",
+        "03034100",
+        "03034200",
+        "03034300",
+        "03034400",
+        "03034600",
+        "03034900",
+        "03035100",
+        "03035300",
+        "03035400",
+        "03035500",
+        "03035700",
+        "03035910",
+        "03035920",
+        "03035990",
+        "03036300",
+        "03036500",
+        "03036600",
+        "03036700",
+        "03036800",
+        "03036990",
+        "03038111",
+        "03038112",
+        "03038113",
+        "03038114",
+        "03038119",
+        "03038190",
+        "03038200",
+        "03038311",
+        "03038319",
+        "03038321",
+        "03038329",
+        "03038400",
+        "03038910",
+        "03038920",
+        "03038932",
+        "03038933",
+        "03038942",
+        "03038943",
+        "03038945",
+        "03038951",
+        "03038952",
+        "03038953",
+        "03038954",
+        "03038955",
+        "03038956",
+        "03038961",
+        "03038962",
+        "03038963",
+        "03038964",
+        "03038965",
+        "03038990",
+        "03039190",
+        "03039200",
+        "03039990"
+      ]
+    }
+  },
+  "0304": {
+    "ncm4": "0304",
+    "descricao": "Filés e pedaços de peixe frescos, resfriados ou congelados",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 24007,
+      "valor_total_brl": 1607405863.33,
+      "ncms_8dig_encontrados": [
+        "03043100",
+        "03043210",
+        "03043290",
+        "03043900",
+        "03044100",
+        "03044200",
+        "03044300",
+        "03044400",
+        "03044500",
+        "03044600",
+        "03044700",
+        "03044910",
+        "03044920",
+        "03044990",
+        "03045100",
+        "03045200",
+        "03045300",
+        "03045400",
+        "03045500",
+        "03045600",
+        "03045700",
+        "03045900",
+        "03046100",
+        "03046210",
+        "03046290",
+        "03046900",
+        "03047100",
+        "03047300",
+        "03047400",
+        "03047500",
+        "03047900",
+        "03048100",
+        "03048200",
+        "03048300",
+        "03048400",
+        "03048510",
+        "03048520",
+        "03048700",
+        "03048890",
+        "03048910",
+        "03048990",
+        "03049100",
+        "03049212",
+        "03049219",
+        "03049221",
+        "03049222",
+        "03049229",
+        "03049300",
+        "03049400",
+        "03049500",
+        "03049600",
+        "03049900"
+      ]
+    }
+  },
+  "0305": {
+    "ncm4": "0305",
+    "descricao": "Peixes secos, salgados ou defumados (bacalhau, arenque)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 9812,
+      "valor_total_brl": 3888572175.0,
+      "ncms_8dig_encontrados": [
+        "03052010",
+        "03052090",
+        "03053100",
+        "03053210",
+        "03053220",
+        "03053290",
+        "03053900",
+        "03054100",
+        "03054200",
+        "03054300",
+        "03054400",
+        "03054910",
+        "03054920",
+        "03054990",
+        "03055100",
+        "03055200",
+        "03055310",
+        "03055390",
+        "03055400",
+        "03055900",
+        "03056100",
+        "03056200",
+        "03056300",
+        "03056400",
+        "03056910",
+        "03056990",
+        "03057100",
+        "03057200",
+        "03057900"
+      ]
+    }
+  },
+  "0306": {
+    "ncm4": "0306",
+    "descricao": "Crustáceos (camarão, lagosta, caranguejo)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 10264,
+      "valor_total_brl": 1030042912.47,
+      "ncms_8dig_encontrados": [
+        "03061110",
+        "03061190",
+        "03061200",
+        "03061400",
+        "03061500",
+        "03061610",
+        "03061690",
+        "03061710",
+        "03061790",
+        "03061910",
+        "03061990",
+        "03063100",
+        "03063200",
+        "03063300",
+        "03063400",
+        "03063500",
+        "03063600",
+        "03063910",
+        "03063990",
+        "03069100",
+        "03069200",
+        "03069300",
+        "03069500",
+        "03069910",
+        "03069990"
+      ]
+    }
+  },
+  "0307": {
+    "ncm4": "0307",
+    "descricao": "Moluscos (lula, polvo, mexilhão, ostra)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 1652,
+      "valor_total_brl": 26626122.39,
+      "ncms_8dig_encontrados": [
+        "03071100",
+        "03071200",
+        "03071900",
+        "03072100",
+        "03072200",
+        "03072900",
+        "03073100",
+        "03073200",
+        "03073900",
+        "03074200",
+        "03074310",
+        "03074320",
+        "03074900",
+        "03075100",
+        "03075200",
+        "03075900",
+        "03076000",
+        "03077100",
+        "03077200",
+        "03077900",
+        "03078100",
+        "03078200",
+        "03078300",
+        "03078400",
+        "03078700",
+        "03079100",
+        "03079200",
+        "03079900"
+      ]
+    }
+  },
+  "0308": {
+    "ncm4": "0308",
+    "descricao": "Invertebrados aquáticos (ouriços, pepinos-do-mar)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 133,
+      "valor_total_brl": 245055.63,
+      "ncms_8dig_encontrados": [
+        "03081100",
+        "03081200",
+        "03081900",
+        "03082100",
+        "03082200",
+        "03082900",
+        "03083000",
+        "03089000"
+      ]
+    }
+  },
+  "0309": {
+    "ncm4": "0309",
+    "descricao": "Farinhas, pellets e resíduos de aquáticos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 1022,
+      "valor_total_brl": 60063320.12,
+      "ncms_8dig_encontrados": [
+        "03091000",
+        "03099000"
+      ]
+    }
+  },
+  "0401": {
+    "ncm4": "0401",
+    "descricao": "Leite fluido (pasteurizado, UHT, cru)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, II / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 50814,
+      "valor_total_brl": 38622077.24,
+      "ncms_8dig_encontrados": [
+        "04011010",
+        "04011090",
+        "04012010",
+        "04012090",
+        "04014010",
+        "04014021",
+        "04014029",
+        "04015010",
+        "04015021",
+        "04015029"
+      ]
+    }
+  },
+  "0402": {
+    "ncm4": "0402",
+    "descricao": "Leite em pó e leite condensado",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, II / Decreto 13.780/12",
+    "no_dataset": {
+      "frequencia_notas": 55069,
+      "valor_total_brl": 99744643.43,
+      "ncms_8dig_encontrados": [
+        "04021010",
+        "04021090",
+        "04022110",
+        "04022120",
+        "04022130",
+        "04022910",
+        "04022920",
+        "04022930",
+        "04029100",
+        "04029900"
+      ]
+    }
+  },
+  "0403": {
+    "ncm4": "0403",
+    "descricao": "Iogurte, coalhada, kefir",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, II",
+    "no_dataset": {
+      "frequencia_notas": 54605,
+      "valor_total_brl": 12684670.24,
+      "ncms_8dig_encontrados": [
+        "04032000",
+        "04039000"
+      ]
+    }
+  },
+  "0404": {
+    "ncm4": "0404",
+    "descricao": "Soro de leite e lactose",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 8955,
+      "valor_total_brl": 3405942.65,
+      "ncms_8dig_encontrados": [
+        "04041000",
+        "04049000"
+      ]
+    }
+  },
+  "0405": {
+    "ncm4": "0405",
+    "descricao": "Manteiga e creme de leite",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 14224,
+      "valor_total_brl": 57398403.6,
+      "ncms_8dig_encontrados": [
+        "04051000",
+        "04052000",
+        "04059010",
+        "04059090"
+      ]
+    }
+  },
+  "0406": {
+    "ncm4": "0406",
+    "descricao": "Queijos (minas, reino, prato, coalho, ricota)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII / Conv.ICMS 50/94",
+    "no_dataset": {
+      "frequencia_notas": 74830,
+      "valor_total_brl": 11344224417.09,
+      "ncms_8dig_encontrados": [
+        "04061010",
+        "04061090",
+        "04062000",
+        "04063000",
+        "04064000",
+        "04069010",
+        "04069020",
+        "04069030",
+        "04069090"
+      ]
+    }
+  },
+  "0407": {
+    "ncm4": "0407",
+    "descricao": "Ovos de aves frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, III / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 35077,
+      "valor_total_brl": 192524423.95,
+      "ncms_8dig_encontrados": [
+        "04071100",
+        "04071900",
+        "04072100",
+        "04072900",
+        "04079000"
+      ]
+    }
+  },
+  "0408": {
+    "ncm4": "0408",
+    "descricao": "Ovos de aves sem casca e gemas",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 585,
+      "valor_total_brl": 161786.93,
+      "ncms_8dig_encontrados": [
+        "04081100",
+        "04081900",
+        "04089100",
+        "04089900"
+      ]
+    }
+  },
+  "0409": {
+    "ncm4": "0409",
+    "descricao": "Mel natural",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 761,
+      "valor_total_brl": 87416245.02,
+      "ncms_8dig_encontrados": [
+        "04090000"
+      ]
+    }
+  },
+  "0410": {
+    "ncm4": "0410",
+    "descricao": "Produtos comestíveis de origem animal",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 728,
+      "valor_total_brl": 11150013.22,
+      "ncms_8dig_encontrados": [
+        "04101000",
+        "04109000"
+      ]
+    }
+  },
+  "0501": {
+    "ncm4": "0501",
+    "descricao": "NCM 0501 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 28,
+      "valor_total_brl": 4705.68,
+      "ncms_8dig_encontrados": [
+        "05010000"
+      ]
+    }
+  },
+  "0502": {
+    "ncm4": "0502",
+    "descricao": "NCM 0502 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 105,
+      "valor_total_brl": 4042545.92,
+      "ncms_8dig_encontrados": [
+        "05021011",
+        "05021019",
+        "05021090",
+        "05029010"
+      ]
+    }
+  },
+  "0504": {
+    "ncm4": "0504",
+    "descricao": "Tripas, bexigas e estômagos de animais inteiros ou em pedaços",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 8304,
+      "valor_total_brl": 450314438.66,
+      "ncms_8dig_encontrados": [
+        "05040011",
+        "05040012",
+        "05040013",
+        "05040019",
+        "05040090"
+      ]
+    }
+  },
+  "0505": {
+    "ncm4": "0505",
+    "descricao": "Peles e outras partes de aves",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 115,
+      "valor_total_brl": 2891504.27,
+      "ncms_8dig_encontrados": [
+        "05051000",
+        "05059000"
+      ]
+    }
+  },
+  "0506": {
+    "ncm4": "0506",
+    "descricao": "Ossos e núcleos córneos (crus ou degelatinados)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 6132,
+      "valor_total_brl": 455915776.67,
+      "ncms_8dig_encontrados": [
+        "05061000",
+        "05069000"
+      ]
+    }
+  },
+  "0507": {
+    "ncm4": "0507",
+    "descricao": "Marfim, cascos, unhas e chifres",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 9,
+      "valor_total_brl": 10844.13,
+      "ncms_8dig_encontrados": [
+        "05071000",
+        "05079000"
+      ]
+    }
+  },
+  "0508": {
+    "ncm4": "0508",
+    "descricao": "NCM 0508 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 52,
+      "valor_total_brl": 60020.25,
+      "ncms_8dig_encontrados": [
+        "05080000"
+      ]
+    }
+  },
+  "0510": {
+    "ncm4": "0510",
+    "descricao": "Âmbar cinzento, castóreo e produtos de glândulas animais",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 956,
+      "valor_total_brl": 337474365.55,
+      "ncms_8dig_encontrados": [
+        "05100010",
+        "05100090"
+      ]
+    }
+  },
+  "0511": {
+    "ncm4": "0511",
+    "descricao": "Produtos de origem animal para uso industrial (sêmen, embrião)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1485,
+      "valor_total_brl": 11276281.05,
+      "ncms_8dig_encontrados": [
+        "05119190",
+        "05119920",
+        "05119930",
+        "05119999"
+      ]
+    }
+  },
+  "0601": {
+    "ncm4": "0601",
+    "descricao": "Bulbos, rizomas e tubérculos para plantio",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": false,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 10185,
+      "valor_total_brl": 425039964.6,
+      "ncms_8dig_encontrados": [
+        "06011000",
+        "06012000"
+      ]
+    }
+  },
+  "0602": {
+    "ncm4": "0602",
+    "descricao": "Plantas vivas (mudas, orquídeas, arbustos)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3147,
+      "valor_total_brl": 2940351.28,
+      "ncms_8dig_encontrados": [
+        "06021000",
+        "06022000",
+        "06023000",
+        "06024000",
+        "06029010",
+        "06029021",
+        "06029029",
+        "06029081",
+        "06029083",
+        "06029089",
+        "06029090"
+      ]
+    }
+  },
+  "0603": {
+    "ncm4": "0603",
+    "descricao": "Flores cortadas e botões",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3581,
+      "valor_total_brl": 2902988.76,
+      "ncms_8dig_encontrados": [
+        "06031100",
+        "06031200",
+        "06031300",
+        "06031400",
+        "06031500",
+        "06031900",
+        "06039000"
+      ]
+    }
+  },
+  "0604": {
+    "ncm4": "0604",
+    "descricao": "Folhagens e ramos ornamentais",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1469,
+      "valor_total_brl": 32608805.79,
+      "ncms_8dig_encontrados": [
+        "06042000",
+        "06049000"
+      ]
+    }
+  },
+  "0701": {
+    "ncm4": "0701",
+    "descricao": "Batatas frescas ou refrigeradas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 1148,
+      "valor_total_brl": 338838836.23,
+      "ncms_8dig_encontrados": [
+        "07011000",
+        "07019000"
+      ]
+    }
+  },
+  "0702": {
+    "ncm4": "0702",
+    "descricao": "Tomates frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3742,
+      "valor_total_brl": 1624046416.55,
+      "ncms_8dig_encontrados": [
+        "07020000"
+      ]
+    }
+  },
+  "0703": {
+    "ncm4": "0703",
+    "descricao": "Cebola, alho, alho-poró e outras aliáceas frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 4335,
+      "valor_total_brl": 804026818.27,
+      "ncms_8dig_encontrados": [
+        "07031011",
+        "07031019",
+        "07031029",
+        "07032010",
+        "07032090",
+        "07039010",
+        "07039090"
+      ]
+    }
+  },
+  "0704": {
+    "ncm4": "0704",
+    "descricao": "Repolho, couve-flor e brócolis frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 1276,
+      "valor_total_brl": 35808296.72,
+      "ncms_8dig_encontrados": [
+        "07041000",
+        "07042000",
+        "07049000"
+      ]
+    }
+  },
+  "0705": {
+    "ncm4": "0705",
+    "descricao": "Alface e chicória frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 1418,
+      "valor_total_brl": 140162489.01,
+      "ncms_8dig_encontrados": [
+        "07051100",
+        "07051900",
+        "07052100",
+        "07052900"
+      ]
+    }
+  },
+  "0706": {
+    "ncm4": "0706",
+    "descricao": "Cenoura, nabo e outras raízes comestíveis frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 2135,
+      "valor_total_brl": 177255141.54,
+      "ncms_8dig_encontrados": [
+        "07061000",
+        "07069000"
+      ]
+    }
+  },
+  "0707": {
+    "ncm4": "0707",
+    "descricao": "Pepinos frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 485,
+      "valor_total_brl": 16648336.53,
+      "ncms_8dig_encontrados": [
+        "07070000"
+      ]
+    }
+  },
+  "0708": {
+    "ncm4": "0708",
+    "descricao": "Vagens, ervilhas e lentilhas frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 479,
+      "valor_total_brl": 11428765.7,
+      "ncms_8dig_encontrados": [
+        "07081000",
+        "07082000",
+        "07089000"
+      ]
+    }
+  },
+  "0709": {
+    "ncm4": "0709",
+    "descricao": "Outras hortaliças frescas (berinjela, pimentão, chuchu, quiabo)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 5521,
+      "valor_total_brl": 256109608.54,
+      "ncms_8dig_encontrados": [
+        "07092000",
+        "07093000",
+        "07094000",
+        "07095100",
+        "07095200",
+        "07095300",
+        "07095900",
+        "07096000",
+        "07097000",
+        "07099100",
+        "07099300",
+        "07099919",
+        "07099990"
+      ]
+    }
+  },
+  "0710": {
+    "ncm4": "0710",
+    "descricao": "Hortaliças congeladas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 763,
+      "valor_total_brl": 201407176.9,
+      "ncms_8dig_encontrados": [
+        "07101000",
+        "07102100",
+        "07102200",
+        "07102900",
+        "07103000",
+        "07104000",
+        "07108000",
+        "07109000"
+      ]
+    }
+  },
+  "0711": {
+    "ncm4": "0711",
+    "descricao": "Hortaliças conservadas provisoriamente em salmoura",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 11,
+      "valor_total_brl": 20689.6,
+      "ncms_8dig_encontrados": [
+        "07112010",
+        "07114000",
+        "07119000"
+      ]
+    }
+  },
+  "0712": {
+    "ncm4": "0712",
+    "descricao": "Hortaliças secas ou desidratadas",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 814,
+      "valor_total_brl": 45335748.67,
+      "ncms_8dig_encontrados": [
+        "07122000",
+        "07123900",
+        "07129010",
+        "07129090"
+      ]
+    }
+  },
+  "0713": {
+    "ncm4": "0713",
+    "descricao": "Leguminosas secas (feijão, grão-de-bico, lentilha, ervilha)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, IV / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3825,
+      "valor_total_brl": 6713505.22,
+      "ncms_8dig_encontrados": [
+        "07131090",
+        "07132090",
+        "07133110",
+        "07133190",
+        "07133290",
+        "07133311",
+        "07133319",
+        "07133321",
+        "07133329",
+        "07133391",
+        "07133399",
+        "07133510",
+        "07133590",
+        "07133990",
+        "07134090",
+        "07136090",
+        "07139010",
+        "07139090"
+      ]
+    }
+  },
+  "0714": {
+    "ncm4": "0714",
+    "descricao": "Raízes e tubérculos (mandioca, inhame, cará, araruta)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 936,
+      "valor_total_brl": 60847028.0,
+      "ncms_8dig_encontrados": [
+        "07141000",
+        "07142000",
+        "07143000",
+        "07144000",
+        "07149000"
+      ]
+    }
+  },
+  "0801": {
+    "ncm4": "0801",
+    "descricao": "Cocos, castanhas do Pará e castanhas de caju frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 6217,
+      "valor_total_brl": 52127717.26,
+      "ncms_8dig_encontrados": [
+        "08011100",
+        "08011200",
+        "08011900",
+        "08012100",
+        "08012200",
+        "08013100",
+        "08013200"
+      ]
+    }
+  },
+  "0802": {
+    "ncm4": "0802",
+    "descricao": "Outras nozes frescas ou secas (amêndoa, avelã, pistache)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 802,
+      "valor_total_brl": 31686938.68,
+      "ncms_8dig_encontrados": [
+        "08021100",
+        "08021200",
+        "08022100",
+        "08022200",
+        "08023100",
+        "08023200",
+        "08024200",
+        "08025100",
+        "08025200",
+        "08026200",
+        "08029100",
+        "08029200",
+        "08029900"
+      ]
+    }
+  },
+  "0803": {
+    "ncm4": "0803",
+    "descricao": "Bananas frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 28634,
+      "valor_total_brl": 12951631642.5,
+      "ncms_8dig_encontrados": [
+        "08031000",
+        "08039000"
+      ]
+    }
+  },
+  "0804": {
+    "ncm4": "0804",
+    "descricao": "Tâmaras, figos, abacaxis, abacates, goiabas e mangas frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 17835,
+      "valor_total_brl": 1185828659.24,
+      "ncms_8dig_encontrados": [
+        "08041010",
+        "08041020",
+        "08042010",
+        "08042020",
+        "08043000",
+        "08044000",
+        "08045010",
+        "08045020",
+        "08045030"
+      ]
+    }
+  },
+  "0805": {
+    "ncm4": "0805",
+    "descricao": "Frutas cítricas frescas (laranja, limão, tangerina, pomelo)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 29154,
+      "valor_total_brl": 4396916240.15,
+      "ncms_8dig_encontrados": [
+        "08051000",
+        "08052100",
+        "08052200",
+        "08052900",
+        "08054000",
+        "08055000",
+        "08059000"
+      ]
+    }
+  },
+  "0806": {
+    "ncm4": "0806",
+    "descricao": "Uvas frescas ou passas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 11444,
+      "valor_total_brl": 383516557.07,
+      "ncms_8dig_encontrados": [
+        "08061000",
+        "08062000"
+      ]
+    }
+  },
+  "0807": {
+    "ncm4": "0807",
+    "descricao": "Melões e melancias frescos",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 15406,
+      "valor_total_brl": 2476041917.74,
+      "ncms_8dig_encontrados": [
+        "08071100",
+        "08071900",
+        "08072000"
+      ]
+    }
+  },
+  "0808": {
+    "ncm4": "0808",
+    "descricao": "Maçãs e peras frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 19426,
+      "valor_total_brl": 5883524945.35,
+      "ncms_8dig_encontrados": [
+        "08081000",
+        "08083000"
+      ]
+    }
+  },
+  "0809": {
+    "ncm4": "0809",
+    "descricao": "Damascos, cerejas, pêssegos e ameixas frescas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 3009,
+      "valor_total_brl": 427999943.17,
+      "ncms_8dig_encontrados": [
+        "08091000",
+        "08092100",
+        "08092900",
+        "08093010",
+        "08093020",
+        "08094000"
+      ]
+    }
+  },
+  "0810": {
+    "ncm4": "0810",
+    "descricao": "Outras frutas frescas (morango, framboesa, maracujá)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 9658,
+      "valor_total_brl": 888958004.89,
+      "ncms_8dig_encontrados": [
+        "08101000",
+        "08102000",
+        "08104000",
+        "08105000",
+        "08107000",
+        "08109011",
+        "08109012",
+        "08109013",
+        "08109014",
+        "08109015",
+        "08109016",
+        "08109017",
+        "08109090"
+      ]
+    }
+  },
+  "0811": {
+    "ncm4": "0811",
+    "descricao": "Frutas congeladas",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, I",
+    "no_dataset": {
+      "frequencia_notas": 12813,
+      "valor_total_brl": 127253655.1,
+      "ncms_8dig_encontrados": [
+        "08111000",
+        "08112000",
+        "08119000"
+      ]
+    }
+  },
+  "0812": {
+    "ncm4": "0812",
+    "descricao": "Frutas conservadas provisoriamente em salmoura",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 7,
+      "valor_total_brl": 9112.92,
+      "ncms_8dig_encontrados": [
+        "08121000",
+        "08129000"
+      ]
+    }
+  },
+  "0813": {
+    "ncm4": "0813",
+    "descricao": "Frutas secas ou desidratadas (ameixa, uva passa, damasco seco)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 2237,
+      "valor_total_brl": 74653287.16,
+      "ncms_8dig_encontrados": [
+        "08131000",
+        "08132010",
+        "08132020",
+        "08133000",
+        "08134010",
+        "08134090",
+        "08135000"
+      ]
+    }
+  },
+  "0814": {
+    "ncm4": "0814",
+    "descricao": "Cascas de frutas cítricas ou de melões conservadas",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 162,
+      "valor_total_brl": 4537323.52,
+      "ncms_8dig_encontrados": [
+        "08140000"
+      ]
+    }
+  },
+  "0901": {
+    "ncm4": "0901",
+    "descricao": "Café torrado, moído e solúvel (cesta básica)",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, III / Conv.ICMS 15/90",
+    "no_dataset": {
+      "frequencia_notas": 46823,
+      "valor_total_brl": 281005312.27,
+      "ncms_8dig_encontrados": [
+        "09011110",
+        "09011190",
+        "09011200",
+        "09012100",
+        "09012200",
+        "09019000"
+      ]
+    }
+  },
+  "0902": {
+    "ncm4": "0902",
+    "descricao": "Chá verde, preto e mate",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 2069,
+      "valor_total_brl": 1150127.94,
+      "ncms_8dig_encontrados": [
+        "09021000",
+        "09022000",
+        "09023000",
+        "09024000"
+      ]
+    }
+  },
+  "0903": {
+    "ncm4": "0903",
+    "descricao": "Mate (erva-mate)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 271,
+      "valor_total_brl": 26244.69,
+      "ncms_8dig_encontrados": [
+        "09030010",
+        "09030090"
+      ]
+    }
+  },
+  "0904": {
+    "ncm4": "0904",
+    "descricao": "Pimenta do reino e pimentas secas",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 2606,
+      "valor_total_brl": 19015287.58,
+      "ncms_8dig_encontrados": [
+        "09041100",
+        "09041200",
+        "09042100",
+        "09042200"
+      ]
+    }
+  },
+  "0905": {
+    "ncm4": "0905",
+    "descricao": "NCM 0905 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 5,
+      "valor_total_brl": 147.74,
+      "ncms_8dig_encontrados": [
+        "09051000"
+      ]
+    }
+  },
+  "0906": {
+    "ncm4": "0906",
+    "descricao": "Canela e flores de caneleira",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 1559,
+      "valor_total_brl": 7633325.42,
+      "ncms_8dig_encontrados": [
+        "09061100",
+        "09061900",
+        "09062000"
+      ]
+    }
+  },
+  "0907": {
+    "ncm4": "0907",
+    "descricao": "Cravo-da-índia",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 566,
+      "valor_total_brl": 490274.28,
+      "ncms_8dig_encontrados": [
+        "09071000",
+        "09072000"
+      ]
+    }
+  },
+  "0908": {
+    "ncm4": "0908",
+    "descricao": "Noz-moscada, macis, amomo e cardamomo",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 230,
+      "valor_total_brl": 390852.45,
+      "ncms_8dig_encontrados": [
+        "09081100",
+        "09081200",
+        "09082200",
+        "09083100"
+      ]
+    }
+  },
+  "0909": {
+    "ncm4": "0909",
+    "descricao": "Sementes de anis, erva-doce, coentro e cominho",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 4186,
+      "valor_total_brl": 4333245.58,
+      "ncms_8dig_encontrados": [
+        "09092100",
+        "09092200",
+        "09093100",
+        "09093200",
+        "09096110",
+        "09096120",
+        "09096190",
+        "09096210",
+        "09096290"
+      ]
+    }
+  },
+  "0910": {
+    "ncm4": "0910",
+    "descricao": "Gengibre, açafrão, tomilho, louro e curry",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 6111,
+      "valor_total_brl": 42755040.4,
+      "ncms_8dig_encontrados": [
+        "09101100",
+        "09101200",
+        "09102000",
+        "09103000",
+        "09109100",
+        "09109900"
+      ]
+    }
+  },
+  "1001": {
+    "ncm4": "1001",
+    "descricao": "Trigo em grão",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 94,
+      "valor_total_brl": 548505.9,
+      "ncms_8dig_encontrados": [
+        "10011100",
+        "10011900",
+        "10019900"
+      ]
+    }
+  },
+  "1002": {
+    "ncm4": "1002",
+    "descricao": "Centeio",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 68,
+      "valor_total_brl": 1044.74,
+      "ncms_8dig_encontrados": [
+        "10021000",
+        "10029000"
+      ]
+    }
+  },
+  "1003": {
+    "ncm4": "1003",
+    "descricao": "Cevada",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 104,
+      "valor_total_brl": 592837.16,
+      "ncms_8dig_encontrados": [
+        "10031000",
+        "10039010",
+        "10039080",
+        "10039090"
+      ]
+    }
+  },
+  "1004": {
+    "ncm4": "1004",
+    "descricao": "Aveia",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 36,
+      "valor_total_brl": 493083.32,
+      "ncms_8dig_encontrados": [
+        "10041000",
+        "10049000"
+      ]
+    }
+  },
+  "1005": {
+    "ncm4": "1005",
+    "descricao": "Milho em grão",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 9045,
+      "valor_total_brl": 25791196.88,
+      "ncms_8dig_encontrados": [
+        "10051000",
+        "10059010",
+        "10059090"
+      ]
+    }
+  },
+  "1006": {
+    "ncm4": "1006",
+    "descricao": "Arroz (em casca, beneficiado, parboilizado, integral)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, V / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 46007,
+      "valor_total_brl": 379283617.96,
+      "ncms_8dig_encontrados": [
+        "10061010",
+        "10061091",
+        "10061092",
+        "10062010",
+        "10062020",
+        "10063011",
+        "10063019",
+        "10063021",
+        "10063029",
+        "10064000"
+      ]
+    }
+  },
+  "1007": {
+    "ncm4": "1007",
+    "descricao": "Sorgo",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 2,
+      "valor_total_brl": 55.9,
+      "ncms_8dig_encontrados": [
+        "10079000"
+      ]
+    }
+  },
+  "1008": {
+    "ncm4": "1008",
+    "descricao": "Outros cereais (quinoa, painço, trigo sarraceno)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 649,
+      "valor_total_brl": 1929275.11,
+      "ncms_8dig_encontrados": [
+        "10081010",
+        "10081090",
+        "10082190",
+        "10082910",
+        "10082990",
+        "10083010",
+        "10083090",
+        "10085090",
+        "10089010",
+        "10089090"
+      ]
+    }
+  },
+  "1101": {
+    "ncm4": "1101",
+    "descricao": "Farinha de trigo",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, IV / Conv.ICMS 01/75",
+    "no_dataset": {
+      "frequencia_notas": 15927,
+      "valor_total_brl": 656310687.68,
+      "ncms_8dig_encontrados": [
+        "11010010",
+        "11010020"
+      ]
+    }
+  },
+  "1102": {
+    "ncm4": "1102",
+    "descricao": "Farinha de milho, canjica e canjicão",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, VI / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 11332,
+      "valor_total_brl": 14354272.97,
+      "ncms_8dig_encontrados": [
+        "11022000",
+        "11029000"
+      ]
+    }
+  },
+  "1103": {
+    "ncm4": "1103",
+    "descricao": "Sêmolas e pellets de cereais",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 404,
+      "valor_total_brl": 1534230.72,
+      "ncms_8dig_encontrados": [
+        "11031100",
+        "11031300",
+        "11031900",
+        "11032000"
+      ]
+    }
+  },
+  "1104": {
+    "ncm4": "1104",
+    "descricao": "Flocos e grãos trabalhados de cereais (aveia, milho, cevada)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 33246,
+      "valor_total_brl": 20442282.54,
+      "ncms_8dig_encontrados": [
+        "11041200",
+        "11041900",
+        "11042200",
+        "11042300",
+        "11042900",
+        "11043000"
+      ]
+    }
+  },
+  "1105": {
+    "ncm4": "1105",
+    "descricao": "Farinha, sêmola e flocos de batata",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 153,
+      "valor_total_brl": 14604.55,
+      "ncms_8dig_encontrados": [
+        "11051000",
+        "11052000"
+      ]
+    }
+  },
+  "1106": {
+    "ncm4": "1106",
+    "descricao": "Farinha de leguminosas e farinha de mandioca",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, VI / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 12045,
+      "valor_total_brl": 213083256.27,
+      "ncms_8dig_encontrados": [
+        "11061000",
+        "11062000",
+        "11063000"
+      ]
+    }
+  },
+  "1107": {
+    "ncm4": "1107",
+    "descricao": "NCM 1107 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 54,
+      "valor_total_brl": 895.76,
+      "ncms_8dig_encontrados": [
+        "11071020",
+        "11072020"
+      ]
+    }
+  },
+  "1108": {
+    "ncm4": "1108",
+    "descricao": "Amidos e féculas (mandioca, milho, batata, arroz)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, VI / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 3468,
+      "valor_total_brl": 11464625.12,
+      "ncms_8dig_encontrados": [
+        "11081100",
+        "11081200",
+        "11081300",
+        "11081400",
+        "11081900"
+      ]
+    }
+  },
+  "1109": {
+    "ncm4": "1109",
+    "descricao": "Glúten de trigo",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 139,
+      "valor_total_brl": 878738.39,
+      "ncms_8dig_encontrados": [
+        "11090000"
+      ]
+    }
+  },
+  "1201": {
+    "ncm4": "1201",
+    "descricao": "Soja em grão",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": false,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27 / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 70,
+      "valor_total_brl": 214476.41,
+      "ncms_8dig_encontrados": [
+        "12011000",
+        "12019000"
+      ]
+    }
+  },
+  "1202": {
+    "ncm4": "1202",
+    "descricao": "Amendoim cru ou torrado em grão",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": false,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 936,
+      "valor_total_brl": 51613157.12,
+      "ncms_8dig_encontrados": [
+        "12023000",
+        "12024100",
+        "12024200"
+      ]
+    }
+  },
+  "1203": {
+    "ncm4": "1203",
+    "descricao": "NCM 1203 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 237.6,
+      "ncms_8dig_encontrados": [
+        "12030000"
+      ]
+    }
+  },
+  "1204": {
+    "ncm4": "1204",
+    "descricao": "NCM 1204 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 411,
+      "valor_total_brl": 1501874.36,
+      "ncms_8dig_encontrados": [
+        "12040010",
+        "12040090"
+      ]
+    }
+  },
+  "1205": {
+    "ncm4": "1205",
+    "descricao": "NCM 1205 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 8218.69,
+      "ncms_8dig_encontrados": [
+        "12051010",
+        "12059090"
+      ]
+    }
+  },
+  "1206": {
+    "ncm4": "1206",
+    "descricao": "NCM 1206 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 408,
+      "valor_total_brl": 2240585.05,
+      "ncms_8dig_encontrados": [
+        "12060010",
+        "12060090"
+      ]
+    }
+  },
+  "1207": {
+    "ncm4": "1207",
+    "descricao": "Outras sementes e frutos oleaginosos (girassol, gergelim, linhaça)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": false,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27",
+    "no_dataset": {
+      "frequencia_notas": 1040,
+      "valor_total_brl": 9271167.06,
+      "ncms_8dig_encontrados": [
+        "12071010",
+        "12071090",
+        "12072100",
+        "12074010",
+        "12074090",
+        "12075010",
+        "12075090",
+        "12076090",
+        "12077010",
+        "12077090",
+        "12079990"
+      ]
+    }
+  },
+  "1208": {
+    "ncm4": "1208",
+    "descricao": "Farinhas e pellets de sementes oleaginosas",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 147,
+      "valor_total_brl": 628102.63,
+      "ncms_8dig_encontrados": [
+        "12081000",
+        "12089000"
+      ]
+    }
+  },
+  "1209": {
+    "ncm4": "1209",
+    "descricao": "NCM 1209 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 790,
+      "valor_total_brl": 923078.58,
+      "ncms_8dig_encontrados": [
+        "12091000",
+        "12092500",
+        "12092900",
+        "12093000",
+        "12099100",
+        "12099900"
+      ]
+    }
+  },
+  "1211": {
+    "ncm4": "1211",
+    "descricao": "Plantas para perfumaria, farmácia e uso alimentar (ervas)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 4779,
+      "valor_total_brl": 18455924.44,
+      "ncms_8dig_encontrados": [
+        "12112000",
+        "12113000",
+        "12115000",
+        "12116000",
+        "12119010",
+        "12119090"
+      ]
+    }
+  },
+  "1212": {
+    "ncm4": "1212",
+    "descricao": "Alfarroba, algas, beterraba açucareira e cana-de-açúcar",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 271,
+      "valor_total_brl": 39134792.36,
+      "ncms_8dig_encontrados": [
+        "12122100",
+        "12122900",
+        "12129100",
+        "12129200",
+        "12129300",
+        "12129990"
+      ]
+    }
+  },
+  "1213": {
+    "ncm4": "1213",
+    "descricao": "NCM 1213 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 79036.0,
+      "ncms_8dig_encontrados": [
+        "12130000"
+      ]
+    }
+  },
+  "1214": {
+    "ncm4": "1214",
+    "descricao": "NCM 1214 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 105,
+      "valor_total_brl": 186274.34,
+      "ncms_8dig_encontrados": [
+        "12141000",
+        "12149000"
+      ]
+    }
+  },
+  "1301": {
+    "ncm4": "1301",
+    "descricao": "NCM 1301 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 24,
+      "valor_total_brl": 9691.53,
+      "ncms_8dig_encontrados": [
+        "13012000",
+        "13019010",
+        "13019090"
+      ]
+    }
+  },
+  "1302": {
+    "ncm4": "1302",
+    "descricao": "Sucos e extratos vegetais (goma xantana, pectina, goma guar)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 7272,
+      "valor_total_brl": 31299318.96,
+      "ncms_8dig_encontrados": [
+        "13021110",
+        "13021190",
+        "13021200",
+        "13021300",
+        "13021910",
+        "13021920",
+        "13021930",
+        "13021950",
+        "13021960",
+        "13021991",
+        "13021999",
+        "13022090",
+        "13023100",
+        "13023211",
+        "13023220",
+        "13023990"
+      ]
+    }
+  },
+  "1401": {
+    "ncm4": "1401",
+    "descricao": "NCM 1401 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 622,
+      "valor_total_brl": 94970.31,
+      "ncms_8dig_encontrados": [
+        "14011000",
+        "14012000",
+        "14019000"
+      ]
+    }
+  },
+  "1404": {
+    "ncm4": "1404",
+    "descricao": "Produtos vegetais não classificados (ceras vegetais, fibras)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1836,
+      "valor_total_brl": 448649.51,
+      "ncms_8dig_encontrados": [
+        "14042010",
+        "14042090",
+        "14049010",
+        "14049090"
+      ]
+    }
+  },
+  "1501": {
+    "ncm4": "1501",
+    "descricao": "NCM 1501 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 221,
+      "valor_total_brl": 55918.83,
+      "ncms_8dig_encontrados": [
+        "15011000",
+        "15012000",
+        "15019000"
+      ]
+    }
+  },
+  "1502": {
+    "ncm4": "1502",
+    "descricao": "NCM 1502 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 43,
+      "valor_total_brl": 154826.92,
+      "ncms_8dig_encontrados": [
+        "15021011",
+        "15021019",
+        "15021090",
+        "15029000"
+      ]
+    }
+  },
+  "1503": {
+    "ncm4": "1503",
+    "descricao": "NCM 1503 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 6,
+      "valor_total_brl": 81.74,
+      "ncms_8dig_encontrados": [
+        "15030000"
+      ]
+    }
+  },
+  "1504": {
+    "ncm4": "1504",
+    "descricao": "NCM 1504 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 6,
+      "valor_total_brl": 21416.29,
+      "ncms_8dig_encontrados": [
+        "15041090",
+        "15042000"
+      ]
+    }
+  },
+  "1505": {
+    "ncm4": "1505",
+    "descricao": "NCM 1505 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 138.9,
+      "ncms_8dig_encontrados": [
+        "15050010",
+        "15050090"
+      ]
+    }
+  },
+  "1506": {
+    "ncm4": "1506",
+    "descricao": "NCM 1506 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 22.52,
+      "ncms_8dig_encontrados": [
+        "15060000"
+      ]
+    }
+  },
+  "1507": {
+    "ncm4": "1507",
+    "descricao": "Óleo de soja bruto e refinado",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, VII / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 23494,
+      "valor_total_brl": 45930089.88,
+      "ncms_8dig_encontrados": [
+        "15071000",
+        "15079011",
+        "15079019",
+        "15079090"
+      ]
+    }
+  },
+  "1508": {
+    "ncm4": "1508",
+    "descricao": "NCM 1508 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 14,
+      "valor_total_brl": 9441.83,
+      "ncms_8dig_encontrados": [
+        "15081000",
+        "15089000"
+      ]
+    }
+  },
+  "1509": {
+    "ncm4": "1509",
+    "descricao": "Azeite de oliva",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 3766,
+      "valor_total_brl": 3511901.92,
+      "ncms_8dig_encontrados": [
+        "15092000",
+        "15093000",
+        "15094000",
+        "15099010",
+        "15099090"
+      ]
+    }
+  },
+  "1510": {
+    "ncm4": "1510",
+    "descricao": "NCM 1510 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 2,
+      "valor_total_brl": 16.49,
+      "ncms_8dig_encontrados": [
+        "15109000"
+      ]
+    }
+  },
+  "1511": {
+    "ncm4": "1511",
+    "descricao": "Óleo de palma (dendê)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 1076,
+      "valor_total_brl": 76909.75,
+      "ncms_8dig_encontrados": [
+        "15111000",
+        "15119000"
+      ]
+    }
+  },
+  "1512": {
+    "ncm4": "1512",
+    "descricao": "Óleos de girassol e algodão",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 939,
+      "valor_total_brl": 104999.77,
+      "ncms_8dig_encontrados": [
+        "15121110",
+        "15121120",
+        "15121911",
+        "15121919",
+        "15121920",
+        "15122100",
+        "15122910",
+        "15122990"
+      ]
+    }
+  },
+  "1513": {
+    "ncm4": "1513",
+    "descricao": "Óleos de coco e palmiste",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 683,
+      "valor_total_brl": 780016.67,
+      "ncms_8dig_encontrados": [
+        "15131100",
+        "15131900",
+        "15132119",
+        "15132919",
+        "15132920"
+      ]
+    }
+  },
+  "1514": {
+    "ncm4": "1514",
+    "descricao": "NCM 1514 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 162,
+      "valor_total_brl": 16441.85,
+      "ncms_8dig_encontrados": [
+        "15141910",
+        "15149910",
+        "15149990"
+      ]
+    }
+  },
+  "1515": {
+    "ncm4": "1515",
+    "descricao": "Outros óleos vegetais fixos (linhaça, milho, mamona)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 1447,
+      "valor_total_brl": 3164471.12,
+      "ncms_8dig_encontrados": [
+        "15151100",
+        "15151900",
+        "15152100",
+        "15152910",
+        "15152990",
+        "15153000",
+        "15155000",
+        "15156000",
+        "15159022",
+        "15159090"
+      ]
+    }
+  },
+  "1516": {
+    "ncm4": "1516",
+    "descricao": "Gorduras e óleos animais ou vegetais hidrogenados",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 158,
+      "valor_total_brl": 34798.07,
+      "ncms_8dig_encontrados": [
+        "15162000",
+        "15163000"
+      ]
+    }
+  },
+  "1517": {
+    "ncm4": "1517",
+    "descricao": "Margarina vegetal e misturas alimentícias gordurosas",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, V / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 34021,
+      "valor_total_brl": 18710486.19,
+      "ncms_8dig_encontrados": [
+        "15171000",
+        "15179010",
+        "15179090"
+      ]
+    }
+  },
+  "1518": {
+    "ncm4": "1518",
+    "descricao": "NCM 1518 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 16,
+      "valor_total_brl": 246.73,
+      "ncms_8dig_encontrados": [
+        "15180010",
+        "15180090"
+      ]
+    }
+  },
+  "1520": {
+    "ncm4": "1520",
+    "descricao": "NCM 1520 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 27,
+      "valor_total_brl": 479.07,
+      "ncms_8dig_encontrados": [
+        "15200010",
+        "15200020"
+      ]
+    }
+  },
+  "1521": {
+    "ncm4": "1521",
+    "descricao": "NCM 1521 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 26,
+      "valor_total_brl": 2099.88,
+      "ncms_8dig_encontrados": [
+        "15211000",
+        "15219011",
+        "15219019",
+        "15219090"
+      ]
+    }
+  },
+  "1522": {
+    "ncm4": "1522",
+    "descricao": "NCM 1522 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 49.44,
+      "ncms_8dig_encontrados": [
+        "15220000"
+      ]
+    }
+  },
+  "1601": {
+    "ncm4": "1601",
+    "descricao": "Embutidos: linguiça, mortadela, salsicha, paio",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII / Conv.ICMS 50/94",
+    "no_dataset": {
+      "frequencia_notas": 70736,
+      "valor_total_brl": 12981417062.76,
+      "ncms_8dig_encontrados": [
+        "16010000"
+      ]
+    }
+  },
+  "1602": {
+    "ncm4": "1602",
+    "descricao": "Outras preparações de carne (presunto, apresuntado, lanche suíno)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 50508,
+      "valor_total_brl": 1737794366.45,
+      "ncms_8dig_encontrados": [
+        "16021000",
+        "16022000",
+        "16023100",
+        "16023210",
+        "16023220",
+        "16023230",
+        "16023290",
+        "16023900",
+        "16024100",
+        "16024200",
+        "16024900",
+        "16025000",
+        "16029000"
+      ]
+    }
+  },
+  "1603": {
+    "ncm4": "1603",
+    "descricao": "NCM 1603 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 12,
+      "valor_total_brl": 406.35,
+      "ncms_8dig_encontrados": [
+        "16030000"
+      ]
+    }
+  },
+  "1604": {
+    "ncm4": "1604",
+    "descricao": "Preparações de peixes (sardinha em lata, atum enlatado)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 10800,
+      "valor_total_brl": 7151620.16,
+      "ncms_8dig_encontrados": [
+        "16041100",
+        "16041200",
+        "16041310",
+        "16041390",
+        "16041410",
+        "16041430",
+        "16041500",
+        "16041600",
+        "16041900",
+        "16042010",
+        "16042020",
+        "16042030",
+        "16042090"
+      ]
+    }
+  },
+  "1605": {
+    "ncm4": "1605",
+    "descricao": "Crustáceos e moluscos preparados ou conservados",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 1075,
+      "valor_total_brl": 38061965.83,
+      "ncms_8dig_encontrados": [
+        "16051000",
+        "16052100",
+        "16052900",
+        "16054000",
+        "16055100",
+        "16055200",
+        "16055400",
+        "16055500",
+        "16056200",
+        "16056900"
+      ]
+    }
+  },
+  "1701": {
+    "ncm4": "1701",
+    "descricao": "Açúcar de cana bruto, cristal e refinado",
+    "aliquota_icms_pct": 7.0,
+    "tipo": "reduzido",
+    "cesta_basica": true,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, VI / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 42662,
+      "valor_total_brl": 71183100.7,
+      "ncms_8dig_encontrados": [
+        "17011200",
+        "17011300",
+        "17011400",
+        "17019100",
+        "17019900"
+      ]
+    }
+  },
+  "1702": {
+    "ncm4": "1702",
+    "descricao": "Outros açúcares (glucose, frutose, lactose, maltose)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 369,
+      "valor_total_brl": 871886.86,
+      "ncms_8dig_encontrados": [
+        "17021100",
+        "17021900",
+        "17022000",
+        "17023019",
+        "17023020",
+        "17024010",
+        "17024020",
+        "17025000",
+        "17026010",
+        "17026020",
+        "17029000"
+      ]
+    }
+  },
+  "1703": {
+    "ncm4": "1703",
+    "descricao": "Melaços de cana",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 316,
+      "valor_total_brl": 5789.32,
+      "ncms_8dig_encontrados": [
+        "17031000",
+        "17039000"
+      ]
+    }
+  },
+  "1704": {
+    "ncm4": "1704",
+    "descricao": "Confeitaria sem cacau (balas, pirulitos, gomas de mascar)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 46717,
+      "valor_total_brl": 165674481.06,
+      "ncms_8dig_encontrados": [
+        "17041000",
+        "17049010",
+        "17049020",
+        "17049090"
+      ]
+    }
+  },
+  "1801": {
+    "ncm4": "1801",
+    "descricao": "Cacau em grão (bruto ou torrado)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 28,
+      "valor_total_brl": 35213.84,
+      "ncms_8dig_encontrados": [
+        "18010000"
+      ]
+    }
+  },
+  "1802": {
+    "ncm4": "1802",
+    "descricao": "Cascas e películas de cacau",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 48991.28,
+      "ncms_8dig_encontrados": [
+        "18020000"
+      ]
+    }
+  },
+  "1803": {
+    "ncm4": "1803",
+    "descricao": "Pasta de cacau (liquor de cacau)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 38,
+      "valor_total_brl": 674968.0,
+      "ncms_8dig_encontrados": [
+        "18032000"
+      ]
+    }
+  },
+  "1804": {
+    "ncm4": "1804",
+    "descricao": "Manteiga, gordura e óleo de cacau",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 218,
+      "valor_total_brl": 578894.25,
+      "ncms_8dig_encontrados": [
+        "18040000"
+      ]
+    }
+  },
+  "1805": {
+    "ncm4": "1805",
+    "descricao": "Cacau em pó sem adição de açúcar",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 376,
+      "valor_total_brl": 2437513.56,
+      "ncms_8dig_encontrados": [
+        "18050000"
+      ]
+    }
+  },
+  "1806": {
+    "ncm4": "1806",
+    "descricao": "Chocolate e preparações com cacau (achocolatado, bombom, barra)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 59553,
+      "valor_total_brl": 30196531.12,
+      "ncms_8dig_encontrados": [
+        "18061000",
+        "18062000",
+        "18063110",
+        "18063120",
+        "18063210",
+        "18063220",
+        "18069000"
+      ]
+    }
+  },
+  "1901": {
+    "ncm4": "1901",
+    "descricao": "Preparados para alimentação infantil (Nestogeno, Aptamil) e malte",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 3587,
+      "valor_total_brl": 41596104.2,
+      "ncms_8dig_encontrados": [
+        "19011010",
+        "19011020",
+        "19011030",
+        "19011090",
+        "19012010",
+        "19012020",
+        "19012090",
+        "19019010",
+        "19019020",
+        "19019090"
+      ]
+    }
+  },
+  "1902": {
+    "ncm4": "1902",
+    "descricao": "Massas alimentícias (macarrão, espaguete, talharim, lasanha)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 10833,
+      "valor_total_brl": 8403901.76,
+      "ncms_8dig_encontrados": [
+        "19021100",
+        "19021900",
+        "19022000",
+        "19023000",
+        "19024000"
+      ]
+    }
+  },
+  "1903": {
+    "ncm4": "1903",
+    "descricao": "Tapioca e sucedâneos preparados a partir de fécula",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 770,
+      "valor_total_brl": 675187.46,
+      "ncms_8dig_encontrados": [
+        "19030000"
+      ]
+    }
+  },
+  "1904": {
+    "ncm4": "1904",
+    "descricao": "Cereais expandidos e torrados (flocos de milho, granola)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 4232,
+      "valor_total_brl": 747484.0,
+      "ncms_8dig_encontrados": [
+        "19041000",
+        "19042000",
+        "19043000",
+        "19049000"
+      ]
+    }
+  },
+  "1905": {
+    "ncm4": "1905",
+    "descricao": "Produtos de padaria (pão, bolacha, biscoito, wafer, torrada)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17, XIII",
+    "no_dataset": {
+      "frequencia_notas": 43576,
+      "valor_total_brl": 2560628806.89,
+      "ncms_8dig_encontrados": [
+        "19051000",
+        "19052010",
+        "19052090",
+        "19053100",
+        "19053200",
+        "19054000",
+        "19059010",
+        "19059020",
+        "19059090"
+      ]
+    }
+  },
+  "2001": {
+    "ncm4": "2001",
+    "descricao": "Cogumelos e trufas preparados em vinagre",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 55,
+      "valor_total_brl": 16751.64,
+      "ncms_8dig_encontrados": [
+        "20011000",
+        "20019000"
+      ]
+    }
+  },
+  "2002": {
+    "ncm4": "2002",
+    "descricao": "Tomates preparados ou conservados (extrato, polpa, pelado)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1046,
+      "valor_total_brl": 576637.52,
+      "ncms_8dig_encontrados": [
+        "20021000",
+        "20029000"
+      ]
+    }
+  },
+  "2003": {
+    "ncm4": "2003",
+    "descricao": "Cogumelos preparados ou conservados",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 39,
+      "valor_total_brl": 1242.53,
+      "ncms_8dig_encontrados": [
+        "20031000",
+        "20039000"
+      ]
+    }
+  },
+  "2004": {
+    "ncm4": "2004",
+    "descricao": "Batatas preparadas ou conservadas sem vinagre",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1482,
+      "valor_total_brl": 3246982.03,
+      "ncms_8dig_encontrados": [
+        "20041000",
+        "20049000"
+      ]
+    }
+  },
+  "2005": {
+    "ncm4": "2005",
+    "descricao": "Outros legumes e hortaliças preparados sem vinagre",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3941,
+      "valor_total_brl": 728107.52,
+      "ncms_8dig_encontrados": [
+        "20051000",
+        "20052000",
+        "20054000",
+        "20055100",
+        "20055900",
+        "20057000",
+        "20058000",
+        "20059900"
+      ]
+    }
+  },
+  "2006": {
+    "ncm4": "2006",
+    "descricao": "Legumes, frutas e cascas de frutas cristalizados em açúcar",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 408,
+      "valor_total_brl": 204900009.02,
+      "ncms_8dig_encontrados": [
+        "20060000"
+      ]
+    }
+  },
+  "2007": {
+    "ncm4": "2007",
+    "descricao": "Geleias, compotas, marmeladas e doces de fruta",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1406,
+      "valor_total_brl": 8855538.7,
+      "ncms_8dig_encontrados": [
+        "20071000",
+        "20079100",
+        "20079910",
+        "20079921",
+        "20079923",
+        "20079924",
+        "20079925",
+        "20079926",
+        "20079927",
+        "20079929",
+        "20079990"
+      ]
+    }
+  },
+  "2008": {
+    "ncm4": "2008",
+    "descricao": "Frutas e nozes preparadas (amendoim torrado, coco ralado, azeitonas)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 2671,
+      "valor_total_brl": 4103016.45,
+      "ncms_8dig_encontrados": [
+        "20081100",
+        "20081900",
+        "20082010",
+        "20082090",
+        "20083000",
+        "20086010",
+        "20087010",
+        "20087020",
+        "20087090",
+        "20088000",
+        "20089100",
+        "20089300",
+        "20089710",
+        "20089790",
+        "20089900"
+      ]
+    }
+  },
+  "2009": {
+    "ncm4": "2009",
+    "descricao": "Sucos de frutas e de produtos hortícolas",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 2335,
+      "valor_total_brl": 5890719.32,
+      "ncms_8dig_encontrados": [
+        "20091100",
+        "20091200",
+        "20091900",
+        "20092900",
+        "20093100",
+        "20093900",
+        "20094900",
+        "20096100",
+        "20096900",
+        "20097100",
+        "20097900",
+        "20098100",
+        "20098911",
+        "20098912",
+        "20098913",
+        "20098919",
+        "20098921",
+        "20098922",
+        "20098990",
+        "20099000"
+      ]
+    }
+  },
+  "2101": {
+    "ncm4": "2101",
+    "descricao": "Extratos de café/chá e preparações para café (cápsulas, solúvel)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1360,
+      "valor_total_brl": 265681.19,
+      "ncms_8dig_encontrados": [
+        "21011110",
+        "21011190",
+        "21011200",
+        "21012010",
+        "21012020",
+        "21013000"
+      ]
+    }
+  },
+  "2102": {
+    "ncm4": "2102",
+    "descricao": "Leveduras ativas ou inativas, fermentos",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 691,
+      "valor_total_brl": 72748.51,
+      "ncms_8dig_encontrados": [
+        "21021090",
+        "21022000",
+        "21023000"
+      ]
+    }
+  },
+  "2103": {
+    "ncm4": "2103",
+    "descricao": "Molhos, condimentos compostos, mostarda, ketchup, maionese",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 9565,
+      "valor_total_brl": 4020270.35,
+      "ncms_8dig_encontrados": [
+        "21031010",
+        "21031090",
+        "21032010",
+        "21032090",
+        "21033010",
+        "21033021",
+        "21033029",
+        "21039011",
+        "21039019",
+        "21039021",
+        "21039029",
+        "21039091",
+        "21039099"
+      ]
+    }
+  },
+  "2104": {
+    "ncm4": "2104",
+    "descricao": "Sopas, caldos e preparações para sopas",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1941,
+      "valor_total_brl": 330448.19,
+      "ncms_8dig_encontrados": [
+        "21041011",
+        "21041019",
+        "21041021",
+        "21041029",
+        "21042000"
+      ]
+    }
+  },
+  "2105": {
+    "ncm4": "2105",
+    "descricao": "Sorvetes e gelados comestíveis",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1874,
+      "valor_total_brl": 42327615.31,
+      "ncms_8dig_encontrados": [
+        "21050010",
+        "21050090"
+      ]
+    }
+  },
+  "2106": {
+    "ncm4": "2106",
+    "descricao": "Preparações alimentícias diversas (temperos prontos, suplementos)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 16092,
+      "valor_total_brl": 1080730111.71,
+      "ncms_8dig_encontrados": [
+        "21061000",
+        "21069010",
+        "21069021",
+        "21069029",
+        "21069030",
+        "21069050",
+        "21069060",
+        "21069090"
+      ]
+    }
+  },
+  "2201": {
+    "ncm4": "2201",
+    "descricao": "Água mineral natural sem gás e com gás",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17 / Conv.ICMS 26/03",
+    "no_dataset": {
+      "frequencia_notas": 4299,
+      "valor_total_brl": 910931.04,
+      "ncms_8dig_encontrados": [
+        "22011000",
+        "22019000"
+      ]
+    }
+  },
+  "2202": {
+    "ncm4": "2202",
+    "descricao": "Refrigerantes e outras bebidas não alcoólicas",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "substituicao_tributaria",
+    "base_legal": "RICMS-BA art.15 / Conv.ICMS 11/91",
+    "no_dataset": {
+      "frequencia_notas": 19725,
+      "valor_total_brl": 3196902.86,
+      "ncms_8dig_encontrados": [
+        "22021000",
+        "22029100",
+        "22029900"
+      ]
+    }
+  },
+  "2203": {
+    "ncm4": "2203",
+    "descricao": "Cervejas de malte",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "substituicao_tributaria",
+    "base_legal": "RICMS-BA art.15 / Conv.ICMS 11/91",
+    "no_dataset": {
+      "frequencia_notas": 5405,
+      "valor_total_brl": 4115328.01,
+      "ncms_8dig_encontrados": [
+        "22030000"
+      ]
+    }
+  },
+  "2204": {
+    "ncm4": "2204",
+    "descricao": "Vinhos de uvas frescas e mostos de uva",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 626,
+      "valor_total_brl": 450781.09,
+      "ncms_8dig_encontrados": [
+        "22041010",
+        "22041090",
+        "22042100",
+        "22042219",
+        "22042910",
+        "22043000"
+      ]
+    }
+  },
+  "2205": {
+    "ncm4": "2205",
+    "descricao": "Vermutes e outras bebidas de uvas aromatizadas",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 25,
+      "valor_total_brl": 1910.62,
+      "ncms_8dig_encontrados": [
+        "22051000"
+      ]
+    }
+  },
+  "2206": {
+    "ncm4": "2206",
+    "descricao": "Outras bebidas fermentadas (sidra, hidromel)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 344,
+      "valor_total_brl": 17578.72,
+      "ncms_8dig_encontrados": [
+        "22060010",
+        "22060090"
+      ]
+    }
+  },
+  "2207": {
+    "ncm4": "2207",
+    "descricao": "Álcool etílico (combustível hidratado, industrial, anidro)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "especial",
+    "cesta_basica": false,
+    "regime_tributario": "monofasico",
+    "base_legal": "RICMS-BA / LC 192/22 / Convs. ICMS combustíveis",
+    "no_dataset": {
+      "frequencia_notas": 2334,
+      "valor_total_brl": 5447191171.17,
+      "ncms_8dig_encontrados": [
+        "22071010",
+        "22071090",
+        "22072011",
+        "22072019",
+        "22072020"
+      ]
+    }
+  },
+  "2208": {
+    "ncm4": "2208",
+    "descricao": "Aguardente, uísque, vodca, cachaça, rum e licores",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1115,
+      "valor_total_brl": 302354.3,
+      "ncms_8dig_encontrados": [
+        "22082000",
+        "22083010",
+        "22083020",
+        "22083090",
+        "22084000",
+        "22085000",
+        "22086000",
+        "22087000",
+        "22089000"
+      ]
+    }
+  },
+  "2209": {
+    "ncm4": "2209",
+    "descricao": "Vinagre e seus sucedâneos",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1141,
+      "valor_total_brl": 60083.92,
+      "ncms_8dig_encontrados": [
+        "22090000"
+      ]
+    }
+  },
+  "2301": {
+    "ncm4": "2301",
+    "descricao": "Farinhas e pellets de carnes ou de peixe",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 2,
+      "valor_total_brl": 9558.47,
+      "ncms_8dig_encontrados": [
+        "23011010"
+      ]
+    }
+  },
+  "2302": {
+    "ncm4": "2302",
+    "descricao": "Farelos e resíduos de cereais (farelo de trigo, milho)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 12,
+      "valor_total_brl": 17507.98,
+      "ncms_8dig_encontrados": [
+        "23021000",
+        "23023010",
+        "23024000"
+      ]
+    }
+  },
+  "2303": {
+    "ncm4": "2303",
+    "descricao": "Resíduos da fabricação de amido e resíduos semelhantes",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 11,
+      "valor_total_brl": 47459.45,
+      "ncms_8dig_encontrados": [
+        "23032000",
+        "23033000"
+      ]
+    }
+  },
+  "2304": {
+    "ncm4": "2304",
+    "descricao": "Tortas e outros resíduos sólidos da extração de óleo de soja",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 9,
+      "valor_total_brl": 940.08,
+      "ncms_8dig_encontrados": [
+        "23040010",
+        "23040090"
+      ]
+    }
+  },
+  "2305": {
+    "ncm4": "2305",
+    "descricao": "NCM 2305 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 9,
+      "valor_total_brl": 650.99,
+      "ncms_8dig_encontrados": [
+        "23050000"
+      ]
+    }
+  },
+  "2306": {
+    "ncm4": "2306",
+    "descricao": "Tortas e resíduos da extração de outros óleos vegetais",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 117,
+      "valor_total_brl": 246870.85,
+      "ncms_8dig_encontrados": [
+        "23061000",
+        "23062000",
+        "23063010",
+        "23065000",
+        "23069090"
+      ]
+    }
+  },
+  "2309": {
+    "ncm4": "2309",
+    "descricao": "Preparações dos tipos utilizados para alimentação de animais (ração)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "reduzido",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.17",
+    "no_dataset": {
+      "frequencia_notas": 2083,
+      "valor_total_brl": 5790783.65,
+      "ncms_8dig_encontrados": [
+        "23091000",
+        "23099010",
+        "23099020",
+        "23099030",
+        "23099060",
+        "23099090"
+      ]
+    }
+  },
+  "2401": {
+    "ncm4": "2401",
+    "descricao": "NCM 2401 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 5,
+      "valor_total_brl": 7765.19,
+      "ncms_8dig_encontrados": [
+        "24011010",
+        "24012010"
+      ]
+    }
+  },
+  "2402": {
+    "ncm4": "2402",
+    "descricao": "Cigarros, charutos e cigarrilhas de tabaco",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "substituicao_tributaria",
+    "base_legal": "RICMS-BA art.15 / Conv.ICMS 37/94",
+    "no_dataset": {
+      "frequencia_notas": 744,
+      "valor_total_brl": 74813.22,
+      "ncms_8dig_encontrados": [
+        "24021000",
+        "24022000",
+        "24029000"
+      ]
+    }
+  },
+  "2403": {
+    "ncm4": "2403",
+    "descricao": "Outros produtos de tabaco (tabaco para cachimbo, rapé)",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 26,
+      "valor_total_brl": 610.41,
+      "ncms_8dig_encontrados": [
+        "24031100",
+        "24031900",
+        "24039100",
+        "24039910",
+        "24039990"
+      ]
+    }
+  },
+  "2404": {
+    "ncm4": "2404",
+    "descricao": "NCM 2404 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 7,
+      "valor_total_brl": 69.26,
+      "ncms_8dig_encontrados": [
+        "24041100",
+        "24041200",
+        "24049100"
+      ]
+    }
+  },
+  "2501": {
+    "ncm4": "2501",
+    "descricao": "Sal de cozinha refinado e grosso (cloreto de sódio)",
+    "aliquota_icms_pct": 0.0,
+    "tipo": "isento",
+    "cesta_basica": true,
+    "regime_tributario": "isencao",
+    "base_legal": "RICMS-BA art.27, VIII / Conv.ICMS 44/75",
+    "no_dataset": {
+      "frequencia_notas": 10061,
+      "valor_total_brl": 3944012.68,
+      "ncms_8dig_encontrados": [
+        "25010011",
+        "25010019",
+        "25010020",
+        "25010090"
+      ]
+    }
+  },
+  "2502": {
+    "ncm4": "2502",
+    "descricao": "NCM 2502 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 9,
+      "valor_total_brl": 10219.23,
+      "ncms_8dig_encontrados": [
+        "25020000"
+      ]
+    }
+  },
+  "2503": {
+    "ncm4": "2503",
+    "descricao": "NCM 2503 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 178,
+      "valor_total_brl": 267711.74,
+      "ncms_8dig_encontrados": [
+        "25030010",
+        "25030090"
+      ]
+    }
+  },
+  "2504": {
+    "ncm4": "2504",
+    "descricao": "NCM 2504 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 42,
+      "valor_total_brl": 9184.37,
+      "ncms_8dig_encontrados": [
+        "25041000",
+        "25049000"
+      ]
+    }
+  },
+  "2505": {
+    "ncm4": "2505",
+    "descricao": "NCM 2505 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 357,
+      "valor_total_brl": 33499.83,
+      "ncms_8dig_encontrados": [
+        "25051000",
+        "25059000"
+      ]
+    }
+  },
+  "2506": {
+    "ncm4": "2506",
+    "descricao": "NCM 2506 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 9,
+      "valor_total_brl": 64.11,
+      "ncms_8dig_encontrados": [
+        "25061000"
+      ]
+    }
+  },
+  "2507": {
+    "ncm4": "2507",
+    "descricao": "NCM 2507 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 18,
+      "valor_total_brl": 162.53,
+      "ncms_8dig_encontrados": [
+        "25070010",
+        "25070090"
+      ]
+    }
+  },
+  "2508": {
+    "ncm4": "2508",
+    "descricao": "NCM 2508 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 221,
+      "valor_total_brl": 102133.63,
+      "ncms_8dig_encontrados": [
+        "25081000",
+        "25083000",
+        "25084090",
+        "25087000"
+      ]
+    }
+  },
+  "2509": {
+    "ncm4": "2509",
+    "descricao": "NCM 2509 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 7,
+      "valor_total_brl": 479.39,
+      "ncms_8dig_encontrados": [
+        "25090000"
+      ]
+    }
+  },
+  "2510": {
+    "ncm4": "2510",
+    "descricao": "NCM 2510 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 5,
+      "valor_total_brl": 2309.92,
+      "ncms_8dig_encontrados": [
+        "25101010",
+        "25101090"
+      ]
+    }
+  },
+  "2512": {
+    "ncm4": "2512",
+    "descricao": "NCM 2512 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 5,
+      "valor_total_brl": 281.57,
+      "ncms_8dig_encontrados": [
+        "25120000"
+      ]
+    }
+  },
+  "2513": {
+    "ncm4": "2513",
+    "descricao": "NCM 2513 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 44,
+      "valor_total_brl": 183.69,
+      "ncms_8dig_encontrados": [
+        "25131000"
+      ]
+    }
+  },
+  "2514": {
+    "ncm4": "2514",
+    "descricao": "NCM 2514 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 136.39,
+      "ncms_8dig_encontrados": [
+        "25140000"
+      ]
+    }
+  },
+  "2515": {
+    "ncm4": "2515",
+    "descricao": "NCM 2515 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 2,
+      "valor_total_brl": 94.38,
+      "ncms_8dig_encontrados": [
+        "25151100",
+        "25151210"
+      ]
+    }
+  },
+  "2516": {
+    "ncm4": "2516",
+    "descricao": "NCM 2516 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 3,
+      "valor_total_brl": 3330.69,
+      "ncms_8dig_encontrados": [
+        "25161100",
+        "25161200",
+        "25169000"
+      ]
+    }
+  },
+  "2517": {
+    "ncm4": "2517",
+    "descricao": "NCM 2517 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 114,
+      "valor_total_brl": 25812.18,
+      "ncms_8dig_encontrados": [
+        "25171000",
+        "25174100",
+        "25174900"
+      ]
+    }
+  },
+  "2518": {
+    "ncm4": "2518",
+    "descricao": "NCM 2518 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 31,
+      "valor_total_brl": 4908.35,
+      "ncms_8dig_encontrados": [
+        "25181000",
+        "25182000"
+      ]
+    }
+  },
+  "2520": {
+    "ncm4": "2520",
+    "descricao": "NCM 2520 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 149,
+      "valor_total_brl": 9895.9,
+      "ncms_8dig_encontrados": [
+        "25202010",
+        "25202090"
+      ]
+    }
+  },
+  "2521": {
+    "ncm4": "2521",
+    "descricao": "NCM 2521 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 29,
+      "valor_total_brl": 10036.13,
+      "ncms_8dig_encontrados": [
+        "25210000"
+      ]
+    }
+  },
+  "2522": {
+    "ncm4": "2522",
+    "descricao": "NCM 2522 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 110,
+      "valor_total_brl": 5440.86,
+      "ncms_8dig_encontrados": [
+        "25221000",
+        "25222000",
+        "25223000"
+      ]
+    }
+  },
+  "2523": {
+    "ncm4": "2523",
+    "descricao": "Cimento Portland e outros cimentos hidráulicos",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "substituicao_tributaria",
+    "base_legal": "RICMS-BA art.15 / Conv.ICMS 33/93",
+    "no_dataset": {
+      "frequencia_notas": 1566,
+      "valor_total_brl": 29492147.94,
+      "ncms_8dig_encontrados": [
+        "25231000",
+        "25232100",
+        "25232910",
+        "25232990",
+        "25233000"
+      ]
+    }
+  },
+  "2525": {
+    "ncm4": "2525",
+    "descricao": "NCM 2525 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 62.0,
+      "ncms_8dig_encontrados": [
+        "25251000"
+      ]
+    }
+  },
+  "2526": {
+    "ncm4": "2526",
+    "descricao": "NCM 2526 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 7,
+      "valor_total_brl": 248.78,
+      "ncms_8dig_encontrados": [
+        "25262000"
+      ]
+    }
+  },
+  "2530": {
+    "ncm4": "2530",
+    "descricao": "NCM 2530 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 38,
+      "valor_total_brl": 1980.04,
+      "ncms_8dig_encontrados": [
+        "25309010",
+        "25309020",
+        "25309090"
+      ]
+    }
+  },
+  "2621": {
+    "ncm4": "2621",
+    "descricao": "NCM 2621 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 89.55,
+      "ncms_8dig_encontrados": [
+        "26211000"
+      ]
+    }
+  },
+  "2701": {
+    "ncm4": "2701",
+    "descricao": "NCM 2701 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 1,
+      "valor_total_brl": 5.51,
+      "ncms_8dig_encontrados": [
+        "27011200"
+      ]
+    }
+  },
+  "2703": {
+    "ncm4": "2703",
+    "descricao": "NCM 2703 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 4,
+      "valor_total_brl": 1080.0,
+      "ncms_8dig_encontrados": [
+        "27030000"
+      ]
+    }
+  },
+  "2706": {
+    "ncm4": "2706",
+    "descricao": "NCM 2706 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 4,
+      "valor_total_brl": 315.36,
+      "ncms_8dig_encontrados": [
+        "27060000"
+      ]
+    }
+  },
+  "2707": {
+    "ncm4": "2707",
+    "descricao": "NCM 2707 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 76,
+      "valor_total_brl": 4918.62,
+      "ncms_8dig_encontrados": [
+        "27071000",
+        "27072000",
+        "27073000",
+        "27074000",
+        "27075010",
+        "27075090",
+        "27079910",
+        "27079990"
+      ]
+    }
+  },
+  "2710": {
+    "ncm4": "2710",
+    "descricao": "Óleos de petróleo e combustíveis (diesel S-10, gasolina, querosene)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "especial",
+    "cesta_basica": false,
+    "regime_tributario": "monofasico",
+    "base_legal": "RICMS-BA / LC 192/22 / Conv.ICMS 110/07",
+    "no_dataset": {
+      "frequencia_notas": 213234,
+      "valor_total_brl": 2013493892819.99,
+      "ncms_8dig_encontrados": [
+        "27101210",
+        "27101229",
+        "27101230",
+        "27101249",
+        "27101251",
+        "27101259",
+        "27101290",
+        "27101911",
+        "27101919",
+        "27101921",
+        "27101922",
+        "27101929",
+        "27101931",
+        "27101932",
+        "27101991",
+        "27101992",
+        "27101993",
+        "27101999",
+        "27109110",
+        "27109900"
+      ]
+    }
+  },
+  "2711": {
+    "ncm4": "2711",
+    "descricao": "Gás natural e GLP (gás de cozinha em botijão P13)",
+    "aliquota_icms_pct": 12.0,
+    "tipo": "especial",
+    "cesta_basica": false,
+    "regime_tributario": "monofasico",
+    "base_legal": "RICMS-BA / LC 192/22 / Conv.ICMS 110/07",
+    "no_dataset": {
+      "frequencia_notas": 12242,
+      "valor_total_brl": 96126844091.74,
+      "ncms_8dig_encontrados": [
+        "27111100",
+        "27111300",
+        "27111910",
+        "27111990",
+        "27112100",
+        "27112990"
+      ]
+    }
+  },
+  "2712": {
+    "ncm4": "2712",
+    "descricao": "NCM 2712 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 76,
+      "valor_total_brl": 31432.22,
+      "ncms_8dig_encontrados": [
+        "27121000",
+        "27122000",
+        "27129000"
+      ]
+    }
+  },
+  "2713": {
+    "ncm4": "2713",
+    "descricao": "NCM 2713 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 5,
+      "valor_total_brl": 295.36,
+      "ncms_8dig_encontrados": [
+        "27132000",
+        "27139000"
+      ]
+    }
+  },
+  "2714": {
+    "ncm4": "2714",
+    "descricao": "NCM 2714 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 2,
+      "valor_total_brl": 37.37,
+      "ncms_8dig_encontrados": [
+        "27141000",
+        "27149000"
+      ]
+    }
+  },
+  "2715": {
+    "ncm4": "2715",
+    "descricao": "NCM 2715 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 47,
+      "valor_total_brl": 4562.54,
+      "ncms_8dig_encontrados": [
+        "27150000"
+      ]
+    }
+  },
+  "2716": {
+    "ncm4": "2716",
+    "descricao": "NCM 2716 - verificar classificação",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 4,
+      "valor_total_brl": 93.7,
+      "ncms_8dig_encontrados": [
+        "27160000"
+      ]
+    }
+  },
+  "3507": {
+    "ncm4": "3507",
+    "descricao": "Enzimas e preparações enzimáticas",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 0,
+      "valor_total_brl": 0.0,
+      "ncms_8dig_encontrados": []
+    }
+  },
+  "6004": {
+    "ncm4": "6004",
+    "descricao": "Tecidos de malha de largura superior a 30 cm",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 0,
+      "valor_total_brl": 0.0,
+      "ncms_8dig_encontrados": []
+    }
+  },
+  "8414": {
+    "ncm4": "8414",
+    "descricao": "Bombas de ar, compressores e ventiladores",
+    "aliquota_icms_pct": 20.5,
+    "tipo": "normal",
+    "cesta_basica": false,
+    "regime_tributario": "debito_credito",
+    "base_legal": "RICMS-BA art.15",
+    "no_dataset": {
+      "frequencia_notas": 0,
+      "valor_total_brl": 0.0,
+      "ncms_8dig_encontrados": []
+    }
+  }
+}
