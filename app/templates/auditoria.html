@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Fila de Auditoria{% endblock %}
+
+{% block content %}
+
+<!-- Page header -->
+<div class="flex items-center justify-between mb-6">
+  <p class="text-sm text-base-content/50">Itens com baixa confiança que requerem revisão humana</p>
+  <a href="/api/export-auditoria" class="btn btn-sm btn-outline gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+    </svg>
+    Exportar CSV
+  </a>
+</div>
+
+<!-- Filter card -->
+<div class="card bg-base-100 shadow-sm mb-4">
+  <div class="card-body p-4">
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+
+      <!-- Search input -->
+      <label class="input input-bordered input-sm flex-1 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+        </svg>
+        <input id="search-input" type="text" placeholder="Filtrar por GTIN ou descrição..." class="grow"/>
+      </label>
+
+      <!-- Threshold slider -->
+      <div class="flex items-center gap-3 shrink-0">
+        <span class="text-sm text-base-content/50 whitespace-nowrap">Confiança ≤</span>
+        <input id="threshold-slider" type="range" min="0.3" max="0.75" step="0.05" value="0.75"
+               class="range range-sm range-warning w-28"/>
+        <kbd class="kbd kbd-sm font-mono font-semibold w-12 text-center" id="threshold-val">0.75</kbd>
+      </div>
+
+      <!-- Count badge -->
+      <div class="badge badge-ghost badge-lg font-mono" id="count-badge">— itens</div>
+    </div>
+  </div>
+</div>
+
+<!-- Table card -->
+<div class="card bg-base-100 shadow-sm">
+  <div class="card-body p-0">
+    <div class="overflow-x-auto">
+      <table class="table table-zebra table-sm">
+        <thead>
+          <tr class="text-xs uppercase tracking-wider">
+            <th>GTIN</th>
+            <th>Descrição</th>
+            <th>Marca</th>
+            <th>Volume</th>
+            <th>NCM</th>
+            <th>Confiança</th>
+            <th>Motivo</th>
+          </tr>
+        </thead>
+        <tbody id="audit-tbody">
+          <tr>
+            <td colspan="7" class="text-center py-10 text-base-content/40">
+              <span class="loading loading-spinner loading-md"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden">
+      <div class="alert m-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span class="text-sm">Nenhum item encontrado com os filtros atuais.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let allItems = [];
+
+function confidenceBadge(v) {
+  if (v >= 0.8) return `<span class="badge badge-success badge-sm font-mono">${v.toFixed(2)}</span>`;
+  if (v >= 0.6) return `<span class="badge badge-warning badge-sm font-mono">${v.toFixed(2)}</span>`;
+  return `<span class="badge badge-error badge-sm font-mono">${v.toFixed(2)}</span>`;
+}
+
+function renderTable(items) {
+  const tbody = document.getElementById('audit-tbody');
+  const empty = document.getElementById('empty-state');
+  document.getElementById('count-badge').textContent = `${items.length} itens`;
+
+  if (items.length === 0) {
+    tbody.innerHTML = '';
+    empty.classList.remove('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  tbody.innerHTML = items.map(r => `
+    <tr>
+      <td>
+        <a href="/explorador?gtin=${r.gtin}" class="link link-hover">
+          <code class="font-mono text-xs">${r.gtin}</code>
+        </a>
+      </td>
+      <td class="max-w-xs text-sm">${r.descricao || '—'}</td>
+      <td class="text-sm">${r.marca ? `<span class="badge badge-ghost badge-sm">${r.marca}</span>` : '<span class="opacity-25">—</span>'}</td>
+      <td class="text-sm">${r.volume ? `<span class="badge badge-outline badge-sm badge-secondary">${r.volume}</span>` : '<span class="opacity-25">—</span>'}</td>
+      <td><code class="font-mono text-xs">${r.ncm || '—'}</code></td>
+      <td>${confidenceBadge(r.confianca)}</td>
+      <td class="text-xs text-base-content/50 max-w-xs">${r.motivo_confianca || '—'}</td>
+    </tr>`).join('');
+}
+
+function applyFilters() {
+  const search = document.getElementById('search-input').value.toLowerCase();
+  const threshold = parseFloat(document.getElementById('threshold-slider').value);
+  const filtered = allItems.filter(r =>
+    r.confianca <= threshold &&
+    (r.gtin.includes(search) || (r.descricao || '').toLowerCase().includes(search))
+  );
+  renderTable(filtered);
+}
+
+document.getElementById('threshold-slider').addEventListener('input', function() {
+  document.getElementById('threshold-val').textContent = parseFloat(this.value).toFixed(2);
+  applyFilters();
+});
+document.getElementById('search-input').addEventListener('input', applyFilters);
+
+fetch('/api/auditoria')
+  .then(r => r.json())
+  .then(data => {
+    allItems = data;
+    applyFilters();
+  });
+</script>
+{% endblock %}

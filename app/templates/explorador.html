@@ -1,0 +1,417 @@
+{% extends "base.html" %}
+{% block title %}Explorador de GTINs{% endblock %}
+
+{% block content %}
+
+<!-- ── Search bar ────────────────────────────────── -->
+<div class="card bg-base-100 shadow-sm mb-6">
+  <div style="padding:1.25rem;">
+    <div style="display:flex; gap:0.75rem;">
+      <div style="flex:1; display:flex; align-items:center; gap:0.625rem; background:oklch(97% 0 0); border:1.5px solid oklch(90% 0 0); border-radius:0.625rem; padding:0 1rem; height:3rem;">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" style="opacity:0.35; flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/></svg>
+        <input id="gtin-input" type="text" placeholder="Digite o GTIN (ex: 7893000979932)"
+               style="flex:1; border:none; outline:none; background:transparent; font-size:0.95rem; font-family:'IBM Plex Mono',monospace;" maxlength="14"/>
+      </div>
+      <button onclick="buscar()"
+              style="background:oklch(45% 0.24 277.023); color:oklch(93% 0.034 272.788); border:none; border-radius:0.625rem; padding:0 2rem; font-size:0.9rem; font-weight:600; cursor:pointer; font-family:inherit; white-space:nowrap;">
+        Buscar
+      </button>
+    </div>
+    <p style="font-size:0.72rem; color:oklch(21% 0.006 285.885 / 0.35); margin-top:0.5rem; padding-left:0.25rem;">
+      Pressione Enter para buscar · Clique em qualquer campo do resultado para editar
+    </p>
+  </div>
+</div>
+
+<!-- ── Loading ───────────────────────────────────── -->
+<div id="loading-state" style="display:none;">
+  <div class="card bg-base-100 shadow-sm">
+    <div style="display:flex; flex-direction:column; align-items:center; padding:5rem; gap:1rem; color:oklch(21% 0.006 285.885 / 0.4);">
+      <span class="loading loading-spinner loading-lg" style="color:oklch(45% 0.24 277.023);"></span>
+      <p style="font-size:0.85rem;">Consultando agente...</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── Error ─────────────────────────────────────── -->
+<div id="error-state" style="display:none;">
+  <div style="display:flex; align-items:center; gap:0.75rem; background:oklch(71% 0.194 13.428 / 0.08); border:1.5px solid oklch(71% 0.194 13.428 / 0.3); border-radius:0.75rem; padding:1rem 1.25rem;">
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="oklch(27% 0.105 12.094)" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span id="error-msg" style="font-size:0.875rem; color:oklch(27% 0.105 12.094); font-weight:500;"></span>
+  </div>
+</div>
+
+<!-- ── Result ────────────────────────────────────── -->
+<div id="result-state" style="display:none;">
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.5rem;">
+
+    <!-- ANTES: dados brutos (somente leitura) -->
+    <div class="card bg-base-100 shadow-sm">
+      <div style="padding:1.5rem;">
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.25rem;">
+          <span style="background:oklch(93% 0 0); color:oklch(21% 0.006 285.885 / 0.6); font-size:0.7rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:999px; letter-spacing:0.05em;">ANTES</span>
+          <span style="font-size:0.8rem; font-weight:600; color:oklch(21% 0.006 285.885 / 0.5);">Dados Originais NF-e</span>
+        </div>
+
+        <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.5rem;">Descrições observadas</p>
+        <div id="raw-descs" style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1.25rem;"></div>
+
+        <div style="height:1px; background:oklch(93% 0 0); margin-bottom:1rem;"></div>
+
+        <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.5rem;">NCMs originais declarados</p>
+        <div id="raw-ncms" style="display:flex; flex-wrap:wrap; gap:0.5rem;"></div>
+      </div>
+    </div>
+
+    <!-- DEPOIS: resultado do agente (editável) -->
+    <div class="card bg-base-100 shadow-sm" style="border:2px solid oklch(45% 0.24 277.023 / 0.2);">
+      <div style="padding:1.5rem;">
+
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.25rem;">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="background:oklch(45% 0.24 277.023); color:oklch(93% 0.034 272.788); font-size:0.7rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:999px; letter-spacing:0.05em;">DEPOIS</span>
+            <span style="font-size:0.8rem; font-weight:600; color:oklch(45% 0.24 277.023 / 0.8);">Resultado do Agente IA</span>
+          </div>
+          <span style="font-size:0.7rem; color:oklch(21% 0.006 285.885 / 0.35);">✏ Clique para editar</span>
+        </div>
+
+        <!-- Descrição (editável) -->
+        <div style="margin-bottom:1rem;">
+          <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.3rem;">Descrição</p>
+          <div class="ef" data-field="descricao" onclick="startEdit(this)">
+            <span class="ef-view" style="font-size:1.1rem; font-weight:700; line-height:1.35; display:block;"></span>
+            <input class="ef-input" style="display:none; width:100%; font-size:1rem; font-weight:700; border:1.5px solid oklch(45% 0.24 277.023); border-radius:0.5rem; padding:0.4rem 0.6rem; font-family:inherit; outline:none;"/>
+          </div>
+        </div>
+
+        <!-- Marca + Volume + NCM em linha -->
+        <div style="display:flex; gap:1rem; margin-bottom:1.25rem; flex-wrap:wrap;">
+
+          <div>
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.3rem;">Marca</p>
+            <div class="ef" data-field="marca" onclick="startEdit(this)" style="min-width:5rem;">
+              <span class="ef-view" style="display:inline-block; background:oklch(93% 0 0); padding:0.2rem 0.7rem; border-radius:999px; font-size:0.82rem; font-weight:600;"></span>
+              <input class="ef-input" style="display:none; width:8rem; font-size:0.82rem; border:1.5px solid oklch(45% 0.24 277.023); border-radius:0.4rem; padding:0.25rem 0.5rem; font-family:inherit; outline:none;"/>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.3rem;">Volume</p>
+            <div class="ef" data-field="volume" onclick="startEdit(this)" style="min-width:4rem;">
+              <span class="ef-view" style="display:inline-block; background:oklch(65% 0.241 354.308 / 0.12); color:oklch(45% 0.16 354.308); padding:0.2rem 0.7rem; border-radius:999px; font-size:0.82rem; font-weight:600;"></span>
+              <input class="ef-input" style="display:none; width:7rem; font-size:0.82rem; border:1.5px solid oklch(45% 0.24 277.023); border-radius:0.4rem; padding:0.25rem 0.5rem; font-family:inherit; outline:none;"/>
+            </div>
+          </div>
+
+          <div>
+            <p style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.3rem;">NCM</p>
+            <div class="ef" data-field="ncm" onclick="startEdit(this)" style="min-width:5.5rem;">
+              <span class="ef-view" style="display:inline-block; background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.4rem; padding:0.25rem 0.6rem; font-size:0.82rem; font-weight:600; font-family:'IBM Plex Mono',monospace;"></span>
+              <input class="ef-input" style="display:none; width:7rem; font-size:0.82rem; border:1.5px solid oklch(45% 0.24 277.023); border-radius:0.4rem; padding:0.25rem 0.5rem; font-family:'IBM Plex Mono',monospace; outline:none;" maxlength="8"/>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão salvar (aparece quando há edições) -->
+        <div id="save-bar" style="display:none; margin-bottom:1.25rem;">
+          <div style="display:flex; gap:0.5rem; padding:0.75rem; background:oklch(45% 0.24 277.023 / 0.06); border-radius:0.625rem; border:1px solid oklch(45% 0.24 277.023 / 0.2);">
+            <button onclick="salvarEdicoes()"
+              style="flex:1; background:oklch(45% 0.24 277.023); color:oklch(93% 0.034 272.788); border:none; border-radius:0.5rem; padding:0.5rem; font-size:0.82rem; font-weight:600; cursor:pointer; font-family:inherit; display:flex; align-items:center; justify-content:center; gap:0.4rem;">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Salvar no JSON
+            </button>
+            <button onclick="cancelarEdicoes()"
+              style="background:oklch(93% 0 0); color:oklch(21% 0.006 285.885 / 0.6); border:none; border-radius:0.5rem; padding:0.5rem 0.75rem; font-size:0.82rem; cursor:pointer; font-family:inherit;">
+              Cancelar
+            </button>
+          </div>
+        </div>
+
+        <!-- Confiança -->
+        <div style="background:oklch(97% 0 0); border-radius:0.875rem; padding:1rem;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.5rem;">
+            <span style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4);">Confiança do Agente</span>
+            <span id="res-confianca-val" class="font-mono" style="font-size:1.4rem; font-weight:700;"></span>
+          </div>
+          <div style="height:6px; background:oklch(90% 0 0); border-radius:999px; overflow:hidden; margin-bottom:0.5rem;">
+            <div id="res-confianca-bar" style="height:100%; border-radius:999px; transition:width 0.4s ease;"></div>
+          </div>
+          <p id="res-motivo" style="font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.5); font-style:italic;"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Registros brutos -->
+  <div class="card bg-base-100 shadow-sm">
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:1rem 1.5rem; border-bottom:1px solid oklch(93% 0 0);">
+      <p style="font-size:0.85rem; font-weight:600;">Registros brutos</p>
+      <span id="raw-count" style="background:oklch(93% 0 0); font-size:0.72rem; font-family:'IBM Plex Mono',monospace; padding:0.15rem 0.6rem; border-radius:999px;"></span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:oklch(98% 0 0);">
+            <th style="padding:0.5rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); width:2.5rem;">#</th>
+            <th style="padding:0.5rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4);">Descrição Original</th>
+            <th style="padding:0.5rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4);">NCM Original</th>
+          </tr>
+        </thead>
+        <tbody id="raw-records-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Toast -->
+<div id="exp-toast" style="position:fixed; bottom:1.5rem; right:1.5rem; z-index:999;"></div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let currentGtin = null;
+let pendingEdits = {};   // field → new value
+let originalValues = {}; // field → original value
+
+/* ── Toast ──────────────────────────────────────── */
+function showToast(msg, ok = true) {
+  const t = document.getElementById('exp-toast');
+  const color = ok ? 'oklch(37% 0.077 168.94)' : 'oklch(27% 0.105 12.094)';
+  t.innerHTML = `<div style="background:#fff; border:1.5px solid ${color}; border-radius:0.75rem; padding:0.7rem 1.1rem; font-size:0.82rem; font-weight:500; box-shadow:0 4px 16px oklch(0% 0 0/0.1); animation:fadeUp 0.2s ease;">${msg}</div>`;
+  setTimeout(() => { t.innerHTML = ''; }, 3000);
+}
+
+/* ── Inline editing ─────────────────────────────── */
+function startEdit(el) {
+  if (el.dataset.editing) return; // já em edição
+  el.dataset.editing = '1';
+  el.style.cursor = 'default';
+  const view  = el.querySelector('.ef-view');
+  const input = el.querySelector('.ef-input');
+  const field = el.dataset.field;
+  input.value = originalValues[field] || '';
+  view.style.display  = 'none';
+  input.style.display = 'block';
+  input.focus();
+  input.select();
+  // Parar o click de propagar (evitar double-trigger)
+  input.onclick = e => e.stopPropagation();
+  input.onkeydown = e => {
+    if (e.key === 'Enter') { e.preventDefault(); confirmEdit(el); }
+    if (e.key === 'Escape') cancelFieldEdit(el);
+  };
+  input.onblur = () => { setTimeout(() => confirmEdit(el), 150); };
+}
+
+function confirmEdit(el) {
+  if (!el.dataset.editing) return;
+  delete el.dataset.editing;
+  el.style.cursor = 'pointer';
+  const view  = el.querySelector('.ef-view');
+  const input = el.querySelector('.ef-input');
+  const field = el.dataset.field;
+  const val = input.value.trim();
+
+  if (val !== (originalValues[field] || '')) {
+    pendingEdits[field] = val || null;
+    view.textContent = val || '—';
+    view.style.outline = '2px dashed oklch(45% 0.24 277.023 / 0.5)';
+    view.style.borderRadius = '0.3rem';
+    document.getElementById('save-bar').style.display = 'block';
+  } else {
+    view.textContent = val || '—';
+  }
+  view.style.display = '';
+  input.style.display = 'none';
+}
+
+function cancelFieldEdit(el) {
+  if (!el.dataset.editing) return;
+  delete el.dataset.editing;
+  el.style.cursor = 'pointer';
+  const view  = el.querySelector('.ef-view');
+  const input = el.querySelector('.ef-input');
+  const field = el.dataset.field;
+  view.textContent = originalValues[field] || '—';
+  view.style.display = '';
+  input.style.display = 'none';
+}
+
+function cancelarEdicoes() {
+  pendingEdits = {};
+  // Restaurar valores originais visíveis
+  document.querySelectorAll('.ef').forEach(el => {
+    const field = el.dataset.field;
+    const view  = el.querySelector('.ef-view');
+    view.textContent = originalValues[field] || '—';
+    view.style.outline = '';
+    delete el.dataset.editing;
+    el.style.cursor = 'pointer';
+    el.querySelector('.ef-input').style.display = 'none';
+    view.style.display = '';
+  });
+  document.getElementById('save-bar').style.display = 'none';
+}
+
+function salvarEdicoes() {
+  if (!currentGtin || Object.keys(pendingEdits).length === 0) return;
+  const btn = document.querySelector('#save-bar button');
+  btn.textContent = 'Salvando...';
+  btn.style.opacity = '0.6';
+
+  fetch(`/api/gtin/${currentGtin}/update`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(pendingEdits)
+  })
+  .then(r => r.json())
+  .then(() => {
+    // Confirmar: remover highlight, atualizar originais
+    Object.assign(originalValues, pendingEdits);
+    pendingEdits = {};
+    document.querySelectorAll('.ef').forEach(el => {
+      el.querySelector('.ef-view').style.outline = '';
+    });
+    document.getElementById('save-bar').style.display = 'none';
+    showToast('✓ Alterações salvas no JSON com sucesso');
+  })
+  .catch(() => {
+    showToast('✗ Erro ao salvar. Tente novamente.', false);
+    btn.textContent = 'Salvar no JSON';
+    btn.style.opacity = '1';
+  });
+}
+
+/* ── Busca principal ────────────────────────────── */
+document.getElementById('gtin-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') buscar();
+});
+
+function buscar() {
+  const gtin = document.getElementById('gtin-input').value.trim();
+  if (!gtin) return;
+  currentGtin = gtin;
+  pendingEdits = {};
+  originalValues = {};
+
+  document.getElementById('result-state').style.display  = 'none';
+  document.getElementById('error-state').style.display   = 'none';
+  document.getElementById('loading-state').style.display = 'block';
+  document.getElementById('save-bar').style.display      = 'none';
+
+  fetch(`/api/gtin/${gtin}`)
+    .then(r => { if (!r.ok) throw new Error('GTIN não encontrado na base de dados.'); return r.json(); })
+    .then(data => {
+      document.getElementById('loading-state').style.display = 'none';
+      const { resolved, desc_freq, raw_records } = data;
+      const maxCount = desc_freq[0]?.count || 1;
+
+      /* Salvar valores originais */
+      originalValues = {
+        descricao: resolved.descricao || '',
+        marca:     resolved.marca     || '',
+        volume:    resolved.volume    || '',
+        ncm:       resolved.ncm       || '',
+      };
+
+      /* ── ANTES: descrições com barras ── */
+      document.getElementById('raw-descs').innerHTML = desc_freq.slice(0, 8).map(d => `
+        <div>
+          <div style="display:flex; justify-content:space-between; font-size:0.72rem; margin-bottom:0.2rem;">
+            <span style="font-family:'IBM Plex Mono',monospace; color:oklch(21% 0.006 285.885/0.6); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:80%;">${d.desc}</span>
+            <span style="background:oklch(93% 0 0); border-radius:999px; padding:0 0.4rem; color:oklch(21% 0.006 285.885/0.4); flex-shrink:0; margin-left:0.5rem;">${d.count}×</span>
+          </div>
+          <div style="height:4px; background:oklch(93% 0 0); border-radius:999px; overflow:hidden;">
+            <div style="height:100%; background:oklch(45% 0.24 277.023/0.35); border-radius:999px; width:${(d.count/maxCount*100).toFixed(0)}%;"></div>
+          </div>
+        </div>`).join('');
+
+      /* ── ANTES: NCMs ── */
+      const ncmCounts = {};
+      raw_records.forEach(r => { if (r.ncm) ncmCounts[r.ncm] = (ncmCounts[r.ncm]||0)+1; });
+      document.getElementById('raw-ncms').innerHTML = Object.entries(ncmCounts)
+        .sort((a,b) => b[1]-a[1]).slice(0,5)
+        .map(([ncm,c]) => `
+          <div style="background:oklch(93% 0 0); border-radius:0.4rem; padding:0.25rem 0.6rem; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; display:flex; align-items:center; gap:0.5rem;">
+            ${String(ncm).padStart(8,'0')}
+            <span style="opacity:0.4;">${c}×</span>
+          </div>`).join('');
+
+      /* ── DEPOIS: preencher campos editáveis ── */
+      setField('descricao', resolved.descricao || '—');
+      setField('marca',     resolved.marca     || '—');
+      setField('volume',    resolved.volume    || '—');
+      setField('ncm',       resolved.ncm       || '—');
+
+      /* ── DEPOIS: confiança ── */
+      const conf = resolved.confianca || 0;
+      const pct  = Math.round(conf * 100);
+      const color = conf >= 0.8
+        ? 'oklch(37% 0.077 168.94)'
+        : conf >= 0.6
+          ? 'oklch(41% 0.112 45.904)'
+          : 'oklch(27% 0.105 12.094)';
+      const barColor = conf >= 0.8
+        ? 'oklch(76% 0.177 163.223)'
+        : conf >= 0.6
+          ? 'oklch(82% 0.189 84.429)'
+          : 'oklch(71% 0.194 13.428)';
+      document.getElementById('res-confianca-val').textContent = conf.toFixed(2);
+      document.getElementById('res-confianca-val').style.color = color;
+      const bar = document.getElementById('res-confianca-bar');
+      bar.style.width = pct + '%';
+      bar.style.background = barColor;
+      document.getElementById('res-motivo').textContent = resolved.motivo_confianca || '';
+
+      /* ── Registros brutos ── */
+      document.getElementById('raw-count').textContent = `${raw_records.length} registros`;
+      document.getElementById('raw-records-tbody').innerHTML = raw_records.map((r, i) => `
+        <tr style="border-bottom:1px solid oklch(96% 0 0);">
+          <td style="padding:0.5rem 1rem; font-size:0.72rem; color:oklch(21% 0.006 285.885/0.3); font-family:'IBM Plex Mono',monospace;">${i+1}</td>
+          <td style="padding:0.5rem 1rem; font-size:0.75rem; font-family:'IBM Plex Mono',monospace; color:oklch(21% 0.006 285.885/0.65);">${r.des_item_norm || '—'}</td>
+          <td style="padding:0.5rem 1rem;">
+            <span style="background:oklch(93% 0 0); border-radius:0.3rem; padding:0.15rem 0.5rem; font-size:0.72rem; font-family:'IBM Plex Mono',monospace;">
+              ${String(r.ncm||'').padStart(8,'0')}
+            </span>
+          </td>
+        </tr>`).join('');
+
+      document.getElementById('result-state').style.display = 'block';
+    })
+    .catch(err => {
+      document.getElementById('loading-state').style.display = 'none';
+      document.getElementById('error-msg').textContent = err.message;
+      document.getElementById('error-state').style.display = 'block';
+    });
+}
+
+function setField(field, val) {
+  const el   = document.querySelector(`.ef[data-field="${field}"]`);
+  const view = el.querySelector('.ef-view');
+  view.textContent = val;
+  view.style.outline = '';
+  el.style.cursor = 'pointer';
+}
+
+/* Auto-busca via URL */
+const urlGtin = new URLSearchParams(window.location.search).get('gtin');
+if (urlGtin) {
+  document.getElementById('gtin-input').value = urlGtin;
+  buscar();
+}
+</script>
+
+<style>
+@keyframes fadeUp {
+  from { transform:translateY(0.5rem); opacity:0; }
+  to   { transform:translateY(0);       opacity:1; }
+}
+.ef { cursor:pointer; }
+.ef:hover .ef-view { opacity:0.75; }
+</style>
+{% endblock %}

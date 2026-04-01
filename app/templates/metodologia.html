@@ -1,0 +1,393 @@
+{% extends "base.html" %}
+{% block title %}Metodologia{% endblock %}
+
+{% block content %}
+
+<div style="max-width:52rem; margin:0 auto; display:flex; flex-direction:column; gap:2rem;">
+
+  <!-- ── Hero ──────────────────────────────────────── -->
+  <div class="card shadow-sm" style="background:oklch(45% 0.24 277.023); color:oklch(93% 0.034 272.788); overflow:hidden; position:relative;">
+    <div style="padding:2rem 2.5rem; position:relative; z-index:1;">
+      <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; opacity:0.6; margin-bottom:0.5rem;">Pipeline completo</p>
+      <h2 style="font-size:1.6rem; font-weight:800; line-height:1.2; margin-bottom:0.5rem;">Enriquecimento de Dados Fiscais com LLMs</h2>
+      <p style="font-size:0.9rem; opacity:0.75; max-width:36rem; line-height:1.6;">
+        Da base bruta de Notas Fiscais Eletrônicas ao dashboard de auditoria inteligente — 9 etapas automatizadas de filtragem, clustering semântico e extração via modelos de linguagem.
+      </p>
+      <div style="display:flex; gap:2rem; margin-top:1.5rem; flex-wrap:wrap;">
+        <div>
+          <p style="font-size:1.5rem; font-weight:800; font-family:'IBM Plex Mono',monospace;">309</p>
+          <p style="font-size:0.72rem; opacity:0.6;">GTINs no pipeline final</p>
+        </div>
+        <div style="width:1px; background:oklch(93% 0.034 272.788 / 0.2);"></div>
+        <div>
+          <p style="font-size:1.5rem; font-weight:800; font-family:'IBM Plex Mono',monospace;">20.133</p>
+          <p style="font-size:0.72rem; opacity:0.6;">Registros NF-e processados</p>
+        </div>
+        <div style="width:1px; background:oklch(93% 0.034 272.788 / 0.2);"></div>
+        <div>
+          <p style="font-size:1.5rem; font-weight:800; font-family:'IBM Plex Mono',monospace;">95%</p>
+          <p style="font-size:0.72rem; opacity:0.6;">Cobertura do volume financeiro</p>
+        </div>
+        <div style="width:1px; background:oklch(93% 0.034 272.788 / 0.2);"></div>
+        <div>
+          <p style="font-size:1.5rem; font-weight:800; font-family:'IBM Plex Mono',monospace;">9</p>
+          <p style="font-size:0.72rem; opacity:0.6;">Etapas no pipeline</p>
+        </div>
+      </div>
+    </div>
+    <!-- decoração de fundo -->
+    <div style="position:absolute; right:-3rem; top:-3rem; width:14rem; height:14rem; border-radius:50%; background:oklch(93% 0.034 272.788 / 0.07);"></div>
+    <div style="position:absolute; right:3rem; bottom:-4rem; width:10rem; height:10rem; border-radius:50%; background:oklch(93% 0.034 272.788 / 0.05);"></div>
+  </div>
+
+  <!-- ── Timeline ───────────────────────────────────── -->
+  <div style="position:relative; display:flex; flex-direction:column; gap:0;">
+
+    <!-- linha vertical de fundo -->
+    <div style="position:absolute; left:1.5rem; top:1.5rem; bottom:1.5rem; width:2px; background:oklch(93% 0 0); z-index:0;"></div>
+
+    <!-- ── ETAPA 1 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(74% 0.16 232.661); color:oklch(29% 0.066 243.157); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">1</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(74% 0.16 232.661);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Dados de Origem</h3>
+            <span style="background:oklch(74% 0.16 232.661 / 0.15); color:oklch(29% 0.066 243.157); font-size:0.68rem; font-weight:700; padding:0.15rem 0.6rem; border-radius:999px;">NF-e</span>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.75rem;">
+            Ponto de partida: base de compras públicas extraída das <strong>Notas Fiscais Eletrônicas (NF-e)</strong> do setor público estadual. Cada registro representa uma linha de item de compra.
+          </p>
+          <p style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.4rem;">Campos utilizados</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <code style="font-size:0.75rem; background:oklch(74% 0.16 232.661 / 0.12); color:oklch(29% 0.066 243.157); padding:0.2rem 0.55rem; border-radius:0.35rem; font-family:'IBM Plex Mono',monospace;">gtin</code>
+            <code style="font-size:0.75rem; background:oklch(74% 0.16 232.661 / 0.12); color:oklch(29% 0.066 243.157); padding:0.2rem 0.55rem; border-radius:0.35rem; font-family:'IBM Plex Mono',monospace;">des_item</code>
+            <code style="font-size:0.75rem; background:oklch(74% 0.16 232.661 / 0.12); color:oklch(29% 0.066 243.157); padding:0.2rem 0.55rem; border-radius:0.35rem; font-family:'IBM Plex Mono',monospace;">ncm</code>
+            <code style="font-size:0.75rem; background:oklch(74% 0.16 232.661 / 0.12); color:oklch(29% 0.066 243.157); padding:0.2rem 0.55rem; border-radius:0.35rem; font-family:'IBM Plex Mono',monospace;">valor_unit_liq</code>
+            <code style="font-size:0.75rem; background:oklch(74% 0.16 232.661 / 0.12); color:oklch(29% 0.066 243.157); padding:0.2rem 0.55rem; border-radius:0.35rem; font-family:'IBM Plex Mono',monospace;">qtd_geral_item</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 2 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(65% 0.241 354.308); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">2</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(65% 0.241 354.308);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Filtros de Formato</h3>
+            <span style="background:oklch(65% 0.241 354.308 / 0.12); color:oklch(40% 0.16 354.308); font-size:0.68rem; font-weight:700; padding:0.15rem 0.6rem; border-radius:999px;">Notebook 01</span>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.75rem;">
+            Limpeza e validação estrutural dos GTINs brutos. Remove registros inválidos e isola o subconjunto de produto de interesse para o projeto.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.4rem;">
+            <div style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.83rem; color:oklch(21% 0.006 285.885 / 0.7);">
+              <span style="color:oklch(65% 0.241 354.308); font-weight:700; flex-shrink:0;">✕</span>
+              Remover registros nulos, zeros e descrições genéricas <code style="font-size:0.72rem; background:oklch(93% 0 0); padding:0.1rem 0.35rem; border-radius:0.25rem; font-family:'IBM Plex Mono',monospace;">"SEM GTIN"</code>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.83rem; color:oklch(21% 0.006 285.885 / 0.7);">
+              <span style="color:oklch(65% 0.241 354.308); font-weight:700; flex-shrink:0;">→</span>
+              Manter somente <strong>EAN-13</strong> (exatamente 13 dígitos, padrão GS1 Internacional)
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.83rem; color:oklch(21% 0.006 285.885 / 0.7);">
+              <span style="color:oklch(65% 0.241 354.308); font-weight:700; flex-shrink:0;">→</span>
+              Selecionar prefixo <code style="font-size:0.72rem; background:oklch(93% 0 0); padding:0.1rem 0.35rem; border-radius:0.25rem; font-family:'IBM Plex Mono',monospace;">789</code> — escopo GS1 Brasil exclusivamente
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.83rem; color:oklch(21% 0.006 285.885 / 0.7);">
+              <span style="color:oklch(65% 0.241 354.308); font-weight:700; flex-shrink:0;">✓</span>
+              Validar <strong>dígito verificador</strong> EAN (algoritmo módulo 10)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 3 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(82% 0.189 84.429); color:oklch(41% 0.112 45.904); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">3</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(82% 0.189 84.429);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Score de Confiança por GTIN</h3>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            Cada GTIN recebe um score de confiança calculado por subtração de penalidades. O score reflete a consistência dos dados declarados nas NF-e para aquele produto.
+          </p>
+          <div style="background:oklch(82% 0.189 84.429 / 0.1); border:1px solid oklch(82% 0.189 84.429 / 0.4); border-radius:0.625rem; padding:0.75rem 1rem; margin-bottom:0.85rem;">
+            <code style="font-size:0.85rem; font-family:'IBM Plex Mono',monospace; color:oklch(41% 0.112 45.904);">confiança = 1 − Σ penalidades</code>
+          </div>
+          <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.8rem;">
+              <thead>
+                <tr style="background:oklch(82% 0.189 84.429 / 0.15);">
+                  <th style="text-align:left; padding:0.45rem 0.75rem; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:oklch(41% 0.112 45.904); font-weight:700;">Critério</th>
+                  <th style="text-align:left; padding:0.45rem 0.75rem; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:oklch(41% 0.112 45.904); font-weight:700;">Condição</th>
+                  <th style="text-align:right; padding:0.45rem 0.75rem; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em; color:oklch(41% 0.112 45.904); font-weight:700;">Penalidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid oklch(93% 0 0);">
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">Dígito verificador</td>
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">Inválido</td>
+                  <td style="padding:0.45rem 0.75rem; text-align:right; font-family:'IBM Plex Mono',monospace; color:oklch(27% 0.105 12.094); font-weight:700;">−0.40</td>
+                </tr>
+                <tr style="border-bottom:1px solid oklch(93% 0 0);">
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">Múltiplos NCMs distintos</td>
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">n_ncm &gt; 1</td>
+                  <td style="padding:0.45rem 0.75rem; text-align:right; font-family:'IBM Plex Mono',monospace; color:oklch(27% 0.105 12.094); font-weight:700;">−0.30</td>
+                </tr>
+                <tr style="border-bottom:1px solid oklch(93% 0 0);">
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">Muitas descrições distintas</td>
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">n_desc &gt; 5</td>
+                  <td style="padding:0.45rem 0.75rem; text-align:right; font-family:'IBM Plex Mono',monospace; color:oklch(41% 0.112 45.904); font-weight:700;">−0.20</td>
+                </tr>
+                <tr>
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">Preço muito variável</td>
+                  <td style="padding:0.45rem 0.75rem; color:oklch(21% 0.006 285.885 / 0.7);">CV &gt; 1</td>
+                  <td style="padding:0.45rem 0.75rem; text-align:right; font-family:'IBM Plex Mono',monospace; color:oklch(41% 0.112 45.904); font-weight:700;">−0.10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div style="display:flex; gap:0.5rem; margin-top:0.75rem; flex-wrap:wrap;">
+            <span style="background:oklch(76% 0.177 163.223 / 0.15); color:oklch(37% 0.077 168.94); font-size:0.75rem; font-weight:600; padding:0.25rem 0.75rem; border-radius:999px; border:1px solid oklch(76% 0.177 163.223 / 0.4);">score ≥ 0.70 → Confiável</span>
+            <span style="background:oklch(71% 0.194 13.428 / 0.1); color:oklch(27% 0.105 12.094); font-size:0.75rem; font-weight:600; padding:0.25rem 0.75rem; border-radius:999px; border:1px solid oklch(71% 0.194 13.428 / 0.35);">score &lt; 0.70 → Suspeito</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 4 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(76% 0.177 163.223); color:oklch(37% 0.077 168.94); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">4</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(76% 0.177 163.223);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Priorização por Pareto — Volume Financeiro</h3>
+            <span style="background:oklch(76% 0.177 163.223 / 0.15); color:oklch(37% 0.077 168.94); font-size:0.68rem; font-weight:700; padding:0.15rem 0.6rem; border-radius:999px;">Notebook 02</span>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            Aplicação do <strong>princípio de Pareto (80/20)</strong> ao volume financeiro das compras. O objetivo é garantir máxima cobertura de impacto com o mínimo de GTINs a processar — foco nos produtos que mais pesam no orçamento público.
+          </p>
+          <div style="background:oklch(76% 0.177 163.223 / 0.1); border-radius:0.5rem; padding:0.6rem 1rem; margin-bottom:0.85rem;">
+            <code style="font-size:0.82rem; font-family:'IBM Plex Mono',monospace; color:oklch(37% 0.077 168.94);">volume_item = valor_unit_liq × qtd_geral_item</code>
+          </div>
+          <p style="font-size:0.83rem; color:oklch(21% 0.006 285.885 / 0.65); margin-bottom:0.85rem;">
+            GTINs são ranqueados em ordem decrescente de volume financeiro total e selecionados cumulativamente até atingir <strong>95% do volume financeiro</strong> da base.
+          </p>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+            <div style="background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(37% 0.077 168.94);">826</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">GTINs selecionados</p>
+            </div>
+            <div style="background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(37% 0.077 168.94);">21.567</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">Registros NF-e</p>
+            </div>
+            <div style="background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(37% 0.077 168.94);">95%</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">Volume financeiro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 5 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(77% 0.152 181.912); color:oklch(38% 0.063 188.416); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">5</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(77% 0.152 181.912);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Filtro — Mínimo de Descrições</h3>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.75rem;">
+            Para que o clustering semântico funcione de forma significativa, é necessário um número mínimo de variações descritivas por GTIN. GTINs com poucas ocorrências não fornecem sinal suficiente ao DBSCAN.
+          </p>
+          <div style="background:oklch(77% 0.152 181.912 / 0.12); border:1px solid oklch(77% 0.152 181.912 / 0.4); border-radius:0.5rem; padding:0.65rem 1rem; margin-bottom:0.85rem; font-size:0.85rem; color:oklch(38% 0.063 188.416); font-weight:600;">
+            Critério: manter GTINs com <strong>≥ 3 descrições únicas</strong> na base
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:0.85rem;">
+            <div style="background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(38% 0.063 188.416);">309</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">GTINs retidos</p>
+            </div>
+            <div style="background:oklch(97% 0 0); border:1px solid oklch(90% 0 0); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(38% 0.063 188.416);">20.133</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">Registros</p>
+            </div>
+            <div style="background:oklch(71% 0.194 13.428 / 0.06); border:1px solid oklch(71% 0.194 13.428 / 0.25); border-radius:0.5rem; padding:0.6rem 1rem; text-align:center;">
+              <p style="font-size:1.3rem; font-weight:800; font-family:'IBM Plex Mono',monospace; color:oklch(27% 0.105 12.094);">517</p>
+              <p style="font-size:0.68rem; color:oklch(21% 0.006 285.885 / 0.5);">Removidos</p>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:oklch(38% 0.063 188.416); font-weight:600;">
+            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Amostra salva em <code style="font-family:'IBM Plex Mono',monospace; background:oklch(77% 0.152 181.912 / 0.15); padding:0.1rem 0.4rem; border-radius:0.25rem;">amostra_gtin_789.csv</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 6 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(65% 0.241 354.308 / 0.8); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">6</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(65% 0.241 354.308);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Clustering Semântico (DBSCAN)</h3>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            As descrições de cada GTIN são agrupadas semanticamente usando <strong>embeddings de texto</strong> e <strong>DBSCAN</strong>. O objetivo é identificar a descrição dominante e detectar outliers que indicam possível confusão de produto.
+          </p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-bottom:0.85rem;">
+            <div style="background:oklch(97% 0 0); border-radius:0.5rem; padding:0.75rem; font-size:0.8rem;">
+              <p style="font-weight:700; color:oklch(21% 0.006 285.885 / 0.5); font-size:0.65rem; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:0.35rem;">Modelo de Embedding</p>
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.8);">MiniLM multilíngue</code>
+              <p style="font-size:0.72rem; color:oklch(21% 0.006 285.885 / 0.45); margin-top:0.2rem;">distância cosseno</p>
+            </div>
+            <div style="background:oklch(97% 0 0); border-radius:0.5rem; padding:0.75rem; font-size:0.8rem;">
+              <p style="font-weight:700; color:oklch(21% 0.006 285.885 / 0.5); font-size:0.65rem; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:0.35rem;">Parâmetros DBSCAN</p>
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.8);">eps=0.25</code>
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.8); margin-left:0.5rem;">min_samples=2</code>
+            </div>
+          </div>
+          <p style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.4); margin-bottom:0.4rem;">Roteamento por resultado</p>
+          <div style="display:flex; flex-direction:column; gap:0.35rem;">
+            <div style="display:flex; align-items:center; gap:0.6rem; background:oklch(76% 0.177 163.223 / 0.1); border:1px solid oklch(76% 0.177 163.223 / 0.3); border-radius:0.4rem; padding:0.4rem 0.75rem; font-size:0.8rem; color:oklch(37% 0.077 168.94); font-weight:600;">
+              <span style="font-size:0.7rem;">▶</span> Cluster dominante ≥ 70% → envia ao LLM para extração
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:oklch(82% 0.189 84.429 / 0.1); border:1px solid oklch(82% 0.189 84.429 / 0.35); border-radius:0.4rem; padding:0.4rem 0.75rem; font-size:0.8rem; color:oklch(41% 0.112 45.904); font-weight:600;">
+              <span style="font-size:0.7rem;">⚠</span> Outliers ≥ 50% → sinaliza para revisão manual
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:oklch(74% 0.16 232.661 / 0.1); border:1px solid oklch(74% 0.16 232.661 / 0.3); border-radius:0.4rem; padding:0.4rem 0.75rem; font-size:0.8rem; color:oklch(29% 0.066 243.157); font-weight:600;">
+              <span style="font-size:0.7rem;">→</span> Menos de 3 descrições → LLM direto (sem clustering)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 7 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(76% 0.177 163.223); color:oklch(37% 0.077 168.94); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">7</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(76% 0.177 163.223);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Extração com LLM</h3>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            Um <strong>Large Language Model (LLM)</strong> recebe a descrição normalizada do GTIN e retorna, em formato estruturado JSON, os atributos do produto. Suporte a dois modos: local (privacidade) ou cloud (qualidade).
+          </p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+            <div style="background:oklch(76% 0.177 163.223 / 0.08); border:1.5px solid oklch(76% 0.177 163.223 / 0.4); border-radius:0.625rem; padding:1rem;">
+              <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(37% 0.077 168.94); margin-bottom:0.5rem;">Local — On-Premise</p>
+              <p style="font-size:0.9rem; font-weight:700; color:oklch(37% 0.077 168.94); margin-bottom:0.5rem; font-family:'IBM Plex Mono',monospace;">Gemma-3n-e4b</p>
+              <div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.65);">
+                <span>Sem custo por token</span>
+                <span>Privacidade total dos dados</span>
+                <span>Execução on-premise</span>
+              </div>
+            </div>
+            <div style="background:oklch(74% 0.16 232.661 / 0.08); border:1.5px solid oklch(74% 0.16 232.661 / 0.4); border-radius:0.625rem; padding:1rem;">
+              <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:oklch(29% 0.066 243.157); margin-bottom:0.5rem;">Cloud — API</p>
+              <p style="font-size:0.9rem; font-weight:700; color:oklch(29% 0.066 243.157); margin-bottom:0.5rem; font-family:'IBM Plex Mono',monospace;">GPT-4o-mini</p>
+              <div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.65);">
+                <span>Alta qualidade de extração</span>
+                <span>Custo por token (OpenAI)</span>
+                <span>Menor latência de resposta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 8 ── -->
+    <div style="display:flex; gap:1.5rem; padding-bottom:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(45% 0.24 277.023); color:oklch(93% 0.034 272.788); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">8</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(45% 0.24 277.023);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Atributos Extraídos por GTIN</h3>
+            <span style="background:oklch(45% 0.24 277.023 / 0.1); color:oklch(45% 0.24 277.023); font-size:0.68rem; font-weight:700; padding:0.15rem 0.6rem; border-radius:999px;">Notebook 03</span>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            O LLM retorna um JSON estruturado com os atributos padronizados do produto. Cada campo é validado e o score de confiança é registrado junto ao motivo da classificação para rastreabilidade completa.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.35rem; margin-bottom:0.85rem;">
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.45rem 0.75rem; background:oklch(97% 0 0); border-radius:0.4rem; font-size:0.82rem;">
+              <span style="width:0.5rem; height:0.5rem; border-radius:50%; background:oklch(45% 0.24 277.023); flex-shrink:0;"></span>
+              <strong style="color:oklch(21% 0.006 285.885 / 0.8); min-width:5rem;">descricao</strong>
+              <span style="color:oklch(21% 0.006 285.885 / 0.5);">Nome do produto normalizado e limpo</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.45rem 0.75rem; background:oklch(97% 0 0); border-radius:0.4rem; font-size:0.82rem;">
+              <span style="width:0.5rem; height:0.5rem; border-radius:50%; background:oklch(45% 0.24 277.023); flex-shrink:0;"></span>
+              <strong style="color:oklch(21% 0.006 285.885 / 0.8); min-width:5rem;">marca</strong>
+              <span style="color:oklch(21% 0.006 285.885 / 0.5);">Fabricante ou marca do produto</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.45rem 0.75rem; background:oklch(97% 0 0); border-radius:0.4rem; font-size:0.82rem;">
+              <span style="width:0.5rem; height:0.5rem; border-radius:50%; background:oklch(45% 0.24 277.023); flex-shrink:0;"></span>
+              <strong style="color:oklch(21% 0.006 285.885 / 0.8); min-width:5rem;">volume</strong>
+              <span style="color:oklch(21% 0.006 285.885 / 0.5);">Quantidade, peso ou capacidade unitária</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.45rem 0.75rem; background:oklch(97% 0 0); border-radius:0.4rem; font-size:0.82rem;">
+              <span style="width:0.5rem; height:0.5rem; border-radius:50%; background:oklch(45% 0.24 277.023); flex-shrink:0;"></span>
+              <strong style="color:oklch(21% 0.006 285.885 / 0.8); min-width:5rem;">ncm</strong>
+              <span style="color:oklch(21% 0.006 285.885 / 0.5);">Código NCM sugerido pelo LLM (8 dígitos)</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.45rem 0.75rem; background:oklch(97% 0 0); border-radius:0.4rem; font-size:0.82rem;">
+              <span style="width:0.5rem; height:0.5rem; border-radius:50%; background:oklch(45% 0.24 277.023); flex-shrink:0;"></span>
+              <strong style="color:oklch(21% 0.006 285.885 / 0.8); min-width:5rem;">confianca</strong>
+              <span style="color:oklch(21% 0.006 285.885 / 0.5);">Score de confiança + motivo textual (rastreável)</span>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:oklch(45% 0.24 277.023); font-weight:600;">
+            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Saída persistida em <code style="font-family:'IBM Plex Mono',monospace; background:oklch(45% 0.24 277.023 / 0.1); padding:0.1rem 0.4rem; border-radius:0.25rem;">gtin_resolved.json</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ETAPA 9 ── -->
+    <div style="display:flex; gap:1.5rem; position:relative;">
+      <div style="flex-shrink:0; width:3rem; height:3rem; border-radius:50%; background:oklch(14% 0.005 285.823); color:oklch(92% 0.004 286.32); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1rem; font-family:'IBM Plex Mono',monospace; z-index:1; box-shadow:0 0 0 4px #fff;">9</div>
+      <div class="card bg-base-100 shadow-sm" style="flex:1; border-left:3px solid oklch(14% 0.005 285.823);">
+        <div style="padding:1.25rem 1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem; flex-wrap:wrap;">
+            <h3 style="font-size:1rem; font-weight:700;">Dashboard de Auditoria</h3>
+            <span style="background:oklch(14% 0.005 285.823 / 0.08); color:oklch(14% 0.005 285.823); font-size:0.68rem; font-weight:700; padding:0.15rem 0.6rem; border-radius:999px;">Flask · Web</span>
+          </div>
+          <p style="font-size:0.85rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.6; margin-bottom:0.85rem;">
+            Interface web interativa para auditoria, exploração e correção dos dados enriquecidos. Permite que analistas fiscais revisem os resultados do LLM, validem NCMs e exportem relatórios.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.4rem;">
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.5rem 0.75rem; border:1px solid oklch(93% 0 0); border-radius:0.45rem; font-size:0.82rem;">
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; background:oklch(93% 0 0); padding:0.1rem 0.45rem; border-radius:0.25rem; flex-shrink:0;">/</code>
+              <span style="color:oklch(21% 0.006 285.885 / 0.65);">Visão geral — estatísticas, distribuição de confiança, top marcas e NCMs</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.5rem 0.75rem; border:1px solid oklch(93% 0 0); border-radius:0.45rem; font-size:0.82rem;">
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; background:oklch(93% 0 0); padding:0.1rem 0.45rem; border-radius:0.25rem; flex-shrink:0;">/auditoria</code>
+              <span style="color:oklch(21% 0.006 285.885 / 0.65);">GTINs com confiança &lt; 0.75 — fila de revisão manual</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.5rem 0.75rem; border:1px solid oklch(93% 0 0); border-radius:0.45rem; font-size:0.82rem;">
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; background:oklch(93% 0 0); padding:0.1rem 0.45rem; border-radius:0.25rem; flex-shrink:0;">/inconsistencias</code>
+              <span style="color:oklch(21% 0.006 285.885 / 0.65);">NCM original NF-e ≠ NCM sugerido pelo LLM — divergências a corrigir</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem; padding:0.5rem 0.75rem; border:1px solid oklch(93% 0 0); border-radius:0.45rem; font-size:0.82rem;">
+              <code style="font-family:'IBM Plex Mono',monospace; font-size:0.75rem; background:oklch(93% 0 0); padding:0.1rem 0.45rem; border-radius:0.25rem; flex-shrink:0;">/explorador</code>
+              <span style="color:oklch(21% 0.006 285.885 / 0.65);">Consulta e edição inline por GTIN — salva diretamente no JSON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+
+</div>
+
+{% endblock %}

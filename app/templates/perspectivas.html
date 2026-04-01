@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% block title %}Perspectivas Futuras{% endblock %}
+
+{% block content %}
+
+<!-- Prioridade badges helper -->
+<style>
+  .badge-alta    { background: oklch(76% 0.177 163.223 / 0.15); color: oklch(37% 0.077 168.94); }
+  .badge-media   { background: oklch(82% 0.189 84.429 / 0.15);  color: oklch(41% 0.112 45.904); }
+  .badge-baixa   { background: oklch(74% 0.16 232.661 / 0.15);  color: oklch(29% 0.066 243.157); }
+  .badge-explor  { background: oklch(65% 0.241 354.308 / 0.12); color: oklch(45% 0.18 354.308); }
+</style>
+
+<!-- Intro -->
+<div class="card bg-base-100 shadow-sm" style="margin-bottom:1.5rem;">
+  <div class="card-body p-6">
+    <p style="font-size:0.95rem; color:oklch(21% 0.006 285.885 / 0.65); line-height:1.7;">
+      A Base Mestra SEI é uma fundação para um ecossistema maior de inteligência fiscal e econômica.
+      As iniciativas abaixo representam extensões naturais do pipeline atual, organizadas por impacto e esforço.
+    </p>
+  </div>
+</div>
+
+<!-- Cards de perspectivas -->
+<div style="display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-bottom:2rem;">
+
+  <!-- A -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(45% 0.24 277.023 / 0.1); display:flex; align-items:center; justify-content:center; color:oklch(45% 0.24 277.023); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">NER Customizado</h3>
+        </div>
+        <span class="badge badge-baixa" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Baixa prioridade</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6; margin-bottom:0.875rem;">
+        Usar o LLM para anotar ~500–1000 descrições e treinar um modelo leve de NER (spaCy ou BERTimbau) que roda localmente em escala. Após o treino, a extração é instantânea e gratuita — sem depender de API.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.375rem;">
+        <span class="badge badge-ghost" style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace;">PRODUTO</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace;">MARCA</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace;">PESO</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace;">VARIANTE</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem; font-family:'IBM Plex Mono',monospace;">UNIDADE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(82% 0.189 84.429 / 0.15); display:flex; align-items:center; justify-content:center; color:oklch(41% 0.112 45.904); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Dashboard de Preços</h3>
+        </div>
+        <span class="badge badge-media" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Média prioridade</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6; margin-bottom:0.875rem;">
+        Interface interativa conectada à base padronizada para consultar preço médio por município e período, comparar entre regiões via mapa e emitir alertas de variação anômala.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.375rem;">
+        <span class="badge badge-ghost" style="font-size:0.7rem;">Analistas SEI</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem;">Jornalistas</span>
+        <span class="badge badge-ghost" style="font-size:0.7rem;">Consumidores</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- C -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(71% 0.194 13.428 / 0.12); display:flex; align-items:center; justify-content:center; color:oklch(27% 0.105 12.094); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Detecção de Anomalias</h3>
+        </div>
+        <span class="badge badge-media" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Média prioridade</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6;">
+        Modelo estatístico ou ML para sinalizar preços fora do padrão: outliers dentro do mesmo cluster, variação temporal suspeita (fraude fiscal ou erro de cadastro) e insumo direto para auditoria da SEFAZ.
+      </p>
+    </div>
+  </div>
+
+  <!-- D -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(77% 0.152 181.912 / 0.15); display:flex; align-items:center; justify-content:center; color:oklch(38% 0.063 188.416); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Matching Geoespacial</h3>
+        </div>
+        <span class="badge badge-explor" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Exploratória</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6;">
+        Identificar se o mesmo produto tem preços sistematicamente diferentes entre regiões. Mapa de calor por município, ranking de municípios mais caros por categoria e detecção de isolamento logístico nos preços.
+      </p>
+    </div>
+  </div>
+
+  <!-- E -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(65% 0.241 354.308 / 0.12); display:flex; align-items:center; justify-content:center; color:oklch(45% 0.18 354.308); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Bases Externas</h3>
+        </div>
+        <span class="badge badge-explor" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Exploratória</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6; margin-bottom:0.875rem;">
+        Integração com referências externas para enriquecimento e validação cruzada do dicionário gerado.
+      </p>
+      <div style="display:flex; flex-direction:column; gap:0.375rem;">
+        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.65);">
+          <span style="width:5px; height:5px; border-radius:50%; background:currentColor; flex-shrink:0;"></span>
+          <strong>Open Food Facts</strong> — validação cruzada do dicionário GTIN
+        </div>
+        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.65);">
+          <span style="width:5px; height:5px; border-radius:50%; background:currentColor; flex-shrink:0;"></span>
+          <strong>Tabela TACO</strong> — enriquecimento nutricional dos alimentos
+        </div>
+        <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.65);">
+          <span style="width:5px; height:5px; border-radius:50%; background:currentColor; flex-shrink:0;"></span>
+          <strong>IBGE (POF, IPCA)</strong> — contextualização frente a índices nacionais
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- F -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(45% 0.24 277.023 / 0.1); display:flex; align-items:center; justify-content:center; color:oklch(45% 0.24 277.023); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">API REST do Dicionário</h3>
+        </div>
+        <span class="badge badge-baixa" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Baixa prioridade</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6; margin-bottom:0.875rem;">
+        API FastAPI leve que expõe o dicionário padronizado para outros sistemas da SEI e SEFAZ. Pode virar um serviço permanente alimentado por novos lotes de NFC-e.
+      </p>
+      <code style="font-size:0.72rem; background:oklch(97% 0 0); border:1px solid oklch(93% 0 0); border-radius:0.375rem; padding:0.375rem 0.625rem; display:block; color:oklch(45% 0.24 277.023);">GET /produto?gtin=7891000100103</code>
+    </div>
+  </div>
+
+  <!-- G -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(74% 0.16 232.661 / 0.15); display:flex; align-items:center; justify-content:center; color:oklch(29% 0.066 243.157); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Pipeline Incremental</h3>
+        </div>
+        <span class="badge badge-baixa" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Baixa prioridade</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6;">
+        O pipeline atual trata um snapshot. Dados de NFC-e chegam continuamente — novos lotes devem verificar se o GTIN já existe, processar apenas o que é novo e monitorar drift de descrições que não se encaixam nos clusters existentes.
+      </p>
+    </div>
+  </div>
+
+  <!-- H -->
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-6">
+      <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.625rem;">
+          <div style="width:2rem; height:2rem; border-radius:0.5rem; background:oklch(76% 0.177 163.223 / 0.12); display:flex; align-items:center; justify-content:center; color:oklch(37% 0.077 168.94); flex-shrink:0;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 style="font-weight:700; font-size:0.95rem;">Generalização para Outros Estados</h3>
+        </div>
+        <span class="badge badge-explor" style="flex-shrink:0; font-size:0.65rem; font-weight:600;">Exploratória</span>
+      </div>
+      <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.6); line-height:1.6;">
+        O pipeline é agnóstico ao estado — com pequenos ajustes pode ser aplicado em dados de NFC-e de SP, MG, RS e outros. Vocabulários de abreviações regionais diferentes e potencial de parceria com outros SEIs estaduais.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Tabela de priorização -->
+<div class="card bg-base-100 shadow-sm">
+  <div class="card-body p-6">
+    <h2 style="font-size:1rem; font-weight:700; margin-bottom:1rem;">Priorização sugerida</h2>
+    <div style="overflow-x:auto;">
+      <table class="table table-sm w-full">
+        <thead>
+          <tr style="font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.45); text-transform:uppercase; letter-spacing:0.06em;">
+            <th>Prioridade</th>
+            <th>Item</th>
+            <th>Impacto</th>
+            <th>Esforço</th>
+          </tr>
+        </thead>
+        <tbody style="font-size:0.82rem;">
+          <tr>
+            <td><span class="badge badge-alta" style="font-size:0.68rem; font-weight:600;">Alta</span></td>
+            <td>Completar Notebook 03 (LLM)</td>
+            <td>Essencial para o pipeline fechar</td>
+            <td style="color:oklch(37% 0.077 168.94); font-weight:600;">Baixo</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-alta" style="font-size:0.68rem; font-weight:600;">Alta</span></td>
+            <td>Pipeline LangGraph</td>
+            <td>Entrega final do projeto</td>
+            <td style="color:oklch(41% 0.112 45.904); font-weight:600;">Médio</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-alta" style="font-size:0.68rem; font-weight:600;">Alta</span></td>
+            <td>Análise de cesta básica</td>
+            <td>Objetivo original da SEI</td>
+            <td style="color:oklch(37% 0.077 168.94); font-weight:600;">Baixo</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-media" style="font-size:0.68rem; font-weight:600;">Média</span></td>
+            <td>Relatórios de qualidade por emissor</td>
+            <td>Valor direto para SEFAZ</td>
+            <td style="color:oklch(37% 0.077 168.94); font-weight:600;">Baixo</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-media" style="font-size:0.68rem; font-weight:600;">Média</span></td>
+            <td>Mapa de inconsistências NCM</td>
+            <td>Valor regulatório</td>
+            <td style="color:oklch(37% 0.077 168.94); font-weight:600;">Baixo</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-media" style="font-size:0.68rem; font-weight:600;">Média</span></td>
+            <td>Dashboard de preços</td>
+            <td>Democratiza o acesso aos dados</td>
+            <td style="color:oklch(41% 0.112 45.904); font-weight:600;">Médio</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-media" style="font-size:0.68rem; font-weight:600;">Média</span></td>
+            <td>Detecção de anomalias de preço</td>
+            <td>Auditoria fiscal</td>
+            <td style="color:oklch(41% 0.112 45.904); font-weight:600;">Médio</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-baixa" style="font-size:0.68rem; font-weight:600;">Baixa</span></td>
+            <td>NER customizado treinado</td>
+            <td>Escalabilidade de longo prazo</td>
+            <td style="color:oklch(27% 0.105 12.094); font-weight:600;">Alto</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-baixa" style="font-size:0.68rem; font-weight:600;">Baixa</span></td>
+            <td>API REST do dicionário</td>
+            <td>Integração institucional</td>
+            <td style="color:oklch(41% 0.112 45.904); font-weight:600;">Médio</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-baixa" style="font-size:0.68rem; font-weight:600;">Baixa</span></td>
+            <td>Pipeline incremental</td>
+            <td>Produção contínua</td>
+            <td style="color:oklch(27% 0.105 12.094); font-weight:600;">Alto</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-explor" style="font-size:0.68rem; font-weight:600;">Exploratória</span></td>
+            <td>Matching geoespacial de preços</td>
+            <td>Pesquisa econômica</td>
+            <td style="color:oklch(27% 0.105 12.094); font-weight:600;">Alto</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-explor" style="font-size:0.68rem; font-weight:600;">Exploratória</span></td>
+            <td>Integração Open Food Facts / IBGE</td>
+            <td>Enriquecimento de dados</td>
+            <td style="color:oklch(41% 0.112 45.904); font-weight:600;">Médio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

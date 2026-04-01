@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+{% block title %}Corretor Inteligente de NCM{% endblock %}
+
+{% block content %}
+
+<!-- ── Hero header ───────────────────────────────── -->
+<div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:1.5rem; gap:1rem;">
+
+  <div>
+    <p style="font-size:0.8rem; font-weight:600; color:oklch(45% 0.24 277.023); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.25rem;">
+      ✦ Agente IA ativo
+    </p>
+    <p style="font-size:0.9rem; color:oklch(21% 0.006 285.885 / 0.5); max-width:36rem;">
+      Divergências entre o NCM declarado na nota fiscal e o NCM inferido pela IA com base no produto real.
+    </p>
+  </div>
+
+  <!-- Summary pills -->
+  <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+    <div id="pill-total" style="display:flex; align-items:center; gap:0.5rem; background:oklch(71% 0.194 13.428 / 0.1); border:1px solid oklch(71% 0.194 13.428 / 0.3); border-radius:999px; padding:0.4rem 0.9rem; font-size:0.8rem; font-weight:600; color:oklch(27% 0.105 12.094);">
+      <span class="loading loading-spinner loading-xs"></span>
+      carregando
+    </div>
+    <div id="pill-aceitos" style="display:none; align-items:center; gap:0.5rem; background:oklch(76% 0.177 163.223 / 0.1); border:1px solid oklch(76% 0.177 163.223 / 0.3); border-radius:999px; padding:0.4rem 0.9rem; font-size:0.8rem; font-weight:600; color:oklch(37% 0.077 168.94);">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      <span id="pill-aceitos-count">0</span> aceitos
+    </div>
+    <div id="pill-auditoria" style="display:none; align-items:center; gap:0.5rem; background:oklch(82% 0.189 84.429 / 0.12); border:1px solid oklch(82% 0.189 84.429 / 0.4); border-radius:999px; padding:0.4rem 0.9rem; font-size:0.8rem; font-weight:600; color:oklch(41% 0.112 45.904);">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      <span id="pill-auditoria-count">0</span> em auditoria
+    </div>
+  </div>
+</div>
+
+<!-- ── Stats cards ───────────────────────────────── -->
+<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem;" id="stats-section">
+
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-5" style="display:flex; flex-direction:row; align-items:center; gap:1rem;">
+      <div style="width:3rem; height:3rem; border-radius:0.75rem; background:oklch(71% 0.194 13.428 / 0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="oklch(27% 0.105 12.094)" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      </div>
+      <div>
+        <p style="font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:oklch(21% 0.006 285.885 / 0.4);">Divergências IA</p>
+        <p class="font-mono" style="font-size:1.6rem; font-weight:700; color:oklch(27% 0.105 12.094);" id="stat-divergencias">—</p>
+        <p style="font-size:0.7rem; color:oklch(21% 0.006 285.885 / 0.4);">NCMs a corrigir</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-5" style="display:flex; flex-direction:row; align-items:center; gap:1rem;">
+      <div style="width:3rem; height:3rem; border-radius:0.75rem; background:oklch(76% 0.177 163.223 / 0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="oklch(37% 0.077 168.94)" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <p style="font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:oklch(21% 0.006 285.885 / 0.4);">Correções aceitas</p>
+        <p class="font-mono" style="font-size:1.6rem; font-weight:700; color:oklch(37% 0.077 168.94);" id="stat-aceitos">0</p>
+        <p style="font-size:0.7rem; color:oklch(21% 0.006 285.885 / 0.4);">aprovadas nesta sessão</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-base-100 shadow-sm">
+    <div class="card-body p-5" style="display:flex; flex-direction:row; align-items:center; gap:1rem;">
+      <div style="width:3rem; height:3rem; border-radius:0.75rem; background:oklch(82% 0.189 84.429 / 0.12); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="oklch(41% 0.112 45.904)" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+      </div>
+      <div>
+        <p style="font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:oklch(21% 0.006 285.885 / 0.4);">Em auditoria</p>
+        <p class="font-mono" style="font-size:1.6rem; font-weight:700; color:oklch(41% 0.112 45.904);" id="stat-auditoria">0</p>
+        <p style="font-size:0.7rem; color:oklch(21% 0.006 285.885 / 0.4);">aguardando revisão</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Filter bar ─────────────────────────────────── -->
+<div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+  <div style="display:flex; align-items:center; gap:0.5rem; background:#fff; border:1px solid oklch(93% 0 0); border-radius:0.5rem; padding:0 0.875rem; height:2.5rem; flex:1; max-width:22rem;">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="opacity:0.35; flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/></svg>
+    <input id="filter-input" type="text" placeholder="Filtrar por GTIN ou descrição..."
+           style="flex:1; border:none; outline:none; font-size:0.8rem; background:transparent;" />
+  </div>
+
+  <!-- Status filter -->
+  <div style="display:flex; gap:0.375rem;">
+    <button onclick="setFilter('todos')" id="btn-todos"
+      class="btn btn-sm btn-primary">Todos</button>
+    <button onclick="setFilter('pendente')" id="btn-pendente"
+      class="btn btn-sm btn-ghost">Pendentes</button>
+    <button onclick="setFilter('aceito')" id="btn-aceito"
+      class="btn btn-sm btn-ghost">Aceitos</button>
+    <button onclick="setFilter('auditoria')" id="btn-auditoria"
+      class="btn btn-sm btn-ghost">Em auditoria</button>
+  </div>
+
+  <button onclick="aceitarTodos()" class="btn btn-sm btn-success gap-2" style="margin-left:auto;">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+    Aceitar todos
+  </button>
+</div>
+
+<!-- ── Main table card ───────────────────────────── -->
+<div class="card bg-base-100 shadow-sm">
+  <div class="card-body p-0">
+    <div style="overflow-x:auto; max-height:calc(100vh - 420px); overflow-y:auto;">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:oklch(97% 0 0); border-bottom:1px solid oklch(93% 0 0);">
+            <th style="padding:0.75rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45); white-space:nowrap;">GTIN</th>
+            <th style="padding:0.75rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45);">Produto</th>
+            <th style="padding:0.75rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45); white-space:nowrap;">NCM Declarado → Corrigido</th>
+            <th style="padding:0.75rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45);">Confiança</th>
+            <th style="padding:0.75rem 1rem; text-align:left; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45);">Motivo IA</th>
+            <th style="padding:0.75rem 1rem; text-align:center; font-size:0.68rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45);">Ação</th>
+          </tr>
+        </thead>
+        <tbody id="incons-tbody">
+          <tr>
+            <td colspan="6" style="text-align:center; padding:4rem; color:oklch(21% 0.006 285.885 / 0.3);">
+              <span class="loading loading-spinner loading-md"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Empty state (hidden by default) -->
+    <div id="empty-state" style="display:none; padding:4rem; text-align:center;">
+      <div style="width:4rem; height:4rem; border-radius:50%; background:oklch(76% 0.177 163.223 / 0.12); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;">
+        <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="oklch(37% 0.077 168.94)" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <p style="font-weight:600; color:oklch(21% 0.006 285.885 / 0.6); margin-bottom:0.25rem;">Nenhum item encontrado</p>
+      <p style="font-size:0.8rem; color:oklch(21% 0.006 285.885 / 0.4);" id="empty-msg">Todos os NCMs estão consistentes</p>
+    </div>
+
+    <!-- Footer count -->
+    <div style="padding:0.75rem 1.25rem; border-top:1px solid oklch(93% 0 0); display:flex; align-items:center; justify-content:space-between;">
+      <p style="font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.4);" id="footer-count">—</p>
+      <a href="/api/export-auditoria" class="btn btn-xs btn-ghost gap-1.5">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        Exportar CSV
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── Toast de confirmação ──────────────────────── -->
+<div id="toast-container" style="position:fixed; bottom:1.5rem; right:1.5rem; display:flex; flex-direction:column; gap:0.5rem; z-index:999;"></div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let allData = [];
+let statusMap = {}; // gtin → 'pendente' | 'aceito' | 'auditoria'
+let activeFilter = 'todos';
+let searchTerm = '';
+
+/* ── Utils ──────────────────────────────────────── */
+function confidenceBadge(v) {
+  const pct = Math.round(v * 100);
+  if (v >= 0.8) return `<span class="badge badge-success badge-sm font-mono">${pct}%</span>`;
+  if (v >= 0.6) return `<span class="badge badge-warning badge-sm font-mono">${pct}%</span>`;
+  return `<span class="badge badge-error badge-sm font-mono">${pct}%</span>`;
+}
+
+function toast(msg, type = 'success') {
+  const colors = {
+    success: 'oklch(76% 0.177 163.223)',
+    warning: 'oklch(82% 0.189 84.429)',
+    error:   'oklch(71% 0.194 13.428)',
+  };
+  const el = document.createElement('div');
+  el.className = 'alert alert-sm shadow-lg';
+  el.style.cssText = `background:#fff; border:1px solid ${colors[type]}; border-radius:0.75rem; padding:0.6rem 1rem; font-size:0.8rem; font-weight:500; min-width:220px; animation: slideIn 0.2s ease;`;
+  el.textContent = msg;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(() => el.remove(), 2800);
+}
+
+/* ── Contadores ─────────────────────────────────── */
+function updateCounters() {
+  const aceitos   = Object.values(statusMap).filter(s => s === 'aceito').length;
+  const auditoria = Object.values(statusMap).filter(s => s === 'auditoria').length;
+
+  document.getElementById('stat-aceitos').textContent   = aceitos;
+  document.getElementById('stat-auditoria').textContent = auditoria;
+
+  const pillAceitos = document.getElementById('pill-aceitos');
+  const pillAudit   = document.getElementById('pill-auditoria');
+  if (aceitos > 0)   { pillAceitos.style.display = 'flex'; document.getElementById('pill-aceitos-count').textContent = aceitos; }
+  if (auditoria > 0) { pillAudit.style.display   = 'flex'; document.getElementById('pill-auditoria-count').textContent = auditoria; }
+}
+
+/* ── Ações por linha ────────────────────────────── */
+function aceitar(gtin) {
+  statusMap[gtin] = 'aceito';
+  updateCounters();
+  renderTable();
+  toast(`✓ NCM aceito para ${gtin.slice(-6)}`);
+}
+
+function marcarAuditoria(gtin) {
+  statusMap[gtin] = 'auditoria';
+  updateCounters();
+  renderTable();
+  toast(`Enviado para auditoria: ${gtin.slice(-6)}`, 'warning');
+}
+
+function aceitarTodos() {
+  const visivel = getFiltered();
+  visivel.forEach(r => { statusMap[r.gtin] = 'aceito'; });
+  updateCounters();
+  renderTable();
+  toast(`✓ ${visivel.length} correções aceitas`, 'success');
+}
+
+/* ── Filtros ─────────────────────────────────────── */
+function setFilter(f) {
+  activeFilter = f;
+  ['todos','pendente','aceito','auditoria'].forEach(id => {
+    const btn = document.getElementById('btn-' + id);
+    btn.className = id === f ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-ghost';
+  });
+  renderTable();
+}
+
+function getFiltered() {
+  return allData.filter(r => {
+    const st = statusMap[r.gtin] || 'pendente';
+    const matchFilter = activeFilter === 'todos' || st === activeFilter;
+    const matchSearch = !searchTerm ||
+      r.gtin.includes(searchTerm) ||
+      (r.descricao || '').toLowerCase().includes(searchTerm);
+    return matchFilter && matchSearch;
+  });
+}
+
+/* ── Render ─────────────────────────────────────── */
+function renderTable() {
+  const tbody = document.getElementById('incons-tbody');
+  const empty = document.getElementById('empty-state');
+  const items = getFiltered();
+
+  document.getElementById('footer-count').textContent =
+    `${items.length} divergência${items.length !== 1 ? 's' : ''} exibida${items.length !== 1 ? 's' : ''}`;
+
+  if (items.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    document.getElementById('empty-msg').textContent =
+      activeFilter !== 'todos' ? 'Nenhum item com este filtro.' : 'Todos os NCMs estão consistentes.';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = items.map(r => {
+    const st = statusMap[r.gtin] || 'pendente';
+
+    // Row background by status
+    const rowBg = st === 'aceito'
+      ? 'background:oklch(76% 0.177 163.223 / 0.04);'
+      : st === 'auditoria'
+        ? 'background:oklch(82% 0.189 84.429 / 0.06);'
+        : '';
+
+    // Status badge
+    const stBadge = st === 'aceito'
+      ? `<span class="badge badge-success badge-xs">aceito</span>`
+      : st === 'auditoria'
+        ? `<span class="badge badge-warning badge-xs">auditoria</span>`
+        : '';
+
+    // Action buttons
+    const actions = st === 'aceito'
+      ? `<button class="btn btn-xs btn-ghost" onclick="marcarAuditoria('${r.gtin}')">Reverter</button>`
+      : st === 'auditoria'
+        ? `<button class="btn btn-xs btn-ghost" onclick="aceitar('${r.gtin}')">Aceitar</button>`
+        : `<div style="display:flex; gap:0.375rem; justify-content:center;">
+             <button class="btn btn-xs btn-success gap-1" onclick="aceitar('${r.gtin}')">
+               <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+               Aceitar
+             </button>
+             <button class="btn btn-xs btn-warning gap-1" onclick="marcarAuditoria('${r.gtin}')">
+               <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2"/></svg>
+               Auditar
+             </button>
+           </div>`;
+
+    return `
+      <tr style="border-bottom:1px solid oklch(95% 0 0); ${rowBg}">
+
+        <!-- GTIN -->
+        <td style="padding:0.875rem 1rem;">
+          <a href="/explorador?gtin=${r.gtin}" style="color:oklch(45% 0.24 277.023); text-decoration:none;">
+            <code class="font-mono" style="font-size:0.72rem;">${r.gtin}</code>
+          </a>
+          ${stBadge ? `<br><span style="margin-top:0.25rem; display:inline-block;">${stBadge}</span>` : ''}
+        </td>
+
+        <!-- Produto -->
+        <td style="padding:0.875rem 1rem; max-width:16rem;">
+          <p style="font-size:0.85rem; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${r.descricao || '—'}</p>
+        </td>
+
+        <!-- NCM antes → depois (destaque principal) -->
+        <td style="padding:0.875rem 1rem;">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+
+            <!-- Original (vermelho) -->
+            <div style="display:flex; align-items:center; gap:0.3rem; background:oklch(71% 0.194 13.428 / 0.1); border:1.5px solid oklch(71% 0.194 13.428 / 0.4); border-radius:0.5rem; padding:0.35rem 0.65rem;">
+              <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="oklch(27% 0.105 12.094)" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+              <code class="font-mono" style="font-size:0.78rem; font-weight:600; color:oklch(27% 0.105 12.094);">${r.ncm_original}</code>
+            </div>
+
+            <!-- Seta -->
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="oklch(21% 0.006 285.885 / 0.3)" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+
+            <!-- Corrigido (verde) -->
+            <div style="display:flex; align-items:center; gap:0.3rem; background:oklch(76% 0.177 163.223 / 0.1); border:1.5px solid oklch(76% 0.177 163.223 / 0.5); border-radius:0.5rem; padding:0.35rem 0.65rem;">
+              <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="oklch(37% 0.077 168.94)" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <code class="font-mono" style="font-size:0.78rem; font-weight:600; color:oklch(37% 0.077 168.94);">${r.ncm_resolvido}</code>
+            </div>
+
+          </div>
+        </td>
+
+        <!-- Confiança -->
+        <td style="padding:0.875rem 1rem;">
+          ${confidenceBadge(r.confianca)}
+        </td>
+
+        <!-- Motivo IA -->
+        <td style="padding:0.875rem 1rem; max-width:14rem;">
+          <p style="font-size:0.75rem; color:oklch(21% 0.006 285.885 / 0.5); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${r.motivo || '—'}</p>
+        </td>
+
+        <!-- Ações -->
+        <td style="padding:0.875rem 1rem; text-align:center;">
+          ${actions}
+        </td>
+
+      </tr>`;
+  }).join('');
+}
+
+/* ── Init ────────────────────────────────────────── */
+document.getElementById('filter-input').addEventListener('input', function() {
+  searchTerm = this.value.toLowerCase().trim();
+  renderTable();
+});
+
+fetch('/api/inconsistencias')
+  .then(r => r.json())
+  .then(data => {
+    allData = data;
+    data.forEach(r => { statusMap[r.gtin] = 'pendente'; });
+
+    // Update total pill
+    const pill = document.getElementById('pill-total');
+    if (data.length === 0) {
+      pill.style.background = 'oklch(76% 0.177 163.223 / 0.1)';
+      pill.style.borderColor = 'oklch(76% 0.177 163.223 / 0.3)';
+      pill.style.color = 'oklch(37% 0.077 168.94)';
+      pill.innerHTML = `<svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Nenhuma divergência`;
+    } else {
+      pill.innerHTML = `<svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> <strong>${data.length}</strong>&nbsp;divergência${data.length > 1 ? 's' : ''} detectada${data.length > 1 ? 's' : ''}`;
+    }
+
+    document.getElementById('stat-divergencias').textContent = data.length;
+    renderTable();
+  });
+</script>
+
+<style>
+@keyframes slideIn {
+  from { transform: translateX(1rem); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+</style>
+{% endblock %}

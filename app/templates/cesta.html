@@ -1,0 +1,468 @@
+{% extends "base.html" %}
+{% block title %}Análise de Cesta — Evolução de Preços{% endblock %}
+
+{% block content %}
+
+<div style="display:grid; grid-template-columns:320px 1fr; gap:1.25rem; height:calc(100vh - 120px);">
+
+  <!-- PAINEL ESQUERDO -->
+  <div style="display:flex; flex-direction:column; gap:0.75rem; overflow:hidden;">
+    <div style="display:flex; align-items:center; gap:0.5rem; background:#fff; border:1px solid oklch(93% 0 0); border-radius:0.5rem; padding:0 0.875rem; height:2.5rem; flex-shrink:0;">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="opacity:0.35; flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/></svg>
+      <input id="busca-gtin" type="text" placeholder="Buscar produto ou GTIN..."
+             style="flex:1; border:none; outline:none; font-size:0.8rem; background:transparent;" />
+    </div>
+    <div id="capitulos-list" style="flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:0.375rem;">
+      <div style="text-align:center; padding:2rem; color:oklch(21% 0.006 285.885 / 0.3);">
+        <span class="loading loading-spinner loading-md"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAINEL DIREITO -->
+  <div style="display:flex; flex-direction:column; gap:1rem; overflow:hidden;">
+
+    <!-- Chips + botão Gerar -->
+    <div class="card bg-base-100 shadow-sm" style="flex-shrink:0;">
+      <div class="card-body" style="padding:0.875rem 1rem;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.5rem;">
+          <p style="font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:oklch(21% 0.006 285.885 / 0.45);">
+            Cesta selecionada
+          </p>
+          <div style="display:flex; gap:0.5rem; align-items:center;">
+            <button onclick="limparCesta()"
+                    class="btn btn-sm btn-ghost"
+                    style="font-size:0.75rem; gap:0.35rem; color:oklch(50% 0.01 285);">
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+              Limpar tudo
+            </button>
+            <button id="btn-gerar" onclick="gerarAnalise()"
+                    class="btn btn-sm btn-primary"
+                    style="font-size:0.75rem; gap:0.35rem;">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              Gerar análise
+            </button>
+          </div>
+        </div>
+        <div id="chips-cesta" style="display:flex; flex-wrap:wrap; gap:0.375rem; min-height:2rem;">
+          <p style="font-size:0.78rem; color:oklch(21% 0.006 285.885 / 0.3); font-style:italic;">Adicione produtos pelo painel ao lado</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="card bg-base-100 shadow-sm" style="flex-shrink:0;">
+      <div class="card-body" style="padding:0.75rem 1rem;">
+        <div style="display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:0.72rem; font-weight:600; color:oklch(21% 0.006 285.885 / 0.5);">Período</span>
+            <div style="display:flex; gap:0.25rem;">
+              <button id="btn-mensal" onclick="setPeriodo('mensal')" class="btn btn-xs btn-primary">Mensal</button>
+              <button id="btn-semanal" onclick="setPeriodo('semanal')" class="btn btn-xs btn-ghost">Semanal</button>
+            </div>
+          </div>
+          <div style="width:1px; height:1.5rem; background:oklch(93% 0 0);"></div>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:0.72rem; font-weight:600; color:oklch(21% 0.006 285.885 / 0.5);">Escala</span>
+            <div style="display:flex; gap:0.25rem;">
+              <button id="btn-absoluto" onclick="setModo('absoluto')" class="btn btn-xs btn-primary">R$ absoluto</button>
+              <button id="btn-indice" onclick="setModo('indice')" class="btn btn-xs btn-ghost">Índice base 100</button>
+            </div>
+          </div>
+          <div style="width:1px; height:1.5rem; background:oklch(93% 0 0);"></div>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:0.72rem; font-weight:600; color:oklch(21% 0.006 285.885 / 0.5);">Média móvel</span>
+            <div style="display:flex; gap:0.25rem;">
+              <button id="btn-mm-off" onclick="setMM(0)" class="btn btn-xs btn-primary">Off</button>
+              <button id="btn-mm-3" onclick="setMM(3)" class="btn btn-xs btn-ghost">3p</button>
+              <button id="btn-mm-6" onclick="setMM(6)" class="btn btn-xs btn-ghost">6p</button>
+            </div>
+          </div>
+          <div style="width:1px; height:1.5rem; background:oklch(93% 0 0);"></div>
+          <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+            <input type="checkbox" id="toggle-variacao" class="toggle toggle-xs toggle-primary" onchange="redraw()"/>
+            <span style="font-size:0.72rem; font-weight:600; color:oklch(21% 0.006 285.885 / 0.5);">Var. % período</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="card bg-base-100 shadow-sm" style="flex:1; overflow:hidden;">
+      <div class="card-body" style="padding:1rem; height:100%; display:flex; flex-direction:column;">
+        <div id="chart-empty" style="flex:1; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:0.75rem; color:oklch(21% 0.006 285.885 / 0.3);">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          <p style="font-size:0.85rem;">Selecione produtos e clique em <strong>Gerar análise</strong></p>
+        </div>
+        <div id="chart-loading" style="flex:1; display:none; align-items:center; justify-content:center; gap:0.75rem; flex-direction:column;">
+          <span class="loading loading-spinner loading-md"></span>
+          <p style="font-size:0.82rem; color:oklch(21% 0.006 285.885 / 0.4);">Carregando séries de preço…</p>
+        </div>
+        <canvas id="preco-chart" style="display:none; flex:1; max-height:100%;"></canvas>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+// ── Estado ──────────────────────────────────────────────────────────────────
+const PALETTE = [
+  '#6366f1','#f59e0b','#10b981','#ef4444','#8b5cf6',
+  '#06b6d4','#f97316','#84cc16','#ec4899','#14b8a6',
+];
+
+let cesta = [];          // strings de GTINs na ordem de adição
+let capitulosData = [];
+const GTIN_LABELS = {};
+const accordionsAbertos = new Set([0, 1, 2]);
+
+let periodo  = 'mensal';
+let modo     = 'absoluto';
+let mmJanela = 0;
+let chart    = null;
+let ultimosResultados = null;  // guarda o último resultado de gerarAnalise()
+
+// ── Capítulos ───────────────────────────────────────────────────────────────
+fetch('/api/capitulos').then(r => r.json()).then(data => {
+  capitulosData = data;
+  data.forEach(cap => cap.gtins.forEach(g => { GTIN_LABELS[g.gtin] = g.descricao; }));
+  renderCapitulos();
+});
+
+function renderCapitulos() {
+  const list  = document.getElementById('capitulos-list');
+  const busca = document.getElementById('busca-gtin').value.trim().toLowerCase();
+  const inCesta = new Set(cesta);
+
+  const caps = capitulosData.map(cap => ({
+    ...cap,
+    gtins: cap.gtins.filter(g =>
+      !busca || g.gtin.includes(busca) || (g.descricao || '').toLowerCase().includes(busca)
+    ),
+  })).filter(c => c.gtins.length > 0);
+
+  if (!caps.length) {
+    list.innerHTML = `<p style="text-align:center;padding:2rem;font-size:0.8rem;color:oklch(21% 0.006 285.885/0.35);">Nenhum resultado</p>`;
+    return;
+  }
+
+  list.innerHTML = caps.map((cap, ci) => {
+    const aberto = busca || accordionsAbertos.has(ci);
+    const rows = cap.gtins.map(g => {
+      const ja  = inCesta.has(g.gtin);
+      const cor = ja ? PALETTE[cesta.indexOf(g.gtin)] : null;
+      return `
+        <div style="display:flex;align-items:center;gap:0.625rem;padding:0.5rem 0.75rem;border-radius:0.5rem;transition:background 0.1s;"
+             onmouseover="this.style.background='oklch(97% 0 0)'" onmouseout="this.style.background='transparent'">
+          <span style="width:8px;height:8px;border-radius:50%;background:${cor || 'transparent'};flex-shrink:0;${cor ? '' : 'border:1px solid #ccc;'}"></span>
+          <div style="flex:1;overflow:hidden;">
+            <p style="font-size:0.78rem;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${g.descricao}</p>
+            <p style="font-size:0.65rem;color:oklch(21% 0.006 285.885/0.4);font-family:monospace;">${g.gtin} · NCM ${g.ncm}</p>
+          </div>
+          <button onclick="toggleGtin('${g.gtin}')"
+                  class="btn btn-xs ${ja ? 'btn-error btn-outline' : 'btn-primary btn-outline'}"
+                  style="flex-shrink:0;font-size:0.65rem;padding:0 0.5rem;">
+            ${ja ? '− Retirar' : '+ Add'}
+          </button>
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="card bg-base-100 shadow-sm" style="overflow:hidden;flex-shrink:0;">
+        <button onclick="toggleAccordion(this,${ci})" style="width:100%;display:flex;align-items:center;gap:0.625rem;padding:0.625rem 0.875rem;background:none;border:none;cursor:pointer;text-align:left;">
+          <span style="font-size:0.68rem;font-weight:700;background:oklch(45% 0.24 277.023);color:#fff;padding:0.15rem 0.45rem;border-radius:0.3rem;font-family:monospace;flex-shrink:0;">${cap.capitulo}</span>
+          <span style="font-size:0.8rem;font-weight:600;flex:1;">${cap.descricao}</span>
+          <span style="font-size:0.65rem;color:oklch(21% 0.006 285.885/0.4);">${cap.gtins.length} GTINs</span>
+          <svg class="accordion-arrow" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+               style="flex-shrink:0;transition:transform 0.15s;transform:rotate(${aberto ? '180' : '0'}deg)">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div style="display:${aberto ? 'block' : 'none'};">${rows}</div>
+      </div>`;
+  }).join('');
+}
+
+function toggleAccordion(btn, ci) {
+  const body = btn.nextElementSibling;
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  btn.querySelector('.accordion-arrow').style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+  if (open) accordionsAbertos.delete(ci); else accordionsAbertos.add(ci);
+}
+
+document.getElementById('busca-gtin').addEventListener('input', renderCapitulos);
+
+// ── Cesta ───────────────────────────────────────────────────────────────────
+function toggleGtin(gtin) {
+  const idx = cesta.indexOf(gtin);
+  if (idx >= 0) cesta.splice(idx, 1);
+  else if (cesta.length < PALETTE.length) cesta.push(gtin);
+  renderChips();
+  renderCapitulos();
+  if (ultimosResultados) marcarDesatualizado();
+}
+
+function limparCesta() {
+  cesta          = [];
+  ultimosResultados = null;
+  renderChips();
+  renderCapitulos();
+  mostrarVazio();
+  resetBtnGerar();
+}
+
+function renderChips() {
+  const container = document.getElementById('chips-cesta');
+  if (!cesta.length) {
+    container.innerHTML = `<p style="font-size:0.78rem;color:oklch(21% 0.006 285.885/0.3);font-style:italic;">Adicione produtos pelo painel ao lado</p>`;
+    return;
+  }
+  container.innerHTML = cesta.map((g, i) => {
+    const cor   = PALETTE[i];
+    const label = GTIN_LABELS[g] || g;
+    return `
+      <span style="display:inline-flex;align-items:center;gap:0.375rem;background:${cor}18;border:1.5px solid ${cor}55;border-radius:999px;padding:0.3rem 0.75rem;font-size:0.75rem;font-weight:500;max-width:220px;">
+        <span style="width:8px;height:8px;border-radius:50%;background:${cor};flex-shrink:0;"></span>
+        <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${label}</span>
+        <button onclick="toggleGtin('${g}')"
+                style="background:none;border:none;cursor:pointer;padding:0;line-height:1;color:${cor};font-size:0.9rem;flex-shrink:0;">×</button>
+      </span>`;
+  }).join('');
+}
+
+// ── Gerar análise ───────────────────────────────────────────────────────────
+async function gerarAnalise() {
+  if (!cesta.length) return;
+
+  const btn = document.getElementById('btn-gerar');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="loading loading-spinner loading-xs"></span> Carregando…';
+  btn.className = 'btn btn-sm btn-primary';
+
+  document.getElementById('chart-empty').style.display   = 'none';
+  document.getElementById('chart-loading').style.display = 'flex';
+  document.getElementById('preco-chart').style.display   = 'none';
+
+  try {
+    const resultados = await Promise.all(
+      cesta.map(g => fetch(`/api/serie-precos/${g}?periodo=${periodo}`).then(r => r.json()))
+    );
+    ultimosResultados = resultados;
+    desenharChart(resultados);
+    resetBtnGerar();
+  } catch (e) {
+    document.getElementById('chart-loading').style.display = 'none';
+    document.getElementById('chart-empty').style.display   = 'flex';
+    btn.disabled  = false;
+    btn.className = 'btn btn-sm btn-error';
+    btn.innerHTML = 'Erro — tentar novamente';
+  }
+}
+
+function marcarDesatualizado() {
+  const btn = document.getElementById('btn-gerar');
+  btn.disabled  = false;
+  btn.className = 'btn btn-sm btn-warning animate-pulse';
+  btn.innerHTML = '↻ Atualizar análise';
+}
+
+function resetBtnGerar() {
+  const btn = document.getElementById('btn-gerar');
+  btn.disabled  = false;
+  btn.className = 'btn btn-sm btn-primary';
+  btn.innerHTML = 'Gerar análise';
+}
+
+// ── Helpers de dados ────────────────────────────────────────────────────────
+function alinhar(resultados) {
+  const todos = new Set();
+  resultados.forEach(r => { if (!r.sem_dados) r.periodos.forEach(p => todos.add(p)); });
+  const periodos = [...todos].sort();
+  const series = resultados.map(r => {
+    if (r.sem_dados) return periodos.map(() => null);
+    const mapa = Object.fromEntries(r.periodos.map((p, i) => [p, r.valores[i]]));
+    return periodos.map(p => mapa[p] ?? null);
+  });
+  return { periodos, series };
+}
+
+function movingAvg(arr, win) {
+  if (win < 2) return arr;
+  return arr.map((_, i) => {
+    const s = arr.slice(Math.max(0, i - win + 1), i + 1).filter(v => v !== null);
+    return s.length ? s.reduce((a, b) => a + b) / s.length : null;
+  });
+}
+
+function toIndice(arr) {
+  const base = arr.find(v => v !== null);
+  if (!base) return arr;
+  return arr.map(v => v !== null ? Math.round(v / base * 1000) / 10 : null);
+}
+
+function variacaoPct(arr) {
+  return arr.map((v, i) => {
+    if (!i || v === null || arr[i-1] === null) return null;
+    return Math.round((v - arr[i-1]) / arr[i-1] * 1000) / 10;
+  });
+}
+
+function calcMedia(series, periodos) {
+  return periodos.map((_, i) => {
+    const vals = series.map(s => s[i]).filter(v => v !== null);
+    if (vals.length < 2) return null;
+    return Math.round(vals.reduce((a, b) => a + b) / vals.length * 10000) / 10000;
+  });
+}
+
+// ── Desenhar gráfico ────────────────────────────────────────────────────────
+function desenharChart(resultados) {
+  document.getElementById('chart-loading').style.display = 'none';
+  document.getElementById('chart-empty').style.display   = 'none';
+  const canvas = document.getElementById('preco-chart');
+  canvas.style.display = 'block';
+
+  const { periodos, series } = alinhar(resultados);
+  const showVar  = document.getElementById('toggle-variacao').checked;
+  const datasets = [];
+
+  cesta.forEach((g, i) => {
+    const r = resultados[i];
+    if (r.sem_dados) return;
+    const cor = PALETTE[i];
+    let vals = series[i];
+    if (mmJanela > 0) vals = movingAvg(vals, mmJanela);
+    if (modo === 'indice') vals = toIndice(vals);
+
+    datasets.push({
+      label: r.label,
+      data: vals,
+      borderColor: cor,
+      backgroundColor: cor + '18',
+      borderWidth: 2,
+      pointRadius: periodos.length > 30 ? 0 : 3,
+      pointHoverRadius: 5,
+      tension: 0.3,
+      fill: false,
+      spanGaps: true,
+    });
+
+    if (showVar) datasets.push({
+      label: r.label + ' (var%)',
+      data: variacaoPct(vals),
+      borderColor: cor,
+      backgroundColor: 'transparent',
+      borderWidth: 1,
+      borderDash: [4, 3],
+      pointRadius: 0,
+      tension: 0.3,
+      fill: false,
+      spanGaps: true,
+      yAxisID: 'yVar',
+    });
+  });
+
+  if (cesta.length >= 2) {
+    let media = calcMedia(series, periodos);
+    if (mmJanela > 0) media = movingAvg(media, mmJanela);
+    if (modo === 'indice') media = toIndice(media);
+    datasets.push({
+      label: 'Média',
+      data: media,
+      borderColor: '#64748b',
+      backgroundColor: 'transparent',
+      borderWidth: 2,
+      borderDash: [6, 3],
+      pointRadius: 0,
+      tension: 0.3,
+      fill: false,
+      spanGaps: true,
+    });
+  }
+
+  const scales = {
+    x: { ticks: { font: { size: 10 }, maxRotation: 45, autoSkip: true, maxTicksLimit: 14 }, grid: { color: 'oklch(93% 0 0)' } },
+    y: {
+      title: { display: true, text: modo === 'indice' ? 'Índice (base 100)' : 'Preço médio (R$)', font: { size: 10 } },
+      ticks: { font: { size: 10 } },
+      grid: { color: 'oklch(93% 0 0)' },
+    },
+  };
+  if (showVar) scales.yVar = {
+    position: 'right',
+    title: { display: true, text: 'Var. % período', font: { size: 10 } },
+    ticks: { font: { size: 10 }, callback: v => v !== null ? v + '%' : '' },
+    grid: { drawOnChartArea: false },
+  };
+
+  if (chart) chart.destroy();
+  chart = new Chart(canvas, {
+    type: 'line',
+    data: { labels: periodos, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 11 }, boxWidth: 12, padding: 12 } },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const v = ctx.raw;
+              if (v === null) return '';
+              if (ctx.dataset.label.includes('var%')) return `  ${ctx.dataset.label}: ${v}%`;
+              if (modo === 'indice') return `  ${ctx.dataset.label}: ${v}`;
+              return `  ${ctx.dataset.label}: R$ ${v?.toFixed ? v.toFixed(2) : v}`;
+            },
+          },
+        },
+      },
+      scales,
+    },
+  });
+}
+
+// Redesenha sem re-fetch (modo/mm mudou)
+function redraw() {
+  if (ultimosResultados) desenharChart(ultimosResultados);
+}
+
+function mostrarVazio() {
+  document.getElementById('chart-empty').style.display   = 'flex';
+  document.getElementById('chart-loading').style.display = 'none';
+  document.getElementById('preco-chart').style.display   = 'none';
+  if (chart) { chart.destroy(); chart = null; }
+}
+
+// ── Controles ───────────────────────────────────────────────────────────────
+function setPeriodo(p) {
+  periodo = p;
+  ['mensal', 'semanal'].forEach(id => {
+    document.getElementById('btn-' + id).className = id === p ? 'btn btn-xs btn-primary' : 'btn btn-xs btn-ghost';
+  });
+  if (ultimosResultados) marcarDesatualizado();
+}
+
+function setModo(m) {
+  modo = m;
+  ['absoluto', 'indice'].forEach(id => {
+    document.getElementById('btn-' + id).className = id === m ? 'btn btn-xs btn-primary' : 'btn btn-xs btn-ghost';
+  });
+  redraw();
+}
+
+function setMM(n) {
+  mmJanela = n;
+  ['off', '3', '6'].forEach(id => {
+    document.getElementById('btn-mm-' + id).className =
+      (id === 'off' ? 0 : parseInt(id)) === n ? 'btn btn-xs btn-primary' : 'btn btn-xs btn-ghost';
+  });
+  redraw();
+}
+</script>
+{% endblock %}

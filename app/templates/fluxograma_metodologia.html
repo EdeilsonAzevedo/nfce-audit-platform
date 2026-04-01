@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Metodologia — Enriquecimento de GTINs com LLMs</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #e8edf3;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ── Title ── */
+.title-area {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 7.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.title-area h1 {
+  font-size: 1.8vh;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: .01em;
+}
+.title-area p {
+  font-size: 1.4vh;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ── Cells ── */
+.cell {
+  position: absolute;
+  border-radius: 10px;
+  padding: 1.2vh 1.2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vh;
+}
+
+/* column x-positions */
+.c1 { left: 1.5vw;   width: 29.5vw; }
+.c2 { left: 35.25vw; width: 29.5vw; }
+.c3 { left: 69vw;    width: 29.5vw; }
+
+/* row y-positions */
+.r1 { top: 8vh;  height: 27vh; }
+.r2 { top: 39vh; height: 27vh; }
+.r3 { top: 70vh; height: 27vh; }
+
+/* ── Cell colors ── */
+.blue   { background:#dbeafe; border:2px solid #3b82f6; }
+.purple { background:#ede9fe; border:2px solid #8b5cf6; }
+.amber  { background:#fef3c7; border:2px solid #f59e0b; }
+.green  { background:#dcfce7; border:2px solid #22c55e; }
+.teal   { background:#ccfbf1; border:2px solid #14b8a6; }
+.pink   { background:#fce7f3; border:2px solid #ec4899; }
+.llm    { background:#f0fdf4; border:2px solid #10b981; }
+.indigo { background:#e0e7ff; border:2px solid #6366f1; }
+.slate  { background:#f1f5f9; border:2px solid #64748b; }
+
+/* ── Cell header ── */
+.cell-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.step-num {
+  min-width: 2.6vh;
+  height: 2.6vh;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5vh;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+.blue   .step-num { background: #2563eb; }
+.purple .step-num { background: #7c3aed; }
+.amber  .step-num { background: #d97706; }
+.green  .step-num { background: #16a34a; }
+.teal   .step-num { background: #0d9488; }
+.pink   .step-num { background: #db2777; }
+.llm    .step-num { background: #059669; }
+.indigo .step-num { background: #4f46e5; }
+.slate  .step-num { background: #475569; }
+
+.cell-title {
+  font-size: 1.7vh;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.blue   .cell-title { color:#1d4ed8; }
+.purple .cell-title { color:#6d28d9; }
+.amber  .cell-title { color:#b45309; }
+.green  .cell-title { color:#15803d; }
+.teal   .cell-title { color:#0f766e; }
+.pink   .cell-title { color:#be185d; }
+.llm    .cell-title { color:#047857; }
+.indigo .cell-title { color:#3730a3; }
+.slate  .cell-title { color:#334155; }
+
+/* ── Cell body ── */
+.cell-body {
+  font-size: 1.45vh;
+  color: #334155;
+  line-height: 1.5;
+  flex: 1;
+}
+.cell-body ul {
+  padding-left: 1.2em;
+}
+.cell-body li { margin-bottom: 1px; }
+
+code {
+  font-size: .88em;
+  background: rgba(0,0,0,.07);
+  padding: 0 3px;
+  border-radius: 3px;
+  font-family: 'Consolas', monospace;
+}
+
+/* ── Result badge ── */
+.result {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,.7);
+  border-radius: 6px;
+  padding: 2px 10px;
+  border: 1px solid rgba(0,0,0,.08);
+  font-size: 1.2vh;
+  color: #475569;
+  line-height: 1.3;
+}
+.chip strong {
+  font-size: 1.5vh;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* ── Score mini-table ── */
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.25vh;
+  margin-top: 2px;
+}
+.score-table th {
+  font-size: 1.2vh;
+  font-weight: 700;
+  color: #92400e;
+  text-align: left;
+  padding: 2px 5px;
+  background: rgba(251,191,36,.4);
+}
+.score-table td {
+  padding: 2px 5px;
+  border-bottom: 1px solid rgba(253,230,138,.6);
+}
+.score-table tr:last-child td { border:none; }
+
+/* ── LLM split cell ── */
+.llm-split {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+.llm-side {
+  flex: 1;
+  border-radius: 7px;
+  padding: 0.6vh 0.8vw;
+  font-size: 1.35vh;
+  line-height: 1.55;
+}
+.llm-local { background: rgba(16,185,129,.12); border: 1px solid #34d399; }
+.llm-cloud { background: rgba(14,165,233,.12); border: 1px solid #38bdf8; }
+.llm-side strong {
+  display: block;
+  font-size: 1.5vh;
+  margin-bottom: 2px;
+}
+.llm-local strong { color: #065f46; }
+.llm-cloud strong { color: #0369a1; }
+
+/* ── Routing badges ── */
+.route {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 2px;
+}
+.route-item {
+  font-size: 1.25vh;
+  padding: 2px 7px;
+  border-radius: 4px;
+  display: flex;
+  gap: 4px;
+}
+.route-go   { background:#dcfce7; color:#166534; }
+.route-warn { background:#fef9c3; color:#854d0e; }
+.route-skip { background:#e0e7ff; color:#3730a3; }
+
+/* ── SVG overlay ── */
+svg.arrows {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* ── Notebook tag ── */
+.nb {
+  font-size: 1.1vh;
+  font-weight: 700;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 1px 5px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+</style>
+</head>
+<body>
+
+<div class="title-area">
+  <h1>Enriquecimento de Dados Fiscais com LLMs — Metodologia</h1>
+  <p>Pipeline completo: da base NF-e ao dashboard de auditoria</p>
+</div>
+
+<!-- ══════════════════ ROW 1 — Esquerda → Direita ══════════════════ -->
+
+<!-- Cell 1: Dados de Origem -->
+<div class="cell blue c1 r1">
+  <div class="cell-head">
+    <div class="step-num">1</div>
+    <div class="cell-title">Dados de Origem <span class="nb">NF-e</span></div>
+  </div>
+  <div class="cell-body">
+    Base de compras públicas (Notas Fiscais Eletrônicas)<br>
+    Campos utilizados:<br>
+    <code>gtin</code> · <code>des_item</code> · <code>ncm</code> · <code>valor_unit_liq</code> · <code>qtd_geral_item</code>
+  </div>
+</div>
+
+<!-- Cell 2: Filtros de Formato -->
+<div class="cell purple c2 r1">
+  <div class="cell-head">
+    <div class="step-num">2</div>
+    <div class="cell-title">Filtros de Formato <span class="nb">Notebook 01</span></div>
+  </div>
+  <div class="cell-body">
+    <ul>
+      <li>Remover nulos, zeros e "SEM GTIN"</li>
+      <li>Manter somente <strong>EAN-13</strong> (13 dígitos, padrão GS1)</li>
+      <li>Selecionar prefixo <strong>789</strong> — GS1 Brasil</li>
+      <li>Validar <strong>dígito verificador</strong> EAN</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Cell 3: Score de Confiança -->
+<div class="cell amber c3 r1">
+  <div class="cell-head">
+    <div class="step-num">3</div>
+    <div class="cell-title">Score de Confiança por GTIN</div>
+  </div>
+  <div class="cell-body">
+    <code>confiança = 1 − Σ penalidades</code>
+    <table class="score-table">
+      <tr><th>Critério</th><th>Condição</th><th>Δ</th></tr>
+      <tr><td>Dígito verificador</td><td>Inválido</td><td>−0.40</td></tr>
+      <tr><td>Múltiplos NCMs</td><td>n_ncm &gt; 1</td><td>−0.30</td></tr>
+      <tr><td>Muitas descrições</td><td>n_desc &gt; 5</td><td>−0.20</td></tr>
+      <tr><td>Preço variável</td><td>CV &gt; 1</td><td>−0.10</td></tr>
+    </table>
+    <div style="margin-top:4px;font-size:1.25vh;color:#92400e;font-weight:600;">
+      ≥ 0.7 → Confiável &nbsp;|&nbsp; &lt; 0.7 → Suspeito
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ ROW 2 — Direita → Esquerda ══════════════════ -->
+
+<!-- Cell 4: Pareto (col 3) -->
+<div class="cell green c3 r2">
+  <div class="cell-head">
+    <div class="step-num">4</div>
+    <div class="cell-title">Pareto — Volume Financeiro <span class="nb">Notebook 02</span></div>
+  </div>
+  <div class="cell-body">
+    <code>volume = valor_unit_liq × qtd_geral_item</code><br>
+    Selecionar GTINs que representam <strong>95% do volume total</strong>
+  </div>
+  <div class="result">
+    <div class="chip"><strong>826</strong>GTINs</div>
+    <div class="chip"><strong>21.567</strong>registros</div>
+    <div class="chip"><strong>95%</strong>do volume</div>
+  </div>
+</div>
+
+<!-- Cell 5: Filtro Descritivo (col 2) -->
+<div class="cell teal c2 r2">
+  <div class="cell-head">
+    <div class="step-num">5</div>
+    <div class="cell-title">Filtro — Mínimo de Descrições</div>
+  </div>
+  <div class="cell-body">
+    Manter apenas GTINs com <strong>≥ 3 descrições únicas</strong><br>
+    <span style="opacity:.75">(mínimo para clustering semântico)</span>
+  </div>
+  <div class="result">
+    <div class="chip"><strong>309</strong>GTINs</div>
+    <div class="chip"><strong>20.133</strong>registros</div>
+    <div class="chip"><strong>517</strong>removidos</div>
+  </div>
+  <div style="font-size:1.2vh;color:#0f766e;margin-top:2px;font-weight:600;">
+    ✓ Amostra salva: <code>amostra_gtin_789.csv</code>
+  </div>
+</div>
+
+<!-- Cell 6: Clustering (col 1) -->
+<div class="cell pink c1 r2">
+  <div class="cell-head">
+    <div class="step-num">6</div>
+    <div class="cell-title">Clustering Semântico (DBSCAN)</div>
+  </div>
+  <div class="cell-body">
+    Embeddings: <code>MiniLM multilíngue</code> · distância cosseno<br>
+    DBSCAN: <code>eps=0.25</code>, <code>min_samples=2</code>
+    <div class="route">
+      <div class="route-item route-go">▶ Cluster dominante ≥ 70% → envia ao LLM</div>
+      <div class="route-item route-warn">⚠ Outliers ≥ 50% → revisão manual</div>
+      <div class="route-item route-skip">→ Menos de 3 descrições → LLM direto</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ ROW 3 — Esquerda → Direita ══════════════════ -->
+
+<!-- Cell 7: LLM -->
+<div class="cell llm c1 r3">
+  <div class="cell-head">
+    <div class="step-num">7</div>
+    <div class="cell-title">Extração com LLM</div>
+  </div>
+  <div class="llm-split">
+    <div class="llm-side llm-local">
+      <strong>Gemma-3n-e4b</strong>
+      Dados on-premise<br>
+      Sem custo por token<br>
+      Privacidade total
+    </div>
+    <div class="llm-side llm-cloud">
+      <strong>Cloud (GPT 4o-mini)</strong>
+      Alta qualidade<br>
+      Custo por token<br>
+      Menor latência
+    </div>
+  </div>
+</div>
+
+<!-- Cell 8: Atributos -->
+<div class="cell indigo c2 r3">
+  <div class="cell-head">
+    <div class="step-num">8</div>
+    <div class="cell-title">Atributos Extraídos por GTIN <span class="nb">Notebook 03</span></div>
+  </div>
+  <div class="cell-body">
+    <ul>
+      <li><strong>Descrição</strong> normalizada</li>
+      <li><strong>Marca</strong> do produto</li>
+      <li><strong>Volume / peso</strong></li>
+      <li><strong>NCM</strong> sugerido</li>
+      <li><strong>Score</strong> de confiança + motivo</li>
+    </ul>
+    <div style="margin-top:4px;">Saída: <code>gtin_resolved.json</code></div>
+  </div>
+</div>
+
+<!-- Cell 9: Dashboard -->
+<div class="cell slate c3 r3">
+  <div class="cell-head">
+    <div class="step-num">9</div>
+    <div class="cell-title">Dashboard de Auditoria (Flask)</div>
+  </div>
+  <div class="cell-body">
+    <ul>
+      <li><code>/dashboard</code> — stats gerais, top marcas, NCMs</li>
+      <li><code>/auditoria</code> — confiança &lt; 0.75</li>
+      <li><code>/inconsistencias</code> — NCM original ≠ NCM LLM</li>
+      <li><code>/explorador</code> — consulta por GTIN</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════ SVG ARROWS ══════════════════
+  viewBox 0 0 100 100  →  1 unit = 1% of viewport
+  preserveAspectRatio="none" → stretches to fill viewport
+
+  Cell edges (in %):
+    Col 1: left=1.5   right=31
+    Col 2: left=35.25 right=64.75
+    Col 3: left=69    right=98.5
+
+  Row centers Y:
+    Row 1: 8 + 27/2 = 21.5  (top=8, height=27)
+    Row 2: 39 + 27/2 = 52.5
+    Row 3: 70 + 27/2 = 83.5
+
+  Row bottoms: Row1=35, Row2=66
+  Row tops:    Row2=39, Row3=70
+-->
+<svg class="arrows" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <defs>
+    <!-- arrowhead marker (auto-orient) -->
+    <marker id="ah" viewBox="0 0 10 10" markerWidth="1.8" markerHeight="1.8"
+            refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,1 L9,5 L0,9 Z" fill="#64748b"/>
+    </marker>
+    <!-- arrowhead for leftward arrows -->
+    <marker id="ahl" viewBox="0 0 10 10" markerWidth="1.8" markerHeight="1.8"
+            refX="1" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M10,1 L1,5 L10,9 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <style>
+    .arr { stroke:#94a3b8; stroke-width:.35; fill:none; }
+    .arr-left { stroke:#94a3b8; stroke-width:.35; fill:none; }
+  </style>
+
+  <!-- ── Row 1: left → right ── -->
+  <!-- 1 → 2 -->
+  <line class="arr" x1="31" y1="21.5" x2="34.5" y2="21.5" marker-end="url(#ah)"/>
+  <!-- 2 → 3 -->
+  <line class="arr" x1="64.75" y1="21.5" x2="68.2" y2="21.5" marker-end="url(#ah)"/>
+
+  <!-- ── Turn: Row1 Col3 → Row2 Col3 (right side, going down) ── -->
+  <line class="arr" x1="83.75" y1="35" x2="83.75" y2="38.2" marker-end="url(#ah)"/>
+
+  <!-- ── Row 2: right → left ── -->
+  <!-- 4 → 5 (col3 → col2) -->
+  <line class="arr" x1="69" y1="52.5" x2="65.5" y2="52.5" marker-end="url(#ah)"/>
+  <!-- 5 → 6 (col2 → col1) -->
+  <line class="arr" x1="35.25" y1="52.5" x2="31.7" y2="52.5" marker-end="url(#ah)"/>
+
+  <!-- ── Turn: Row2 Col1 → Row3 Col1 (left side, going down) ── -->
+  <line class="arr" x1="16.25" y1="66" x2="16.25" y2="69.2" marker-end="url(#ah)"/>
+
+  <!-- ── Row 3: left → right ── -->
+  <!-- 7 → 8 -->
+  <line class="arr" x1="31" y1="83.5" x2="34.5" y2="83.5" marker-end="url(#ah)"/>
+  <!-- 8 → 9 -->
+  <line class="arr" x1="64.75" y1="83.5" x2="68.2" y2="83.5" marker-end="url(#ah)"/>
+
+  <!-- ── Direction labels in gaps ── -->
+  <text x="32.7" y="20.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">▶</text>
+  <text x="66.5" y="20.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">▶</text>
+  <text x="32.7" y="51.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">◀</text>
+  <text x="66.5" y="51.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">◀</text>
+  <text x="32.7" y="82.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">▶</text>
+  <text x="66.5" y="82.3" text-anchor="middle" font-size="1.1" fill="#94a3b8" font-family="Segoe UI,Arial">▶</text>
+</svg>
+
+</body>
+</html>
