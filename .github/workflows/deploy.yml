@@ -17,15 +17,6 @@ jobs:
       - name: Push to Heroku
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
         run: |
-          cat > ~/.netrc << EOF
-          machine api.heroku.com
-            login $HEROKU_EMAIL
-            password $HEROKU_API_KEY
-          machine git.heroku.com
-            login $HEROKU_EMAIL
-            password $HEROKU_API_KEY
-          EOF
-          git remote add heroku https://git.heroku.com/gtin-intel-sei.git
+          git remote add heroku https://:$HEROKU_API_KEY@git.heroku.com/gtin-intel-sei.git
           git push heroku master --force
