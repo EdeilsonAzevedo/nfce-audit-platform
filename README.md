@@ -4,6 +4,8 @@
 > **SEI-BA** (Superintendência de Estudos Econômicos e Sociais da Bahia)
 > e a **SEFAZ-BA** (Secretaria da Fazenda do Estado da Bahia).
 
+**Acesse:** [sei.edeilson.xyz](https://sei.edeilson.xyz)
+
 ---
 
 ## Protótipo
@@ -35,6 +37,17 @@ sendo uma fonte rica para:
 - Análise de **inflação local** e isolamento logístico
 - **Auditoria fiscal** e detecção de inconsistências de NCM
 - Pesquisa econômica sobre padrões de consumo
+
+---
+
+## Deploy
+
+**Acesse:** [sei.edeilson.xyz](https://sei.edeilson.xyz)
+
+Push para `main` dispara deploy automático no Heroku via GitHub Actions.
+
+> Configure os secrets `HEROKU_API_KEY` e `HEROKU_EMAIL` em
+> **Settings → Secrets → Actions** no repositório GitHub.
 
 ---
 
